@@ -1,0 +1,1860 @@
+#+TITLE: Économie de l'ingénieur
+
+* Économie de l'ingénieur
+
+** Cours
+
+*** Cours 1
+*J'ai manqué ce cours*.
+Le sujet est les états financiers.
+**** Plan
+- Introduction
+- Objectifs Généraux du cours
+- Formes d'entreprise
+- États financiers (présentation)
+  - État de la situation financière
+  - État des résultats
+  - État des variations des capitaux propres
+  - État des flux de trésorie (prochain cours)
+- Exemple
+
+**** Formes d'entreprise
+***** Formes Juridiques
+****** Entreprise individuelle
+****** Société de personnes
+****** Société de capitaux
+****** Coopérative
+***** Formes économiques
+****** Entreprise industrielle
+****** Entreprise comemrciale
+****** Entreprise de services
+
+***** Tableau sur les formes juridiques
+
+**** Comptabilité
+***** Définition
+C’est unsystème d’informationfinancière permettant de:
+-enregistrerles opérations d’une entreprise
+-lesregrouper
+-les classer
+-les présenter(dans les états financiers É/F) pour eninterpréter les résultats.
+***** Rôle
+Transformerl’ensemble des données financières en informations utiles et
+pertinentes(É/F) pour les divers groupes qui forment l’environnement économique
+de l’entreprise.
+
+Depuis janvier 2011, les sociétés ouvertes (cotées en bourse) doivent adopter
+les Normes internationales d'information financière (IFRS).
+
+**** Notions de base
+- Personnalité de l’entreprise (entité séparée)
+- Indépendance des exercices et rattachement des
+  charges aux produits
+- Coût historique (valeur d’acquisition)
+- Comptabilisation (constatation des produits et charges)
+- Permanence des méthodes comptables
+- Prudence
+
+**** étapes du système comptable
+*NOTE* Seule la partie «Établissement des états financiers» sera traitée dans ce cours
+***** enregistrement des opérations
+journal général
+
+***** report dans le grand livre général
+comptes en T
+
+***** Établissement de la balance de vérification
+
+***** Régularisation et clôture des comptes
+Charges, Produits
+
+***** Établissement des états financiers
+- état des résultats
+- état des variations des capitatux propres
+- état de la situation financière
+- état des flux de trésorerie
+
+**** Compte en T
+**** Présentation des états financiers
+
+***** État des résultats
+****** Tableau
+| <Nom compagnie>                                                |     |
+| État des résultats                                             |     |
+| du j j-mm-aaaa au jj-mm-aaaa                                   |     |
+|----------------------------------------------------------------+-----|
+| _produits_                                                     |     |
+| + Ventes                                                       | x   |
+| - Couts des ventes                                             | (x) |
+| *Résultats bruts*                                              | XX  |
+| + Produits de location                                         | x   |
+| + Produits d'intérêts                                          | x   |
+| + Gains sur disposition (prix de vente - valeur comptable)     | x   |
+| _Charges_                                                      |     |
+| + Écliectricité                                                | x   |
+| + Salaires                                                     | x   |
+| + Assurances                                                   | x   |
+| + Amortissement (Sans effet sur la trésorie)                   | x   |
+| + Dépréciation des comptes client (Sans effet sur la trésorie) | x   |
+| + Pertes sur disposition d'actif                               | x   |
+| _Resultat net_                                                 |     |
+| = Sum(Produits) - Somme(Charges)                               | XX  |
+| _Resultat net après impôts_                                    |     |
+| = Resultat net - impot                                         | XX  |
+****** Composantes
+- Actifs(A):ressources économiques que l’entreprise possède ou sur lesquelles
+  elle exerce un contrôle et qui devraient lui procurer des avantages
+  économiques maintenant ou dans le futur.
+
+- Passifs(P):obligations qu’a l’entreprise envers des tiers et dont le
+  règlement se fera par transfert d’actifs, la prestation de services ou tout
+  autre avantage.
+  
+- Capitauxpropres(C): mise(s) defonds du(des) propriétaire(s) auxquelles
+  s’ajoutent les résultats non distribués aux actionnaires sous forme de
+  dividendes (société par actions) et le surplus d’apport.
+****** Vérifications
+Les éléments ici influencent l'état de variations des capitaux propres et la
+situation financière qui est vérifié avec l'équation comptable.
+***** État des variations des capitaux propres
+****** Tableau
+| <nom de la compagine>                    |                |           |                  |
+| État des variations des capitaux propres |                |           |                  |
+| Période terminée le <jj-mm-aa>           |                |           |                  |
+|------------------------------------------+----------------+-----------+------------------|
+|                                          | Capital Social | RND       | Surplus d'apport |
+|------------------------------------------+----------------+-----------+------------------|
+| Solde de début                           | a              | b         | c                |
+|------------------------------------------+----------------+-----------+------------------|
+| Surplus d'apport de la période           |                |           | h                |
+| Emission d'actions                       | d              |           |                  |
+| Rachat d'actions                         | (e)            |           |                  |
+| Resultats de la periode                  |                | f         |                  |
+| Dividendes déclarés                      |                | (g)       |                  |
+|------------------------------------------+----------------+-----------+------------------|
+| Solde de fin                             | a + d - e      | b + f - g | c + h            |
+|------------------------------------------+----------------+-----------+------------------|
+
+****** Explications
+On prend a, b, c, de l'état des résultats.
+
+Émettre des actions augmente le capital social.  Les RDN de fin est notre RND
+précédent plus nos résultats de la période moins la partie des résultats qu'on a
+versé en dividendes.  Finalement le surplus d'apport est le surplus d'apport n-1
+plus le surplus d'apport que les propriétaires on mis durant la période.
+****** Vérifications
+Les éléments ici influencent l'état de la situation financière qui est vérifié
+avec l'équation comptable.
+***** État de la situation financière
+****** Tableau
+|----------------------------------------------------+------+------|
+| <Nom de la compagnie>                              |      |      |
+| État de la situation financière                    |      |      |
+| Au 31 décembre 2017                                |      |      |
+|----------------------------------------------------+------+------|
+|                                                    | 2017 | 2018 |
+|----------------------------------------------------+------+------|
+| _Actifs_                                           |      |      |
+|----------------------------------------------------+------+------|
+| _Actifs courants_ (< 12 mois)                      |      |      |
+| Encaisse                                           | x    | x    |
+| Stocks                                             | x    | x    |
+| Comptes Clients                                    | x    | x    |
+| Placements à court terme                           | x    | x    |
+| (Provision pour dépréciation des CC)               | (x)  | (x)  |
+| Produits à recevoir                                | x    | x    |
+| Charges payées d'avance                            | x    | x    |
+| *Total actifs courants*                            | XX   | XX   |
+|----------------------------------------------------+------+------|
+| _Actifs non-courants_                              |      |      |
+| Immobilisation corporelles                         | x    | x    |
+| Équipement/Machines                                | x    | x    |
+| (Amortissement cumulé Équipement/Machine)          | (x)  | (x)  |
+| Immeubles                                          | x    | x    |
+| (Amortissement cumulé immeubles)                   | (x)  | (x)  |
+| Immobilisations incorporelles (breuvets, licences) | x    | x    |
+| Placements à long terme                            | x    | x    |
+| *Total actifs non-courants*                        | XX   | XX   |
+|----------------------------------------------------+------+------|
+| *Total Actifs*                                     | XXX  | XXX  |
+|----------------------------------------------------+------+------|
+| Passifs et Capitaux propres                        |      |      |
+|----------------------------------------------------+------+------|
+| _Passifs courants_                                 |      |      |
+| Comptes fournisseurs                               | x    | x    |
+| Charges à payer                                    | x    | x    |
+| Dividendes à payer                                 | x    | x    |
+| Emprunts à court terme                             | x    | x    |
+| Obligations à court terme                          | x    | x    |
+| Produits différés (we owe merch to someone)        | x    | x    |
+| *Total pasifs courants*                            | XX   | XX   |
+|----------------------------------------------------+------+------|
+| _Passifs non courants_                             |      |      |
+| Emprunts à long terme                              | x    | x    |
+| Hypothèque                                         | x    | x    |
+| *Total passifs non courants*                       | XX   | XX   |
+|----------------------------------------------------+------+------|
+| _Capitaux propres_                                 |      |      |
+| Capital social                                     | x    | x    |
+| Résultats non distribués                           | x    | x    |
+| Surplus d'apport                                   | x    | x    |
+| *Total Capitaux Propres*                           | XX   | XX   |
+|----------------------------------------------------+------+------|
+| *Total passifs et capitaux propres*                | XXX  | XXX  |
+|----------------------------------------------------+------+------|
+****** Vérifications:
+Voir équation comptable A = P + CP
+Les éléments ici influencent l'état des flux de trésorie qui a ses propres vérifications.
+****** Remarques :
+Document de synthèse qui expose à une date donnée la situation financière d'une
+entreprise en fournissant un résumé de l'ensemble de ses éléments d'actif (A),
+de passif(P)et de capitaux propres (C).
+
+1. La situation financière se compose de deux parties principales: les
+   éléments d'actif et les sources d'actif (passif et capitaux propres).
+2. Le total des éléments d'actif doit toujours égaler le total des sources
+   d'actif.
+   L'ÉQUATION COMPTABLE : A = P + C doit toujours être vérifiée.
+3. À tout moment, il est possible d'établir les capitaux propres d'une
+   entreprise.
+   A - P = C
+****** Équation comptable
+   L'ÉQUATION COMPTABLE : A = P + C doit toujours être vérifiée.
+
+***** État des flux de trésorie (prochain cours)
+****** Tableau
+|--------------------------------------------------------------+-----|
+| Compagnie YY                                                 |     |
+| État des flux de trésorie (méthode indirecte)                |     |
+| Du 1er Janvier au 31 décembre 2018                           |     |
+|--------------------------------------------------------------+-----|
+| Activités de opérationnelles                                 |     |
+|--------------------------------------------------------------+-----|
+| + Resultat net                                               | x   |
+| + Éléments sans effets sur la trésorie                       | x   |
+| (amortissement)                                              |     |
+| (Dépréciation des comptes clients)                           |     |
+| + Delta PC (Fin - Début) (exclure prov pour dépréc CC)       | x   |
+| + Delta AC (Début - Fin) (exclure encaisse et placements CT) | x   |
+|--------------------------------------------------------------+-----|
+| *Total Activités Opérationnelles*                            | XX  |
+|--------------------------------------------------------------+-----|
+| Activités de financement                                     |     |
+|--------------------------------------------------------------+-----|
+| + Émission d'actions                                         | x   |
+| - Versement de dividendes                                    | (x) |
+| + Nouvel emprunts                                            | x   |
+| - Remboursement d'emprunts                                   | (x) |
+| - Frais financiers                                           | (x) |
+|--------------------------------------------------------------+-----|
+| *Total activités de financement*                             | XX  |
+|--------------------------------------------------------------+-----|
+| Activité d'investissement                                    |     |
+|--------------------------------------------------------------+-----|
+| - Achat d'actifs non courant                                 | (x) |
+| + Disposition d'actif non courant                            | x   |
+|--------------------------------------------------------------+-----|
+| *Total Activités d'Investissement*                           | XX  |
+|--------------------------------------------------------------+-----|
+| Variation de la trésorie                                     | XXX |
+| Trésorie de début                                            | XX  |
+| Trésorie de fin                                              | XX  |
+
+****** Vérifications
+#+BEGIN_QUOTE
+\Delta_Tr = \Sigma_AO + \Sigma_AF + \Sigma_AI
+= \Delta_Encaisse + \Delta_PlacementsCT
+
+Tr_Début = Encaisse_Début + PlacementsCT_Début
+
+Tr_Fin = Encaisse_Fin + PlacementsCT_Fin
+#+END_QUOTE
+*** Cours 2 État des flux de trésorie & Ratios financiers
+**** Etat de flux de trésorie mis avec les états financiers dans cours 1
+**** Ratios : Voir [[https://moodle.polymtl.ca/pluginfile.php/512706/mod_folder/content/0/Cours%25202.1%2520-%2520Ratios.pdf?forcedownload=0][Cours 2.1 Ratios.pdf]] 
+***** Ratios de liquidité
+****** Ratio de liquidité courante (ratio du fond de roulement)
+ #+BEGIN_EXAMPLE
+ actif courants
+ ---------------
+ passif courants
+ #+END_EXAMPLE
+******* Interprétation
+ *Capacité d'une entreprise à faire face à ses obligations financières à court
+ terme lorsqu'elles viennent à échéance*
+ - < 1: la compagnie a de la misère à rembourser ses dettes
+ - > 2: L'entreprise a trop de stocks
+ - [1.2, 2.0] : La majorité des analystes estiment que c'est idéal 
+****** Ratio de liquidité relative (Ratio de liquidité immédiate)
+ #+BEGIN_EXAMPLE
+ actif courant - stocks - frais payés d'avance
+ ---------------------------------------------
+               passif courant
+ #+END_EXAMPLE
+******* Interprétation
+ *Indique si on peut rembourser le passif à court terme sans avoir à vendre les
+ stocks. Si le ratio est nettement inférieur au ratio de liquidé courante, cela
+ signifie que l'actif à court terme dépend étroitement des stocks.*
+ - Idéal : [1,2]
+***** Ratios d'endettement
+****** Ratio d'endettement
+ #+BEGIN_EXAMPLE
+ passif total
+ ------------
+ actif total
+ #+END_EXAMPLE
+******* Interprétation
+ Capacité de respecter ses engagements à long terme
+ - < 30% : Excellent
+ - [30%, 36%] : bon
+ - > 40% : Problématique
+****** Ratio de la couverture des intérêts
+ #+BEGIN_EXAMPLE
+ Résultat avant intérêts et impôts
+ ---------------------------------
+        Intérêts
+ #+END_EXAMPLE
+******* Interprétation
+ Indique dans quelle mesure les intérêts débiteurs sont couverts par les flux de
+ trésorie de la société.
+ - < 1 : La société peut éprouver de véritables difficultés à régler ses intérêts
+   débiteurs et le risque de défaut de paiement est jugé élevé.
+ - > 1.5 : Idéal
+***** Ratios de performance
+****** Ratio de rotation de l'actif
+ #+BEGIN_EXAMPLE
+       Ventes nettes
+ -------------------------
+ Valeur moyenne de l'actif
+
+ Valeur moyenne = (montant de fin + montant de début) / 2
+ Ventes nettes = ventes moins les rendus, rabais et escomptes sur les ventes
+ #+END_EXAMPLE
+******* Interprétation
+ - Il indique le montant du chiffre d'affaires généré par chaque dollar investi
+   dans l'actif total.
+ - Habituellement, plus le ratio est élevé, plus la gestion des actifs est
+   optimale.
+ - Par exemple, un ratio de 0,60 $ indique que chaque dollar investi rapporte
+   0,60 $ de ventes nettes.
+ - Ce ratio est utile pour se comparer à ses concurrents.
+****** Ratio de rotation des comptes clients
+ #+BEGIN_EXAMPLE
+          ventes nettes
+ ----------------------------------
+ Valeur moyenne des comptes clients
+
+ Valeur moyenne = (montant de fin + montant de début) / 2
+ Ventes nettes = ventes moins les rendus, rabais et escomptes sur les ventes
+ #+END_EXAMPLE
+******* Interprétation
+ - Il mesure le nombre de fois qu’une entreprise transforme ses créances clients en
+   ventes.
+ - Plus ce ratio est faible, plus l’entreprise s’expose aux risques de non-paiement de la
+   part de ses partenaires, et plus elle devra revoir sa politique de crédit. Il s’agit donc,
+   pour l’entreprise, de trouver un juste milieu entre les créances accordées et les ventes
+   à générer via le crédit.
+ - Un ratio de 15 signifie que l’entreprise collecte 15 fois ses compte-client par année. On
+   peut également conclure que ça lui prend en moyenne 24,3 jours pour collecter ses
+   clients (ratio du délai de recouvrement des c.c. 365/15).
+****** Ratio du délai de recouvrement des comptes clients
+ #+BEGIN_EXAMPLE
+          365 jours
+ ----------------------------
+ Rotation des Comptes Clients
+ #+END_EXAMPLE
+******* Interprétation
+ - Mesure le nombre moyen de jours qu’il faut aux clients pour payer leurs comptes.
+ - Donne une indication de l’efficacité des politiques de crédit et de recouvrement en
+   vigueur dans l’entreprise.
+ - Permet de déterminer si les modalités de crédit dont se sert l’entreprise sont réalistes.
+ - Pour déterminer si le délai moyen de recouvrement des comptes clients est adéquat, il
+   suffit de le comparer aux modalités de crédit que vous offrez à vos clients.
+   - Par exemple, si vous donnez à vos clients 30 jours pour payer leur facture et que
+     votre délai moyen de recouvrement des comptes clients est de 45 jours, il y a un
+     problème; en revanche, si le délai moyen est inférieur à 30 jours, c’est une bonne
+     nouvelle.
+****** Ratio de rotation stocks
+ #+BEGIN_EXAMPLE
+     Coûts des ventes
+ -------------------------
+ Valeur moyenne des stocks
+ #+END_EXAMPLE
+******* Interprétation
+ - Un faible ratio de rotation est généralement de mauvais augure, car les produits ont
+   tendance à s'abîmer s'ils restent trop longtemps dans un entrepôt.
+ - Les sociétés qui vendent des biens périssables ont un ratio de rotation très élevé.
+ - Ce ratio est utile pour se comparer à ses concurrents.
+ - Voici un lien utile afin de pouvoir comparer le ratio de votre entreprise à celui de votre
+   secteur d’activité :
+   https://www.bdc.ca/fr/articles-outils/boite-outils-entrepreneur/evaluation-entreprise/pages/rotation-stocks-outil-analyse-comparative.aspx?ChangeIndustry=1
+****** Ratio de rotation de l'actif immobilisé
+ #+BEGIN_EXAMPLE
+             ventes nettes
+ --------------------------------------
+ valeur moyenne des actifs non courants
+
+ Valeur moyenne = (montant de fin + montant de début) / 2
+ Ventes nettes = ventes moins les rendus, rabais et escomptes sur les ventes
+ #+END_EXAMPLE
+******* Interprétation
+ - Le ratio de rotation des immobilisations (rotation de l’actif immobilisé)
+   indique combien de revenus génère chaque dollar investi dans les
+   immobilisations.
+ - Habituellement, plus le ratio est élevé, plus la gestion des actifs
+   immobilisés est optimale.
+ - Attention à l’interprétation du ratio: Une entreprise bien installée possédant
+   de vieux équipements fortement amortie aurait un meilleur résultat en
+   opposition à une plus jeune entreprise possédant de nouveaux équipements.
+ - Il faut donc comparer des entreprises possédant des immobilisations d’âge
+   comparable.
+***** Ratios de rentabilité (rendement)
+****** Ratio de la marge nette
+ #+BEGIN_EXAMPLE
+ Résultats nets
+ --------------
+ Ventes nettes
+
+ Ventes nettes : ventes moins les rendus, rabais et escomptes sur les ventes
+ Résultat net : résultat brut moins les charges
+ Résultat brut : ventes moins le coût des vente
+ #+END_EXAMPLE
+******* Interprétation
+ Rentabilité de l'exploitation
+ Ce ratio indique la partie des ventes qui contribue au bénéfice de l'entreprise.
+ - Le ratio ne sert à rien si l'entreprise perd de l'argent, car elle ne fait
+   alors pas de profit.
+ - Lorsque le ratio de marge bénéficiaire nette (marge nette) est faible, cela
+   peut être attribuable à la stratégie prix et/ou à l'incidence que la
+   concurrence a sur la marge.
+ - Une marge élevée est un bon signe
+ - Ce ratio est utile pour se comparer à ses concurrents.
+****** Ratio de la marge brute
+ #+BEGIN_EXAMPLE
+ Resultats bruts
+ ---------------
+  Ventes nettes
+ #+END_EXAMPLE
+******* Interprétation
+ Indique le niveau de bénéfice généré par l'entreprise.
+
+ Ce ratio témoigne de la politique de fixation des prix de la société et de la majoration
+ réelle des prix.
+
+ Par exemple, si le ration de la marge bénéficiaire brute (marge brute) est de 33 %,
+ cela signifie que le prix des produits est majoré de 50 % (1/(1-33 %))-100 %).
+ - Les résultats peuvent être biaisés si l'éventail de produits de la société est
+   très large.
+ - Ce ratio se révèle très utile lorsqu'il est comparé à ceux des exercices
+   antérieurs.
+ - En général, la marge bénéficiaire brute doit être stable. Elle ne doit pas
+   fluctuer d'une période à l'autre.
+****** Ratio de rentabilité
+ #+BEGIN_EXAMPLE
+          résultats nets
+ -----------------------------------
+ valeur moyenne des capitaux propres
+
+ Valeur moyenne = (Montant de fin + montant début)/2
+ Résultat net = résultat brut moins les charges
+ #+END_EXAMPLE
+******* Interprétation
+ Ce ratio indique le taux de rendement que l'entreprise tire de l'investissement
+ de ses propriétaires ou que les actionnaires obtiennent de leurs actions.
+
+ Par exemple, si le ratio s'élève à 10 %, cela signifie que chaque dollar investi
+ à l'origine produit un actif de 10 cents.
+
+ - Les sociétés à forte croissance devraient obtenir un rendement élevé des capitaux
+   propres.
+ - Le rendement moyen des capitaux propres au cours des 5 à 10 dernières années
+   donne une meilleure idée de la croissance à long terme.
+
+***** Ratios de la valeur marchande
+****** Ratio du résultat par action
+ #+BEGIN_EXAMPLE
+             Résultats nets
+ ------------------------------------------
+ Nombre d'actions ordinaires en circulation
+
+ Résultats net = résultat brut moins les charges
+ #+END_EXAMPLE
+******* Interprétation
+ C'est le ratio le plus utilisé. Il indique le montant du bénéfice généré par la
+ société, par action.
+ - On compare ce ratio avec les exercices précédents ainsi qu’avec d’autres
+   entreprises.
+ - Lorsque la société émet de nouvelles actions, il est beaucoup plus difficile
+   de comparer le BPA de l'exercice en cours et des exercices précédents.
+ - Le ratio du bénéfice par action (BPA ou du résultat par action) est
+   principalement utilisé pour les sociétés cotées en bourse. En soi, le BPA
+   n'indique pas grand-chose. Par contre, si vous le comparez au BPA d'un
+   trimestre ou d'un exercice antérieur, vous pouvez calculer le taux de
+   croissance du bénéfice (par action) de la société. Par exemple, une entreprise
+   qui augmente de 50 % en un an possède un excellent taux de croissance.
+****** Ratio du cours/résultats
+ #+BEGIN_EXAMPLE
+ Cours du marché ordinaire
+ -------------------------
+ Résultat par action
+
+ Résultats net = résultat brut moins les charges
+ #+END_EXAMPLE
+******* Interprétation
+ L'un des ratios les plus utilisés, il permet de comparer le prix courant au
+ bénéfice afin de déterminer si le titre est surévalué ou sous-évalué. Il
+ représente une attente quant au rendement futur de l'entreprise.
+ - En règle générale, lorsque le ratio est élevé, cela signifie que les
+   investisseurs prévoient une forte croissance dans le futur.
+ - Le ratio cours/bénéfice (cours/résultats, C/B) moyen du marché est de 20 à 25
+   fois le bénéfice.
+ - Les sociétés qui perdent de l'argent n'ont pas de ratio C/B.
+ - On compare ce ratio avec les exercices précédents ainsi qu’avec d’autres
+   entreprises.
+ - Le ratio C/B ne détermine pas le cours de l'action. Un ratio C/B bas peut
+   indiquer que le bénéfice de l'entreprise est stable ou qu'il croît lentement,
+   comme il peut signifier que l'entreprise éprouve des difficultés financières.
+*** Cours 3 Immobilisations et amortissement
+**** Vocabulaire
+*Actif immobilisé/Immobilisations* : 
+- Destinés à être utilisés pour la production de bien ou pour gagner du revenu.
+- Destinés à être utilisés de façon durable
+- Non destinés à être vendus
+***** Catégories d'immobilisations
+****** Immobilisations corporelles
+  - Biens amortissables : 
+    - Immeubles
+    - Biens qui s'épuisent
+  - Biens non-ammortissables : 
+    - Terrain
+****** Immobilisations incorporelles
+  - R&D
+  - Droits d'auteur
+  - Franchises
+  - Licenses
+  - Marque de commerce
+  - Autres propriétés intellectuelles
+
+**** Coût d'un actif immobilisé
+L'idée est de prendre en compte 
+| Coût de l'actif (prix affiché) |
+| + Coûts de mise en service     |
+| + Autres frais comme transport, préparation, installation |
+
+
+**** Amortissement
+***** Amortissement linéaire
+L'immobilisation passe du coût initial *P* à sa valeur résiduelle *R* en *n*
+années en perdant *(P-R)/n* à chaque année (sauf la première année où on prend
+une fraction de ce montant correspondant à la fraction d'année d'utilisation(m/12)).
+
+D_1 = (m/12) * (P-R)/n
+
+D_t = (P-R)/n
+
+***** Amortissement à taux dégressif à taux constant
+
+Aller de *P* à *R* en *n* étapes en multipliant par un facteur.
+
+L'idée est en fait de multiplier la valeur de l'année précédente par un facteur
+de sorte qu'après avoir multiplié par ce facteur *n* fois, on fini par avoir
+multiplié par *R/P*.
+
+| Année | Valeur comptable              |
+|-------+-------------------------------|
+|     0 | P                             |
+|     1 | P (R/P)^{1/n}                    |
+|     2 | P (R/P)^{1/n} (R/P)^{1/n}           |
+|     \dots | \dots                             |
+|     n | P ( (R/P)^{1/n} )^n = P (R/P) = R |
+
+
+En pratique, on utilise la terminologie suivante:
+On calcule un taux basé sur *P*, *R* et *n*:
+
+d = 1 - (R/P)^{1/n}
+
+et au lieu de soustraire le même montant à chaque année, on ammortit de
+
+D_t = CNA_{t-1} * d
+
+Ce qui correspond à multiplier par (R/P)^{1/n}:
+
+CNA_t = CNA_{t-1} - CNA_{t-1} * d = CNA_{t-1} * (1 - d) = CNA_{t-1} * (R/P)^{1/n}
+
+***** Amortissement Proportionnel à l'ordre inversé des années
+
+Soit U_t = (P-R)(n - t + 1)/k la perte de valeur dans la première année *d'utilisation*.
+
+Si les années d'utilisation sont désynchronisées avec les périodes d'éxercice,
+chaque année d'exercice ira chercher une partie de chaque année d'utilisation qui
+la chevauchent.
+
+Par exemple, pour une machinne achetée en fin avril de l'année 1: on a
+U_1 = (P-R)(n-1+1)/k, mais seulement (8/12)U_1 sera mis dans les livres pour
+l'année 1.
+
+D_1 = (8/12)U_1
+
+À l'année fiscale 2, on a 4 mois qui font partie de la première année
+d'utilisation (U_1).  L'amortissement à l'année 2 incluera (4/12)D_1 et aussi (8/12)D_2
+où
+
+D_2 = (4/12)U_1 + (8/12)U_2
+
+*En passant, k = n(n+1)/2.*
+
+/Sti que ça vaut pas la peine d'apprendre cet esti d'amortissement, come on.
+R'garde, si j'ai besoin de faire un amortissement comme ça, j'ouvrirai un
+livre./
+
+
+***** Amortissement Proportionnel à l'utilisation
+
+Ben simple: on remplace le *n* par un volume total d'utilisation *V*.
+
+on a donc d = (P-R)/V
+
+L'amortissement à l'année *t* sera donné par le volume d'utilisation de v_t de
+l'année *t*.
+
+D_t = d*v_t
+
+Par exemple, ça pourrait être une voiture, *V* serait le nombre total de
+kilomètres qu'on prévoit faire avec la voiture et v_t serait le nombre de
+kilomètres faits durant l'année *t*.
+
+*** Cours 4 Intérêt et valeur de l'argent dans le temps
+À cause des intérêts ou de l'inflation, un montant X_1 à un temps T_1 n'aura pas
+la même valeur à un temps T_2.  Les méthodes dans cette sections permettent de
+trouver des équivalences entre des montants d'argents à différents temps.
+
+Les facteurs d'actualisations permettent d'établire ces équivalences.
+
+Les taux effectifs permettent de comparer des situations avec des fréquences de
+capitalisations différentes.
+**** Valeur de l'argent dans le temps
+
+***** La base (P/F;i;n), (F/P;i;n)
+
+Avec un taux i, un montant est multiplié par (1+i) à chaque période de
+capitalisation.
+
+Ainsi, un montant à l'année 0 aura été mutiplié par (1+i)^n rendu à l'année n.
+
+Ainsi, si on connait le montant à l'année n, on peut connaître le montant à
+l'année 0 en multipliant par (1+i)^{-n}.  Donc:
+
+| (P/F, i, n) | (1+i)^{-n} |
+| (F/P, i, n) | (1+i)^{n}  |
+
+***** Le reste
+
+Avec des annuités, on dépose un montant A à chaque période. Au bout de n années,
+le premier montant A déposé à l'année vaudrait A(1+i)^{-1} à l'année 0, le montant
+déposé à l'année 2 vaudrait A(1+i)^{-2} à l'année 0.  Finalement le montant déposé
+à l'année n vaudrait A(1+i)^{-n} à l'année 0.
+
+La somme est donc
+
+A((1+i)^{-1} + (1+i)^{-2} + \dots + (1+i)^{-n}) = P
+
+Si on fait le même truc qu'avec une série géométrique pour trouver P/A = \xi, nous
+avons
+
+\xi = (1+i)^{-1} + (1+i)^{-2} + \dots + (1+i)^{-n}
+
+et
+
+(1+i)\xi = 1 + (1+i)^{-1} + (1+i)^{-2} + \dots + (1+i)^{-(n-1)} 
+
+donc \xi - (1+i)\xi = -i\xi = (1+i)^{-n} - 1.
+
+ou bien i\xi = 1 - (1+i)^{-n} et donc \xi = (P/A;i;n) = (1 - (1+i)^{-n})/i
+
+On peut multiplier par (1+i)^n/(1+i)^n = 1 pour obtenir
+
+| (P/A, i, n) | ((1+i)^n - 1)/(i(1+i)^n) |
+| (A/P, i, n) | 1/(P/A, i, n)          |
+
+pour avoir une formule sans exposants négatifs.
+(setq org-pretty-entities nil)
+
+Les autres formules peuvent être obtenues ainsi:
+
+| (F/A, i, n) | ((1+i)^n - 1)/i   |
+| (A/F, i, n) | i / ((1+i)^n - 1) |
+| (P/G, i, n) | ...              |
+
+***** A_\infty
+On veut que l'intérêt annuel nous donne un montant A_\infty à chaque année.
+
+P * (1 + i) = P + A_\infty 
+
+et on retire le A_\infty pour faire quelque chose avec, et on s'en fait donner un
+autre l'année d'après jusqu'à la fin des temps.
+
+Donc A_\infty = i * P \Leftrightarrow P = A_\infty / i
+
+Le P dans P = A_\infty / i est appelé le coût immobilisé
+
+***** Règle du 72
+
+n = 0.72 / i ~ nombre d'années pour doubler au taux i
+
+
+*** Cours 5 Taux d'intérêts nominal et réel
+
+Formules pour convertir entre différens taux d'intérêts équivalents et exprimés.
+
+**** Taux nominal et périodes de capitalisation 
+
+Les termes d'un prêt ou d'un investissement expriment les taux sous la forme
+
+"Un taux nominal de i_nominal par année capitalisée m fois par année"
+
+Ceci veux dire que m fois par année, le montant sera multiplié par (1 + i/m).
+Au bout d'une année, le montant aura été multiplié par (1 + i/m)^m.
+
+On appelle i_eff = (1 + i_nom/m)^m.
+
+Afin de pouvoir travailler avec des flux monétaires avec diverses fréquences de
+capitalisation, nous devons transformer ces taux en taux effectifs de la même fréquence.
+
+**** Comparaisons
+
+(1 + i_1/m)^m = (1 + i_2/\nu)^\nu
+
+(1 + i_1/m)^{m/\nu} = 1 + i_2/\nu
+
+i_2/\nu = (1 + i_1/m)^{m/\nu} - 1
+
+
+*** Cours 6 Seuil de rentabilité = Point Mort et analyse marginale
+**** Contexte
+On suppose que les ventes et côuts suivent une relation
+
+Ventes = PV_u * U
+
+Coûts = CV_u * U + CF
+
+Coûts variables totaux = CV_u * U
+
+où U est le nombre d'unités vendues d'un produit, PV_u, CV_u et CF sont des
+constantes en $/u, $/u et $ respectivement.
+
+**** Point Mort (Nombre d'unités qui rend les ventes égales aux coûts)
+
+Le point mort U^* est la solution de l'équation des recettes et des coûts.
+
+#+BEGIN_QUOTE
+Pv * U^* = CT(U^*) = CV_u * U^* + CF
+#+END_QUOTE
+
+Ça nous donne un nombre d'unités:
+
+\Leftrightarrow (PV - CV_u) * U^* = CF
+
+\Leftrightarrow U^* = CF / (PV - CV_u)
+
+**** Différentes expressions du point mort
+
+SR(Q) = U^* = CF / (PV_u - CV_u) = CF / CM_u \Leftrightarrow CF = U^* * CM_u
+
+SR($) = U^* * PV_u = (U^* * CM_u) * (PV_u/CM_u) = CF * 1/CM_%
+
+**** Contributions marginales
+
+CM_u = PV_u - CV_u contribution marginale unitaire.
+
+CM_% = CM_u / PV_u marginale en pourcentage
+
+CM_$(U) = Ventes - Coûts Variables Totaux = PV_u * U - CV_u * U : (contribution marginale totale)
+
+C'est le profit qu'on ferait si les couts fixes disparaissaient.
+
+NOTE: CM_$(U^*) = CF
+
+**** Méthode des points extrêmes
+
+On se fait donner un tableau avec des lignes (x,y) = (quantité, couts).
+
+On suppose que ces coûts suivent une règle y = ax + b avec a = CV_u et b = CF.
+
+On choisi deux points (x_1, y_1), (x_2, y_2) éloignés dans le tableau:
+
+a = (y_2 - y_1) / (x_2 - x_1)
+
+maintenant qu'on a calculé a, on peut utiliser un des points pour calculer b:
+
+y_1 = a x_1 + b \Leftrightarrow b = y_1 - a x_1
+
+**** Point d'équivalence de deux projets
+
+Ah point d'équivalence entre deux options pour produire la même chose. Soit deux
+options données par CV_u1, CF_1 et CV_u2, CF_2.  Alors CV_U1 * U_eq + CF_1 = CV_U2 *
+U_eq + CF_2 nous donne
+
+PE(Q) = U_eq = (CF_2 - CF_1) / (CV_u1 - CV_u2)
+
+CM_%1 * PE($) - CF_1 = CM_%2 * PE($) - CF_2
+
+PE($) = (CF_1 - CF_2) / (CM_%2 - CM_%1)
+
+**** Marge de sécurité
+
+Soit U un nombre d'unités
+
+MS($) = RevenusTotauxPrévus - RevenusAuSeulDeRentabilité = PV_u * U - PV_u * U^*
+
+MS(Q) = U - U^* = (nombre d'unités vendues de plus que le point mort)
+
+MS(%) = MS($)/(PV_u * U) = PV_u(U-U^*)/(PV_u*U) = 
+
+**** Profit/Perte par unité
+
+Profit(U) = PV_u * U - (CV_u * U + CF)
+
+Profit(U) / U = ProfitParUnité
+
+= (PV_u * U - (CV_u * U + CF)) / u
+
+= ((PV_u - CV_u) * U - CF) / U
+
+= (PV_u - CV_u) - CF/U
+
+
+
+**** Vocabulaire
+***** Composantes du coût de fabrication (ou de production) 
+
+- Matières premières (MP) \\
+  Note: C'est un coût variable
+- Main d'oeuvre directe (MOD) \\
+  Salaires de ceux qui travaillent /directement/ à la transofrmation des
+  matières premières en produits finis.
+- Frais généraux de fabrication (FGF) autres que la /Main d'oeuvre directe/ et les
+  /matières premières/.
+
+***** Frais généraux de fabrication
+
+*Definition* : Tous les autres coûts que main d'oeuvre directe (MOD) et la
+matière première (MP).
+
+*Exemples* : 
+- Amortissements
+- Chauffage et éclairage
+- Entretien des équipements
+- Assurances, impôt foncier
+- Main-d'oeuvre indirecte: 
+  - Salaires des contremaîtres
+  - employés de bureau,
+  - ingénieurs
+  - programmeurs
+
+*Notes* : Certains FGF peuvent être des coûts fixes et d'autres peuvent être des
+coûts variables.
+
+Les FGF sont répartis aux produits.
+
+***** Coûts pertinents
+
+- Coûts différentiels et coûts stables
+- Coûts engagés et coûts d'opportunité
+- Coûts passés
+
+**** État des flux de trésorie différentiel 
+Voir https://moodle.polymtl.ca/pluginfile.php/163307/mod_resource/content/35/SSH3201%20Cours%206%20Couts_PM_A2018_modifié_PDF.pdf
+*** Cours 7 VAN, IR, DR, TRI, TRIM
+    
+**** VAN : Valeur Actualisée Nette
+
+C'est la somme des valeurs actualisées de tous les flux monétaires d'un projet.
+
+La VAN est fonction du taux utilisé pour les actualisations.  On peut donc
+généraliser la définition:
+
+VAN(i) : La somme des flux monétaires actualisés au taux i du projet
+
+On utilise généralement i = TRAM en l'absence d'indication contraire.
+
+**** TRI : Le taux
+
+Le TRI est la solution i^* de l'équation VAN(i^*) = 0.
+
+Soient V_1 = VAN(i_1), V_2 = VAN(i_2), V^* = VAN(i^*) = 0.
+
+**** Calcul du TRI par interpolation
+
+Alors par un argument de triangles semblables, on a
+
+(i^* - i_1)/(V^* - V_1) = (i_2 - i_1)/(V_2 - V_1)
+
+Ce qui nous permet d'isoler i^*:
+
+\Leftrightarrow i^* - i_1 = (V^* - V_1) * (i_2 - i_1)/(V_2 - V_1)
+
+\Leftrightarrow i^* =  i_1 + (V^* - V_1) * (i_2 - i_1)/(V_2 - V_1)
+
+\Leftrightarrow i^* =  i_1 - V_1 * (i_2 - i_1)/(V_2 - V_1),  (parce que V^* = 0)
+
+Et si on veut la formule donnée dans certains powerpoints, on a jsute à changer
+le + pour un - et inverser l'ordre de V_1, V_2 dans le dénominateur.
+
+#+BEGIN_QUOTE
+\Leftrightarrow i^* =  i_1 + V_1 * (i_2 - i_1)/(V_1 - V_2) _FF_
+#+END_QUOTE
+
+**** TRIM
+
+MP = Somme des *valeurs actuelles* des flux monétaires nets négatifs
+
+MF = Somme des *valeurs futures* des flux monétaires positifs
+
+MP = MF(1 + TRIM)^{-n}
+
+MP/MF = (1 + TRIM)^{-n}
+
+MF/MP = (1 + TRIM)^n
+
+(MF/MP)^{1/n} - 1 = TRIM
+
+**** Indice de rentabilité
+
+IR = (VA des Flux Monétaires) / (VA des investissements) \\
+Parce que VAN = VA_Recettes - |VA_INV| (ce qui rentre - ce qui sort) \\
+donc VA_Recettes / |VA_INV| = (VAN + |VA_INV|) / |VA_INV| = VAN/|VA_INV| + 1 \\
+**** Comparaison de projets de durées différentes
+
+Ramener à un m
+Critére du service égales
+PPCM
+
+Période d'étude
+
+**** Annuité Équivalente
+
+Étant donné un projet avec des flux monétaires FMN_t et une durée de vie n, et un
+TRAM i,
+
+AE = VAN * (A/P;i;n)
+
+**** Charges d'exploitation annuelle
+
+CEA = (\Sigma_t CH_t(P/F;i;t) ) * (A/P;i;n)
+
+Transformer les coûts en annuité équivalente
+
+**** Cout annuel équivalent
+
+1. DI = somme des valeurs actualisées des investissements \\
+2. VAC = somme des valeurs actualisées des coûts \\
+3. VAR = somme des valeurs actualisées des valeurs de revente \\
+
+CAE = -(|DI| + |VAC| - |VAR|) * (A/P;i;n)
+
+Attention aux signes, puisque DI < 0, VAC < 0, VAR > 0 en tant que flux
+monétaires, CAE = (DI + VAC + VAR) * (A/P;i;n) mais les valeurs absolues sont là
+pour qu' on voit quels doivent être les signes des affaires.
+
+**** Recouvrement du capital
+
+RC = (|DI| - |VAR|) * (A/P;i;n)
+
+**** Délai de recouvrement
+
+***** Input: Un tableau 
+
+| Année | FMN  |
+|     0 | FMN_0 |
+|     1 | FMN_1 |
+|     2 | FMN_2 |
+|     3 | FMN_3 |
+
+***** Output: Les cumuls 
+
+| Année | FMN  | CUMUL         |
+|     0 | FMN_0 | FMN_0          |
+|     1 | FMN_1 | CUMUL_0 + FMN_1 |
+|     2 | FMN_2 | CUMUL_1 + FMN_2 |
+|     3 | FMN_3 | CUMUL_2 + FMN_3 |
+
+On trouve plus petit *n* tel que CUMUL_n < 0 < CUMUL_{n+1}
+
+***** Interpolation pour le nombre de jours
+Ensuite, on interpole sur une droite passant par (0, cumul_n) et (1, cumul_{n+1})
+
+cumul(k) = (cumul_{n+1} - cumul_n) * k + cumul_n
+
+juste pour être sur :\\
+cumul(0) = cumul_n \\
+cumul(1) = cumul_{n+1} - cumul_n + cumul_n = cumul_{n+1} \\
+
+cumul(\xi) = 0 \Leftrightarrow \xi = cumul_n / (cumul_{n+1} - cumul_n) = cumul_n / FMN_{n+1}
+
+On donne la réponse sous la forme suivante: Le délai de recouvrement du projet
+donné par les flux monétaires FMN_i a un délai de recouvrement 
+
+***** Valeur
+
+#+BEGIN_QUOTE
+DR = n années et 365\cdot\xi jours
+#+END_QUOTE
+
+Le fait que cumul_n et cumul_{n+1} soient de signes différents garanti que x \in [0,1].
+
+***** Conclusions
+
+On peut comparer le DR au délai maximal fixé par les gestionnaires et décider de
+faire ou ne pas faire le projet
+*** Cours 8(Anas) 
+**** + ANalyse marginale
+
+Pourcentage des bénéfices = BénéficeNet
+*** Cours 8 Métriques de comparaison (AE, CAE, RC, DUE), remplacement
+*** Cours 9,10 : Impôt
+
+**** Taux fiscal effectif
+
+Impôt à Payer = Revenu Imposable * T
+
+**** Règle de mise en service et de la demie année
+
+***** Règle de mise en service
+
+Bien autre qu'un batiment : date de première utilisiation
+Bâtiment : date à partir de laquelle 90% ou plus du bâtiment est utilisé
+Bâtiment que je construit : date de 
+- fin de construction, reno ou modification ou
+- 90% est utilisé
+
+***** Règle de la demie année
+
+Chaque actif est amorti comme s'il avait été mis en service au milieu de son
+année d'acquisition.  On verra l'effet de ça dans les formules de déductions
+pour amortissement.
+
+***** Déductions pour amortissement (dégressif)
+DPA_1 = (DI * d) / 2 \\
+FNACC_1 = DI - DPA_1
+
+FNACC_n = FNACC_1 * (1-d)^{n-1} = DI * (1 - d/2) * (1-d)^{n-1} \\
+(On multiplie n fois par quelque chose, (1-d/2) la première fois et (1-d) toutes
+les autres fois)
+
+DPA_n = d * FNACC_{n-1 }\\
+= d * DI * (1 - d/2) * (1 - d)^{n-2}
+
+***** Revenu imposable
+
+Revenu imposable = BénéficeNet - DPA
+
+***** Impôt
+
+Impot = RevenuImposable * T
+
+***** BénéficeNetAprèsImpôt
+
+BN après Impôt = BénéviceNet - Impôt
+
+
+
+
+
+*** Cours 11,12 : Risque
+** Don't forget:
+
+**** Remplacer ou pas un actif
+** Matière
+
+*** États financiers
+
+**** État des résultats
+***** Tableau
+| <Nom compagnie>                                                |     |
+| État des résultats                                             |     |
+| du j j-mm-aaaa au jj-mm-aaaa                                   |     |
+|----------------------------------------------------------------+-----|
+| _produits_                                                     |     |
+| + Ventes                                                       | x   |
+| - Couts des ventes                                             | (x) |
+| *Résultats bruts*                                              | XX  |
+| + Produits de location                                         | x   |
+| + Produits d'intérêts                                          | x   |
+| + Gains sur disposition (prix de vente - valeur comptable)     | x   |
+| _Charges_                                                      |     |
+| + Écliectricité                                                | x   |
+| + Salaires                                                     | x   |
+| + Assurances                                                   | x   |
+| + Amortissement (Sans effet sur la trésorie)                   | x   |
+| + Dépréciation des comptes client (Sans effet sur la trésorie) | x   |
+| + Pertes sur disposition d'actif                               | x   |
+| _Resultat net_                                                 |     |
+| = Sum(Produits) - Somme(Charges)                               | XX  |
+| _Resultat net après impôts_                                    |     |
+| = Resultat net - impot                                         | XX  |
+***** Vérifications
+Les éléments ici influencent l'état de variations des capitaux propres et la
+situation financière qui est vérifié avec l'équation comptable.
+**** État des variations des capitaux propres
+***** Tableau
+| <nom de la compagine>                    |                |           |                  |
+| État des variations des capitaux propres |                |           |                  |
+| Période terminée le <jj-mm-aa>           |                |           |                  |
+|------------------------------------------+----------------+-----------+------------------|
+|                                          | Capital Social | RND       | Surplus d'apport |
+|------------------------------------------+----------------+-----------+------------------|
+| Solde de début                           | a              | b         | c                |
+|------------------------------------------+----------------+-----------+------------------|
+| Surplus d'apport de la période           |                |           | h                |
+| Emission d'actions                       | d              |           |                  |
+| Rachat d'actions                         | (e)            |           |                  |
+| Resultats de la periode                  |                | f         |                  |
+| Dividendes déclarés                      |                | (g)       |                  |
+|------------------------------------------+----------------+-----------+------------------|
+| Solde de fin                             | a + d - e      | b + f - g | c + h            |
+|------------------------------------------+----------------+-----------+------------------|
+
+***** Explications
+On prend a, b, c, de l'état des résultats.
+
+Émettre des actions augmente le capital social.  Les RDN de fin est notre RND
+précédent plus nos résultats de la période moins la partie des résultats qu'on a
+versé en dividendes.  Finalement le surplus d'apport est le surplus d'apport n-1
+plus le surplus d'apport que les propriétaires on mis durant la période.
+***** Vérifications
+Les éléments ici influencent l'état de la situation financière qui est vérifié
+avec l'équation comptable.
+**** État de la situation financière
+***** Tableau
+|----------------------------------------------------+------+------|
+| <Nom de la compagnie>                              |      |      |
+| État de la situation financière                    |      |      |
+| Au 31 décembre 2017                                |      |      |
+|----------------------------------------------------+------+------|
+|                                                    | 2017 | 2018 |
+|----------------------------------------------------+------+------|
+| _Actifs_                                           |      |      |
+|----------------------------------------------------+------+------|
+| _Actifs courants_ (< 12 mois)                      |      |      |
+| Encaisse                                           | x    | x    |
+| Stocks                                             | x    | x    |
+| Comptes Clients                                    | x    | x    |
+| (Provision pour dépréciation des CC)               | (x)  | (x)  |
+| Placements à court terme                           | x    | x    |
+| Produits à recevoir                                | x    | x    |
+| Charges payées d'avance                            | x    | x    |
+| *Total actifs courants*                            | XX   | XX   |
+|----------------------------------------------------+------+------|
+| _Actifs non-courants_                              |      |      |
+| Immobilisation corporelles                         |      |      |
+| Équipement/Machines                                | x    | x    |
+| (Amortissement cumulé Équipement/Machine)          | (x)  | (x)  |
+| Immeubles                                          | x    | x    |
+| (Amortissement cumulé immeubles)                   | (x)  | (x)  |
+| Immobilisations incorporelles (breuvets, licences) |      |      |
+| Placements à long terme                            | x    | x    |
+| *Total actifs non-courants*                        | XX   | XX   |
+|----------------------------------------------------+------+------|
+| *Total Actifs*                                     | XXX  | XXX  |
+|----------------------------------------------------+------+------|
+| Passifs et Capitaux propres                        |      |      |
+|----------------------------------------------------+------+------|
+| _Passifs courants_                                 |      |      |
+| Comptes fournisseurs                               | x    | x    |
+| Charges à payer                                    | x    | x    |
+| Dividendes à payer                                 | x    | x    |
+| Emprunts à court terme                             | x    | x    |
+| Obligations à court terme                          | x    | x    |
+| Produits différés (we owe merch to someone)        | x    | x    |
+| *Total pasifs courants*                            | XX   | XX   |
+|----------------------------------------------------+------+------|
+| _Passifs non courants_                             |      |      |
+| Emprunts à long terme                              | x    | x    |
+| Hypothèque                                         | x    | x    |
+| *Total passifs non courants*                       | XX   | XX   |
+|----------------------------------------------------+------+------|
+| _Capitaux propres_                                 |      |      |
+| Capital social                                     | x    | x    |
+| Résultats non distribués                           | x    | x    |
+| Surplus d'apport                                   | x    | x    |
+| *Total Capitaux Propres*                           | XX   | XX   |
+|----------------------------------------------------+------+------|
+| *Total passifs et capitaux propres*                | XXX  | XXX  |
+|----------------------------------------------------+------+------|
+***** Composantes
+- Actifs(A):ressources économiques que l’entreprise possède ou sur lesquelles
+  elle exerce un contrôle et qui devraient lui procurer des avantages
+  économiques maintenant ou dans le futur.
+
+- Passifs(P):obligations qu’a l’entreprise envers des tiers et dont le
+  règlement se fera par transfert d’actifs, la prestation de services ou tout
+  autre avantage.
+  
+- Capitauxpropres(C): mise(s) defonds du(des) propriétaire(s) auxquelles
+  s’ajoutent les résultats non distribués aux actionnaires sous forme de
+  dividendes (société par actions) et le surplus d’apport.
+***** Vérifications:
+Voir équation comptable A = P + CP
+Les éléments ici influencent l'état des flux de trésorie qui a ses propres vérifications.
+***** Remarques :
+Document de synthèse qui expose à une date donnée la situation financière d'une
+entreprise en fournissant un résumé de l'ensemble de ses éléments d'actif (A),
+de passif(P)et de capitaux propres (C).
+
+1. La situation financière se compose de deux parties principales: les
+   éléments d'actif et les sources d'actif (passif et capitaux propres).
+2. Le total des éléments d'actif doit toujours égaler le total des sources
+   d'actif.
+   L'ÉQUATION COMPTABLE : A = P + C doit toujours être vérifiée.
+3. À tout moment, il est possible d'établir les capitaux propres d'une
+   entreprise.
+   A - P = C
+***** Équation comptable
+  L'ÉQUATION COMPTABLE : A = P + C doit toujours être vérifiée.
+
+**** État des flux de trésorie (prochain cours)
+***** Tableau
+|--------------------------------------------------------------+-----|
+| Compagnie YY                                                 |     |
+| État des flux de trésorie (méthode indirecte)                |     |
+| Du 1er Janvier au 31 décembre 2018                           |     |
+|--------------------------------------------------------------+-----|
+| Activités de opérationnelles                                 |     |
+|--------------------------------------------------------------+-----|
+| + Resultat net                                               | x   |
+| + Éléments sans effets sur la trésorie                       | x   |
+| (amortissement)                                              |     |
+| (Dépréciation des comptes clients)                           |     |
+| + Delta PC (Fin - Début) (exclure prov pour dépréc CC)       | x   |
+| + Delta AC (Début - Fin) (exclure encaisse et placements CT) | x   |
+|--------------------------------------------------------------+-----|
+| *Total Activités Opérationnelles*                            | XX  |
+|--------------------------------------------------------------+-----|
+| Activité d'investissement                                    |     |
+|--------------------------------------------------------------+-----|
+| - Achat d'actifs non courant                                 | (x) |
+| + Vente d'actif non courant                                  | x   |
+| + Placements LT: (Debut - fin - perte + gains)               | x   |
+|--------------------------------------------------------------+-----|
+| *Total Activités d'Investissement*                           | XX  |
+|--------------------------------------------------------------+-----|
+| Activités de financement                                     |     |
+|--------------------------------------------------------------+-----|
+| + Émission d'actions                                         | x   |
+| - Rachat d'actions                                           | (x) |
+| - Versement de dividendes                                    | (x) |
+| + Nouvel emprunts                                            | x   |
+| - Remboursement d'emprunts                                   | (x) |
+| - Frais financiers                                           | (x) |
+|--------------------------------------------------------------+-----|
+| *Total activités de financement*                             | XX  |
+|--------------------------------------------------------------+-----|
+| Variation de la trésorie                                     | XXX |
+| Trésorie de début                                            | XX  |
+| Trésorie de fin                                              | XX  |
+|--------------------------------------------------------------+-----|
+
+***** Vérifications
+#+BEGIN_QUOTE
+\Delta_Tr = \Sigma_AO + \Sigma_AF + \Sigma_AI
+= \Delta_Encaisse + \Delta_PlacementsCT
+
+Tr_Début = Encaisse_Début + PlacementsCT_Début
+
+Tr_Fin = Encaisse_Fin + PlacementsCT_Fin
+#+END_QUOTE
+
+*** Ratios : Voir [[https://moodle.polymtl.ca/pluginfile.php/512706/mod_folder/content/0/Cours%25202.1%2520-%2520Ratios.pdf?forcedownload=0][Cours 2.1 Ratios.pdf]] 
+**** Ratios de liquidité
+***** Ratio de liquidité courante (ratio du fond de roulement)
+#+BEGIN_EXAMPLE
+actif courants
+---------------
+passif courants
+#+END_EXAMPLE
+****** Interprétation
+*Capacité d'une entreprise à faire face à ses obligations financières à court
+terme lorsqu'elles viennent à échéance*
+- < 1: la compagnie a de la misère à rembourser ses dettes
+- > 2: L'entreprise a trop de stocks
+- [1.2, 2.0] : La majorité des analystes estiment que c'est idéal 
+***** Ratio de liquidité relative (Ratio de liquidité immédiate)
+#+BEGIN_EXAMPLE
+actif courant - stocks - frais payés d'avance
+---------------------------------------------
+              passif courant
+#+END_EXAMPLE
+****** Interprétation
+*Indique si on peut rembourser le passif à court terme sans avoir à vendre les
+stocks. Si le ratio est nettement inférieur au ratio de liquidé courante, cela
+signifie que l'actif à court terme dépend étroitement des stocks.*
+- Idéal : [1,2]
+**** Ratios d'endettement
+***** Ratio d'endettement
+#+BEGIN_EXAMPLE
+passif total
+------------
+actif total
+#+END_EXAMPLE
+****** Interprétation
+Capacité de respecter ses engagements à long terme
+- < 30% : Excellent
+- [30%, 36%] : bon
+- > 40% : Problématique
+***** Ratio de la couverture des intérêts
+#+BEGIN_EXAMPLE
+Résultat avant intérêts et impôts
+---------------------------------
+       Intérêts
+#+END_EXAMPLE
+****** Interprétation
+Indique dans quelle mesure les intérêts débiteurs sont couverts par les flux de
+trésorie de la société.
+- < 1 : La société peut éprouver de véritables difficultés à régler ses intérêts
+  débiteurs et le risque de défaut de paiement est jugé élevé.
+- > 1.5 : Idéal
+**** Ratios de performance
+***** Ratio de rotation de l'actif
+#+BEGIN_EXAMPLE
+      Ventes nettes
+-------------------------
+Valeur moyenne de l'actif
+
+Valeur moyenne = (montant de fin + montant de début) / 2
+Ventes nettes = ventes moins les rendus, rabais et escomptes sur les ventes
+#+END_EXAMPLE
+****** Interprétation
+- Il indique le montant du chiffre d'affaires généré par chaque dollar investi
+  dans l'actif total.
+- Habituellement, plus le ratio est élevé, plus la gestion des actifs est
+  optimale.
+- Par exemple, un ratio de 0,60 $ indique que chaque dollar investi rapporte
+  0,60 $ de ventes nettes.
+- Ce ratio est utile pour se comparer à ses concurrents.
+***** Ratio de rotation des comptes clients
+#+BEGIN_EXAMPLE
+         ventes nettes
+----------------------------------
+Valeur moyenne des comptes clients
+
+Valeur moyenne = (montant de fin + montant de début) / 2
+Ventes nettes = ventes moins les rendus, rabais et escomptes sur les ventes
+#+END_EXAMPLE
+****** Interprétation
+- Il mesure le nombre de fois qu’une entreprise transforme ses créances clients en
+  ventes.
+- Plus ce ratio est faible, plus l’entreprise s’expose aux risques de non-paiement de la
+  part de ses partenaires, et plus elle devra revoir sa politique de crédit. Il s’agit donc,
+  pour l’entreprise, de trouver un juste milieu entre les créances accordées et les ventes
+  à générer via le crédit.
+- Un ratio de 15 signifie que l’entreprise collecte 15 fois ses compte-client par année. On
+  peut également conclure que ça lui prend en moyenne 24,3 jours pour collecter ses
+  clients (ratio du délai de recouvrement des c.c. 365/15).
+***** Ratio du délai de recouvrement des comptes clients
+#+BEGIN_EXAMPLE
+         365 jours
+----------------------------
+Rotation des Comptes Clients
+#+END_EXAMPLE
+****** Interprétation
+- Mesure le nombre moyen de jours qu’il faut aux clients pour payer leurs comptes.
+- Donne une indication de l’efficacité des politiques de crédit et de recouvrement en
+  vigueur dans l’entreprise.
+- Permet de déterminer si les modalités de crédit dont se sert l’entreprise sont réalistes.
+- Pour déterminer si le délai moyen de recouvrement des comptes clients est adéquat, il
+  suffit de le comparer aux modalités de crédit que vous offrez à vos clients.
+  - Par exemple, si vous donnez à vos clients 30 jours pour payer leur facture et que
+    votre délai moyen de recouvrement des comptes clients est de 45 jours, il y a un
+    problème; en revanche, si le délai moyen est inférieur à 30 jours, c’est une bonne
+    nouvelle.
+***** Ratio de rotation stocks
+#+BEGIN_EXAMPLE
+    Coûts des ventes
+-------------------------
+Valeur moyenne des stocks
+#+END_EXAMPLE
+****** Interprétation
+- Un faible ratio de rotation est généralement de mauvais augure, car les produits ont
+  tendance à s'abîmer s'ils restent trop longtemps dans un entrepôt.
+- Les sociétés qui vendent des biens périssables ont un ratio de rotation très élevé.
+- Ce ratio est utile pour se comparer à ses concurrents.
+- Voici un lien utile afin de pouvoir comparer le ratio de votre entreprise à celui de votre
+  secteur d’activité :
+  https://www.bdc.ca/fr/articles-outils/boite-outils-entrepreneur/evaluation-entreprise/pages/rotation-stocks-outil-analyse-comparative.aspx?ChangeIndustry=1
+***** Ratio de rotation de l'actif immobilisé
+#+BEGIN_EXAMPLE
+            ventes nettes
+--------------------------------------
+valeur moyenne des actifs non courants
+
+Valeur moyenne = (montant de fin + montant de début) / 2
+Ventes nettes = ventes moins les rendus, rabais et escomptes sur les ventes
+#+END_EXAMPLE
+****** Interprétation
+- Le ratio de rotation des immobilisations (rotation de l’actif immobilisé)
+  indique combien de revenus génère chaque dollar investi dans les
+  immobilisations.
+- Habituellement, plus le ratio est élevé, plus la gestion des actifs
+  immobilisés est optimale.
+- Attention à l’interprétation du ratio: Une entreprise bien installée possédant
+  de vieux équipements fortement amortie aurait un meilleur résultat en
+  opposition à une plus jeune entreprise possédant de nouveaux équipements.
+- Il faut donc comparer des entreprises possédant des immobilisations d’âge
+  comparable.
+**** Ratios de rentabilité (rendement)
+***** Ratio de la marge nette
+#+BEGIN_EXAMPLE
+Résultats nets
+--------------
+Ventes nettes
+
+Ventes nettes : ventes moins les rendus, rabais et escomptes sur les ventes
+Résultat net : résultat brut moins les charges
+Résultat brut : ventes moins le coût des vente
+#+END_EXAMPLE
+****** Interprétation
+Rentabilité de l'exploitation
+Ce ratio indique la partie des ventes qui contribue au bénéfice de l'entreprise.
+- Le ratio ne sert à rien si l'entreprise perd de l'argent, car elle ne fait
+  alors pas de profit.
+- Lorsque le ratio de marge bénéficiaire nette (marge nette) est faible, cela
+  peut être attribuable à la stratégie prix et/ou à l'incidence que la
+  concurrence a sur la marge.
+- Une marge élevée est un bon signe
+- Ce ratio est utile pour se comparer à ses concurrents.
+***** Ratio de la marge brute
+#+BEGIN_EXAMPLE
+Resultats bruts
+---------------
+ Ventes nettes
+#+END_EXAMPLE
+****** Interprétation
+Indique le niveau de bénéfice généré par l'entreprise.
+
+Ce ratio témoigne de la politique de fixation des prix de la société et de la majoration
+réelle des prix.
+
+Par exemple, si le ration de la marge bénéficiaire brute (marge brute) est de 33 %,
+cela signifie que le prix des produits est majoré de 50 % (1/(1-33 %))-100 %).
+- Les résultats peuvent être biaisés si l'éventail de produits de la société est
+  très large.
+- Ce ratio se révèle très utile lorsqu'il est comparé à ceux des exercices
+  antérieurs.
+- En général, la marge bénéficiaire brute doit être stable. Elle ne doit pas
+  fluctuer d'une période à l'autre.
+***** Ratio de rentabilité
+#+BEGIN_EXAMPLE
+         résultats nets
+-----------------------------------
+valeur moyenne des capitaux propres
+
+Valeur moyenne = (Montant de fin + montant début)/2
+Résultat net = résultat brut moins les charges
+#+END_EXAMPLE
+****** Interprétation
+Ce ratio indique le taux de rendement que l'entreprise tire de l'investissement
+de ses propriétaires ou que les actionnaires obtiennent de leurs actions.
+
+Par exemple, si le ratio s'élève à 10 %, cela signifie que chaque dollar investi
+à l'origine produit un actif de 10 cents.
+
+- Les sociétés à forte croissance devraient obtenir un rendement élevé des capitaux
+  propres.
+- Le rendement moyen des capitaux propres au cours des 5 à 10 dernières années
+  donne une meilleure idée de la croissance à long terme.
+
+**** Ratios de la valeur marchande
+***** Ratio du résultat par action
+#+BEGIN_EXAMPLE
+            Résultats nets
+------------------------------------------
+Nombre d'actions ordinaires en circulation
+
+Résultats net = résultat brut moins les charges
+#+END_EXAMPLE
+****** Interprétation
+C'est le ratio le plus utilisé. Il indique le montant du bénéfice généré par la
+société, par action.
+- On compare ce ratio avec les exercices précédents ainsi qu’avec d’autres
+  entreprises.
+- Lorsque la société émet de nouvelles actions, il est beaucoup plus difficile
+  de comparer le BPA de l'exercice en cours et des exercices précédents.
+- Le ratio du bénéfice par action (BPA ou du résultat par action) est
+  principalement utilisé pour les sociétés cotées en bourse. En soi, le BPA
+  n'indique pas grand-chose. Par contre, si vous le comparez au BPA d'un
+  trimestre ou d'un exercice antérieur, vous pouvez calculer le taux de
+  croissance du bénéfice (par action) de la société. Par exemple, une entreprise
+  qui augmente de 50 % en un an possède un excellent taux de croissance.
+***** Ratio du cours/résultats
+#+BEGIN_EXAMPLE
+Cours du marché ordinaire
+-------------------------
+Résultat par action
+
+Résultats net = résultat brut moins les charges
+#+END_EXAMPLE
+****** Interprétation
+L'un des ratios les plus utilisés, il permet de comparer le prix courant au
+bénéfice afin de déterminer si le titre est surévalué ou sous-évalué. Il
+représente une attente quant au rendement futur de l'entreprise.
+- En règle générale, lorsque le ratio est élevé, cela signifie que les
+  investisseurs prévoient une forte croissance dans le futur.
+- Le ratio cours/bénéfice (cours/résultats, C/B) moyen du marché est de 20 à 25
+  fois le bénéfice.
+- Les sociétés qui perdent de l'argent n'ont pas de ratio C/B.
+- On compare ce ratio avec les exercices précédents ainsi qu’avec d’autres
+  entreprises.
+- Le ratio C/B ne détermine pas le cours de l'action. Un ratio C/B bas peut
+  indiquer que le bénéfice de l'entreprise est stable ou qu'il croît lentement,
+  comme il peut signifier que l'entreprise éprouve des difficultés financières.
+*** Immobilisations et amortissement
+**** Vocabulaire
+*Actif immobilisé/Immobilisations* : 
+- Destinés à être utilisés pour la production de bien ou pour gagner du revenu.
+- Destinés à être utilisés de façon durable
+- Non destinés à être vendus
+***** Catégories d'immobilisations
+****** Immobilisations corporelles
+  - Biens amortissables : 
+    - Immeubles
+    - Biens qui s'épuisent
+  - Biens non-ammortissables : 
+    - Terrain
+****** Immobilisations incorporelles
+  - R&D
+  - Droits d'auteur
+  - Franchises
+  - Licenses
+  - Marque de commerce
+  - Autres propriétés intellectuelles
+
+**** Coût d'un actif immobilisé
+L'idée est de prendre en compte 
+| Coût de l'actif (prix affiché) |
+| + Coûts de mise en service     |
+| + Autres frais comme transport, préparation, installation |
+
+**** Coût Amortissable
+
+Si on achète un terrain et un immeuble pour un prix P, il faut déterminer quelle
+partie est amortissable.
+
+Une évaluation municipale par exemple dirait que l'immeuble vaut I et le terrain
+vaut T.  Alors on va dire que P * (I/T) est le coût amortissable de l'immeuble.
+
+Notons que nous n'avons pas nécéssairement I + T = P.  Nous utilisons les
+évaluations pour obtenir un ratio de valeur, mais nous utilisons le coût d'achat
+comme entrée pour avoir le coût amortissable.
+
+**** Amortissement
+***** Amortissement linéaire
+L'immobilisation passe du coût initial *P* à sa valeur résiduelle *R* en *n*
+années en perdant *(P-R)/n* à chaque année (sauf la première année où on prend
+une fraction de ce montant correspondant à la fraction d'année d'utilisation(m/12)).
+
+D_1 = (m/12) * (P-R)/n
+
+D_t = (P-R)/n
+
+***** Amortissement à taux dégressif à taux constant
+
+Aller de *P* à *R* en *n* étapes en multipliant par un facteur.
+
+L'idée est en fait de multiplier la valeur de l'année précédente par un facteur
+de sorte qu'après avoir multiplié par ce facteur *n* fois, on fini par avoir
+multiplié par *R/P*.
+
+| Année | Valeur comptable              |
+|-------+-------------------------------|
+|     0 | P                             |
+|     1 | P (R/P)^{1/n}                    |
+|     2 | P (R/P)^{1/n} (R/P)^{1/n}           |
+|     \dots | \dots                             |
+|     n | P ( (R/P)^{1/n} )^n = P (R/P) = R |
+
+
+En pratique, on utilise la terminologie suivante:
+On calcule un taux basé sur *P*, *R* et *n*:
+
+d = 1 - (R/P)^{1/n}
+
+et au lieu de soustraire le même montant à chaque année, on ammortit de
+
+D_t = CNA_{t-1} * d
+
+Ce qui correspond à multiplier par (R/P)^{1/n}:
+
+CNA_t = CNA_{t-1} - CNA_{t-1} * d = CNA_{t-1} * (1 - d) = CNA_{t-1} * (R/P)^{1/n}
+
+***** Amortissement Proportionnel à l'ordre inversé des années
+
+Soit U_t = (P-R)(n - t + 1)/k la perte de valeur dans la première année *d'utilisation*.
+
+Si les années d'utilisation sont désynchronisées avec les périodes d'éxercice,
+chaque année d'exercice ira chercher une partie de chaque année d'utilisation qui
+la chevauchent.
+
+Par exemple, pour une machinne achetée en fin avril de l'année 1: on a
+U_1 = (P-R)(n-1+1)/k, mais seulement (8/12)U_1 sera mis dans les livres pour
+l'année 1.
+
+D_1 = (8/12)U_1
+
+À l'année fiscale 2, on a 4 mois qui font partie de la première année
+d'utilisation (U_1).  L'amortissement à l'année 2 incluera (4/12)D_1 et aussi (8/12)D_2
+où
+
+D_2 = (4/12)U_1 + (8/12)U_2
+
+*En passant, k = n(n+1)/2.*
+
+/Sti que ça vaut pas la peine d'apprendre cet esti d'amortissement, come on.
+R'garde, si j'ai besoin de faire un amortissement comme ça, j'ouvrirai un
+livre./
+
+
+***** Amortissement Proportionnel à l'utilisation
+
+Ben simple: on remplace le *n* par un volume total d'utilisation *V*.
+
+on a donc d = (P-R)/V
+
+L'amortissement à l'année *t* sera donné par le volume d'utilisation de v_t de
+l'année *t*.
+
+D_t = d*v_t
+
+Par exemple, ça pourrait être une voiture, *V* serait le nombre total de
+kilomètres qu'on prévoit faire avec la voiture et v_t serait le nombre de
+kilomètres faits durant l'année *t*.
+
+*** Intérêt et valeur de l'argent dans le temps
+À cause des intérêts ou de l'inflation, un montant X_1 à un temps T_1 n'aura pas
+la même valeur à un temps T_2.  Les méthodes dans cette sections permettent de
+trouver des équivalences entre des montants d'argents à différents temps.
+
+Les facteurs d'actualisations permettent d'établire ces équivalences.
+
+Les taux effectifs permettent de comparer des situations avec des fréquences de
+capitalisations différentes.
+**** Valeur de l'argent dans le temps
+
+***** La base
+
+Avec un taux i, un montant est multiplié par (1+i) à chaque période de
+capitalisation.
+
+Ainsi, un montant à l'année 0 aura été mutiplié par (1+i)^n rendu à l'année n.
+
+Ainsi, si on connait le montant à l'année n, on peut connaître le montant à
+l'année 0 en multipliant par (1+i)^{-n}.  Donc:
+
+| (P/F, i, n) | (1+i)^{-n} |
+| (F/P, i, n) | (1+i)^{n}  |
+
+***** Le reste
+
+Avec des annuités, on dépose un montant A à chaque période. Au bout de n années,
+le premier montant A déposé à l'année vaudrait A(1+i)^{-1} à l'année 0, le montant
+déposé à l'année 2 vaudrait A(1+i)^{-2} à l'année 0.  Finalement le montant déposé
+à l'année n vaudrait A(1+i)^{-n} à l'année 0.
+
+La somme est donc
+
+A((1+i)^{-1} + (1+i)^{-2} + \dots + (1+i)^{-n}) = P
+
+Si on fait le même truc qu'avec une série géométrique pour trouver P/A = \xi, nous
+avons
+
+\xi = (1+i)^{-1} + (1+i)^{-2} + \dots + (1+i)^{-n}
+
+et
+
+(1+i)\xi = 1 + (1+i)^{-1} + (1+i)^{-2} + \dots + (1+i)^{-(n-1)} 
+
+donc \xi - (1+i)\xi = -i\xi = (1+i)^{-n} - 1.
+
+ou bien i\xi = 1 - (1+i)^{-n} et donc \xi = (1 - (1+i)^{-n})/i
+
+On peut multiplier par (1+i)^n/(1+i)^n = 1 pour obtenir
+
+| (P/A, i, n) | ((1+i)^n - 1)/(i(1+i)^n) |
+| (A/P, i, n) | 1/(P/A, i, n)          |
+
+pour avoir une formule sans exposants négatifs.
+
+Les autres formules peuvent être obtenues ainsi:
+
+| (F/A, i, n) | ((1+i)^n - 1)/i   |
+| (A/F, i, n) | i / ((1+i)^n - 1) |
+| (P/G, i, n) | ...              |
+| (           |                  |
+
+***** Cas spécial: Annuité à l'infini
+
+Combien d'argent dois-je déposer dans un compte pour pouvoir retirer A_\infty à
+chaque année jusqu'à la fin des temps?  Pour que ça marche, c'est que les
+intérêts qui me seront versés à chaque année vont être l'annuité.
+
+Si je place 1000 à un taux *i*, à chaque année, la banque va me donner
+1000 \cdot i.  Si je retire 1000 \cdot i, il me reste encore 1000 et je pourrai retirer
+1000 \cdot i l'année prochaine.
+
+Donc si je veux retirer A_\infty par année jusqu'à la fin des temps, il faut que
+
+A_\infty = i \cdot P.
+
+*Tout ce que c'est les annuités à l'infini, c'est de dire que je vais me payer
+par l'intérêt à chaque année.*
+
+Ou en d'autres termes, j'ai un projet qui me rapporte 100$ par année jusqu'à la
+fin des temps.  Et le taux est de 7%.  Ça veut dire que la valeur actuelle de ce
+projet est de 100/0.07 = 1428.57 parce que le projet est équivalent à mettre
+1428.57 dans un compte avec un rendement de 7% et je vais recevoir 100$ par
+année comme ce que le projet me donnerait.
+
+Mathématiquement, notons que
+
+(P/A, i, n) = (1 - (1+i)^{-n})/i
+
+et que lorsque n \to \infty, ceci tend vers (1+0)/i = 1/i. Notons que ceci requiert que
+i > 0 pour que (1+i) > 1 pour que (1+i)^{-n} \to 0 quand n \to \infty.
+
+**** Taux nominal et périodes de capitalisation 
+
+Les termes d'un prêt ou d'un investissement expriment les taux sous la forme
+
+"Un taux nominal de i_nominal par année capitalisée m fois par année"
+
+Ceci veux dire que m fois par année, le montant sera multiplié par (1 + i/m).
+Au bout d'une année, le montant aura été multiplié par (1 + i/m)^m.
+
+On appelle i_eff = (1 + i_nom/m)^m.
+
+Afin de pouvoir travailler avec des flux monétaires avec diverses fréquences de
+capitalisation, nous devons transformer ces taux en taux effectifs de la même
+fréquence (généralement on met tout en années).
+
+Périodes de versements:
+
+On a vu une formule pour avoir un taux effectif qui a un *m* et un *v*.  Ce
+qu'on veut, c'est que
+
+(1+i/m)^m = (1 + i/v)^v
+
+On fait X^(1/v) des deux côtés pour obtenir
+
+((1+i_1/m)^m)^{1/v} = 1 + i_2/v \\
+\Rightarrow (1 + i_1/m)^{m/v} = 1 + i_2/v \\
+\Rightarrow (1 + i_1/m)^{m/v} - 1 = i_2/v \\
+
+Exemple: un taux de 10% capitalisé mensuellement mais payés semestriellement
+donne:
+
+(1 + 0.10/12)^12 = (1 + i_2/2)^2      \\
+\Rightarrow (1 + 0.10/12)^6 = 1 + i_2/2       \\
+\Rightarrow (1 + 0.10/12)^6 - 1 = 0.05105    \\
+
+Ce qui veut dire que notre taux de 10% par année capitalisé mensuellement
+correspond à un taux de 5.105% effectif par période de paiement.
+
+Ça correspond aussi à un taux de 10.21% capitalisé semestriellement.
+
+En effet:
+
+(1 + 0.10/12)^12 = 1.1047
+
+et 
+
+(1 + 0.1021/2)^2 = 1.1047
+
+Le 0.05105, c'est le i_2/v. C'est le taux effectif.  Si on veut un taux nominal
+annuel, c'est i_2 = 10.21%.
+
+*** Interpolations:
+
+Supposons une fonction y = f(x) et nous cherchons x^* pour que f(x^*) = y^*,
+
+Si on a x_1, x_2 tels que f(x_1) < y^* < f(x_2) (sans dire si x_1 > x_2 ou x_2 > x_2), la
+droite reliant (x_2, y_2) à (x^*, y^*) a la même pente que la droite reliant (x_1,
+y_1) à (x_2, y_2) donc
+
+#+BEGIN_EXAMPLE
+x_2 - x^*     x_2 - x_1  \\
+---------  =  ---------  \\
+y_2 - y^*     y_2 - y_1  \\
+
+Et on peut manipuler cette équation
+
+x_1 - x^*    x_2 - x_1            \\
+---------  = --------- (y_1 - y^*)  \\
+             y_2 - y_1            \\
+
+
+              x_2 - x_1            \\
+-x^* = -x_1 + --------- (y_1 - y^*)  \\
+              y_2 - y_1            \\
+
+pour obtenir
+
+              x_2 - x_1            \\
+ x^* = +x_1 - --------- (y_1 - y^*)  \\
+              y_2 - y_1            \\
+
+Et notons que dans les slides, c'est généralement présenté comme suit:
+
+              x_2 - x_1            \\
+ x^* = +x_1 + --------- (y^* - y_1)  \\
+              y_2 - y_1            \\
+#+END_EXAMPLE
+
+ x^* = +x_1 + (y^* - y_1) \cdot (x_2 - x_1)/(y_2 - y_1) \\
+
+** Travaux Pratiques (TP)
+
+
+** Feuille de formules
+
+- [X] États financiers [4/4]
+  - [X] État des résultats
+    - [X] Notes
+  - [X] État de variations de CP
+    - [X] Notes
+  - [X] État des résultats
+    - [X] Notes
+  - [X] État des flux de trésorie
+    - [X] Notes
+
+- [-] Ratios [4/14]
+
+  - [X] 
+  - [X] 
+  - [ ] 
+  - [ ] 
+  - [X] 
+  - [X] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+  - [ ] 
+
+- [ ] Cas de figure (valeur de l'argent dans le temps) [0/5]
+  - [ ] Annuités
+  - [ ] Gradient arithmétique
+  - [ ] Gradient géométrique
+  - [ ] Annuité à l'infini
+  - [ ] Formule d'interpolation (Slides extra MVH P35)
+
+- [ ] Conversions de taux d'intérêts
+
+- [ ] Amortissement
+  - [ ] Note: Coût amortissable
+  - [ ] Amortissement Linéaire
+  - [ ] Amortissement Dégressif
+  - [ ] Amortissement Proportionnel à l'ordre inversé des années
+  - [ ] Amortissement Linéaire

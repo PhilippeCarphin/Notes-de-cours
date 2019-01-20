@@ -1,0 +1,2412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-01-19 Sat 15:52 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SSH3100 Sociologie de l'ingénieur</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Philippe Carphin" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">SSH3100 Sociologie de l'ingénieur</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgf5e61cc">1. SSH3100 Sociologie de l'ingénieur</a>
+<ul>
+<li><a href="#org09aad58">1.1. Team notes for travail de session</a></li>
+<li><a href="#org3cb9434">1.2. Team</a></li>
+<li><a href="#org21f16f1">1.3. Évaluations</a>
+<ul>
+<li><a href="#org6afb22a">1.3.1. Examen intra 20%</a></li>
+<li><a href="#orgb40e6fd">1.3.2. Projet de session 40%</a></li>
+</ul>
+</li>
+<li><a href="#orgac9e756">1.4. Cours</a>
+<ul>
+<li><a href="#org0051acc">1.4.1. Cours 1</a></li>
+<li><a href="#org140d7c8">1.4.2. Cours 2,3,4,5</a></li>
+<li><a href="#org8af5615">1.4.3. Cours 6 <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-10-15 Mon 12:46&gt; </span></span> Impacts des nouvelles technologies dans la vie quotidienne</a></li>
+<li><a href="#orgab0466a">1.4.4. Cours 6 - Discussion de l'examen</a></li>
+<li><a href="#orgc1254af">1.4.5. Cours 7 - INTRA</a></li>
+<li><a href="#orgb02fdbd">1.4.6. Cours 8 - Résistance au changement et Mouvements sociaux</a></li>
+<li><a href="#org7a6a1b1">1.4.7. Cours 9 Déviances autour des nouvelles technologies</a></li>
+<li><a href="#org9e5154e">1.4.8. Cours 10 Modes de gestion des oppositions et des déviances</a></li>
+<li><a href="#org313d8dd">1.4.9. Cours 11 Notes de Saïf et de Cristain</a></li>
+<li><a href="#orgcc003cd">1.4.10. Cours 12, 13 manquants</a></li>
+</ul>
+</li>
+<li><a href="#orgb9b6b94">1.5. Retour sur l'intra</a>
+<ul>
+<li><a href="#orga4b15f4">1.5.1. Question 1</a></li>
+<li><a href="#org928550a">1.5.2. Question 2</a></li>
+<li><a href="#org8b610c4">1.5.3. Question 1</a></li>
+<li><a href="#orgb1a07cd">1.5.4. Question 2</a></li>
+<li><a href="#org4324b94">1.5.5. Question 3</a></li>
+<li><a href="#org1cf1aac">1.5.6. Question 4</a></li>
+<li><a href="#org5dfa308">1.5.7. Question 5</a></li>
+</ul>
+</li>
+<li><a href="#orgaaac3e2">1.6. Textes du recueil</a>
+<ul>
+<li><a href="#org7a6f07f">1.6.1. Lejeune, M. L'apport de la sociologie de la technologie à la professionnalisation de l'ingénieur.</a></li>
+<li><a href="#orgc12798d">1.6.2. Texte 7 Les <b>Trois leviers stratégiques</b> de la réussite du changement technologique</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf5e61cc" class="outline-2">
+<h2 id="orgf5e61cc"><span class="section-number-2">1</span> SSH3100 Sociologie de l'ingénieur</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org09aad58" class="outline-3">
+<h3 id="org09aad58"><span class="section-number-3">1.1</span> Team notes for travail de session</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Notes for the team should go in this shared file
+</p>
+
+<p>
+<a href="file:///Users/pcarphin/Dropbox/PolyMtl_AUT2018/SSH3100/SSH3100A_TravailDeSession/Notes_TravailSession.html">file:///Users/pcarphin/Dropbox/PolyMtl_AUT2018/SSH3100/SSH3100A_TravailDeSession/Notes_TravailSession.html</a>
+</p>
+
+<p>
+There is also a google doc at <a href="https://docs.google.com/document/d/1_EFlC3fcEQfcdxR8pWZtQ0WZNIo54kQitghTT-efDUI/edit?usp=sharing">https://docs.google.com/document/d/1_EFlC3fcEQfcdxR8pWZtQ0WZNIo54kQitghTT-efDUI/edit?usp=sharing</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org3cb9434" class="outline-3">
+<h3 id="org3cb9434"><span class="section-number-3">1.2</span> Team</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+Oumaima Kidari &lt;oumaima.kidari@polymtl.ca&gt;
+Jules Lefebvre &lt;jltlefebvre@gmail.com&gt;
+Cristian Fredes Salvador &lt;cristian.fredes-salvador@polymtl.ca&gt;
+Philippe Carphin &lt;philippe.carphin@polymtl.ca&gt;
+Victor Walgenwitz &lt;victor.walgenwitz@etu.unistra.fr&gt;
+</p>
+</div>
+</div>
+<div id="outline-container-org21f16f1" class="outline-3">
+<h3 id="org21f16f1"><span class="section-number-3">1.3</span> Évaluations</h3>
+<div class="outline-text-3" id="text-1-3">
+</div>
+<div id="outline-container-org6afb22a" class="outline-4">
+<h4 id="org6afb22a"><span class="section-number-4">1.3.1</span> Examen intra 20%</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">2 questions</td>
+<td class="org-left">textes du recueil 1 à 5</td>
+</tr>
+
+<tr>
+<td class="org-left">6 questions</td>
+<td class="org-left">matière des cours 1 à 6</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-orgb40e6fd" class="outline-4">
+<h4 id="orgb40e6fd"><span class="section-number-4">1.3.2</span> Projet de session 40%</h4>
+<div class="outline-text-4" id="text-1-3-2">
+<ul class="org-ul">
+<li>Doit être auprès d'un organisation ou entreprise</li>
+<li>Doit concerner l'adoption d'une technologie</li>
+</ul>
+
+<blockquote>
+<p>
+Les impacts d'une technologie dans une organisation <b>du point de vue des
+utilisateurs</b>.
+</p>
+
+<p>
+Ce qui importe est le point de vue des utilisateurs.
+</p>
+</blockquote>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgb07eec2"></a>Fiche de projet<br />
+<div class="outline-text-5" id="text-1-3-2-1">
+<ul class="org-ul">
+<li>Membres</li>
+<li>1 courriel pour rejoindre l'équipe</li>
+<li>QUelle organisation</li>
+<li>Qui on va interviewer</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgac9e756" class="outline-3">
+<h3 id="orgac9e756"><span class="section-number-3">1.4</span> Cours</h3>
+<div class="outline-text-3" id="text-1-4">
+</div>
+<div id="outline-container-org0051acc" class="outline-4">
+<h4 id="org0051acc"><span class="section-number-4">1.4.1</span> Cours 1</h4>
+<div class="outline-text-4" id="text-1-4-1">
+<ol class="org-ol">
+<li>Présentation des étudiants</li>
+<li>Présentation du Plan de cours et évaluations</li>
+<li>Concepts du cours</li>
+</ol>
+<p>
+Voir section évaluations.
+</p>
+</div>
+</div>
+<div id="outline-container-org140d7c8" class="outline-4">
+<h4 id="org140d7c8"><span class="section-number-4">1.4.2</span> Cours 2,3,4,5</h4>
+<div class="outline-text-4" id="text-1-4-2">
+<p>
+Sur papier seulement :(
+</p>
+</div>
+</div>
+<div id="outline-container-org8af5615" class="outline-4">
+<h4 id="org8af5615"><span class="section-number-4">1.4.3</span> Cours 6 <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-10-15 Mon 12:46&gt; </span></span> Impacts des nouvelles technologies dans la vie quotidienne</h4>
+<div class="outline-text-4" id="text-1-4-3">
+</div>
+<ol class="org-ol">
+<li><a id="orgf679a67"></a>Retour sur le cours 5:<br />
+<div class="outline-text-5" id="text-1-4-3-1">
+<ul class="org-ul">
+<li>La technologie dans une organisation.</li>
+<li>Finalité de Réponse &rArr; Production (P/S)</li>
+<li>Production &rArr; Ressources &rArr; Notion de performance(Critère
+d'éfficience, d'efficacité et d'économie)</li>
+<li>Multiples représentations de l'<b>organisation</b></li>
+<li>Catégories d'impacts:
+<ul class="org-ul">
+<li>Emploi : Postes, pas le travail effectué</li>
+<li>Travail : Les tâches effectuées</li>
+<li>Dynamique Organisationnelle</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orgde399bd"></a>Mise en contexte Nouvelles technologies de l'information et de la communcation <b>(NTIC)</b><br />
+<div class="outline-text-5" id="text-1-4-3-2">
+<ul class="org-ul">
+<li>Omniprésence des NTIC</li>
+<li>Impacts au près des usagers + Appropriation (voir cours 3)</li>
+<li><p>
+NTIC &rArr; génèrent différents effets:
+-* Effet de complémentarité* (Ex: Cellulaire et téléphones intelligents vs
+  Téléphones fixes.
+</p>
+<ul class="org-ul">
+<li>Genre les deux peuvent communiquer ensemble, c'est ça qu'il veut dire par complémentarité</li>
+</ul>
+<ul class="org-ul">
+<li><b>Effet de substitution</b> : un disparaît au profit de l'autre (Ex: Agenda
+remplacé par téléphones intelligents (lien à faire avec le cours sur la
+convergence technologique).</li>
+<li><b>Effets de réduction</b> :  On utilise plus une technologie par rapport à
+une autre. (Ex: Utilisation de ipod réduite par les téléphones intelligents)</li>
+</ul></li>
+</ul>
+</div>
+</li>
+
+<li><a id="orgf238307"></a>Exemple d'impacts d'Internet<br />
+<ol class="org-ol">
+<li><a id="org1dc8700"></a>Vie familiale<br />
+<div class="outline-text-6" id="text-1-4-3-3-1">
+<ul class="org-ul">
+<li>Diminution du temps passé en famille</li>
+<li>Communication simplifiée</li>
+<li>Facilité de maintenir le contact avec les membres éloignés</li>
+<li>Contribue à une meilleure gestion du budget familial
+On est mieu en mesure de trouver des escomptes
+<ul class="org-ul">
+<li>Augmentation de l'épargne familiale</li>
+</ul></li>
+<li>Augmentation du temps passé &#x2026; suivre des activités d'intérêt commun.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgba5aea0"></a>Vie Sociale<br />
+<div class="outline-text-6" id="text-1-4-3-3-2">
+<p>
+Défini weirdement par le prof comme étant les interactions hors-famille
+</p>
+<ul class="org-ul">
+<li>Formation de nouveaux liens sociaux (Communautés).
+Les communautés étaient plus formées par des facteurs comme la proximité et
+autres facteurs.  Maintenant, ça devient plus des intérêts communs</li>
+<li>Intérêts plus ou moins grands des dynamiques sociales (hors-frontières)</li>
+<li>Intérêt pour les facettes d'autres cultures (Musique, Nourriture etc.)</li>
+<li>Intérêt pour l'engagement dans diverses causes de nature sociale</li>
+<li>Participation à des mobilisations citoyennes</li>
+</ul>
+</div>
+</li>
+<li><a id="org3bf8983"></a>Education<br />
+<div class="outline-text-6" id="text-1-4-3-3-3">
+<p>
+Nous allons distinguer les impacts qu'on peut caractériser comme <b>négatifs</b> et
+<b>positifs</b>.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org42cc5ee"></a>Positifs<br />
+<div class="outline-text-7" id="text-1-4-3-3-3-1">
+<ul class="org-ul">
+<li>Facilite les recherches</li>
+<li>Facilite une plus grande production scientifique et une plus grande diffusion scientifique.</li>
+<li>Accès à un plus grand nombre de bibliothèques</li>
+<li>Meilleure coordination du travail d'équipe</li>
+<li>Offre plus importante de cours et de programmes</li>
+<li>Autonomisation plus importante des participants</li>
+</ul>
+</div>
+</li>
+
+<li><a id="orgd3371d3"></a>Négatifs<br />
+<div class="outline-text-7" id="text-1-4-3-3-3-2">
+<ul class="org-ul">
+<li>Augmentation des formes de tricherie (plagiat, sous-traitance)</li>
+<li>Augmentation des fausses informations (faux documents de référence, faux
+articles)</li>
+<li>L'éducation est devenue un objet de consommation qui répond à la réalité de
+l'offre et de la demande. (PHIL: I don't know if this wasn't true before the
+Internet. But he explained it in a nice way.  Education is supposed to have
+some sort of vocation to teach what the teacher thinks he needs to teach vs
+what the students want (as customers))</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org0d6f535"></a>Enjeux relatifs de l'internet dans le milieu de l'Éducation<br />
+<ol class="org-ol">
+<li><a id="org474207c"></a>Confusion entre Donnée, Informations, Savoir<br />
+<div class="outline-text-8" id="text-1-4-3-3-3-3-1">
+<ul class="org-ul">
+<li><b>Donnée</b> : fait brut observable (ex: 5%)</li>
+<li><b>Information</b> : Une donnée contextualisée
+Ex : Le taux de la banque du canada est égal à 1.5%</li>
+<li><b>Connaissance</b> : Sachant que le taux de Bance du Canada mes 1.5% et projette des
+placements et d'investissements.  La connaissance requiert des
+connaissances préalables.</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org7eefe37"></a>Émergence d'un savoir Flou vs Savoir Précis<br /></li>
+<li><a id="org7baac0e"></a>L'aspect marchand, ce qui fait qu'à l'absence de contrôle et vérification, il devient difficile d'en assurer la qualité<br /></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+
+<li><a id="org7413484"></a>Impacts de la <b>monétique</b><br />
+<div class="outline-text-5" id="text-1-4-3-4">
+<p>
+Monétique : Contraction de "monnaie" et "informatique".
+</p>
+
+<p>
+"La monnaie est réduite à {0,1}"
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgb23f078"></a>Impacts dans les institutions financières<br />
+<div class="outline-text-6" id="text-1-4-3-4-1">
+<ul class="org-ul">
+<li>Amélioration du volume d'affaires</li>
+<li>Concentration des cervices variés au sein d'une même entité</li>
+<li>Diversité de l'offre des services</li>
+<li>Augmentation de la concurrence</li>
+<li>Augmentation des fraudes.</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org9cf32a2"></a>Impacts sur les clients<br />
+<div class="outline-text-6" id="text-1-4-3-4-2">
+<ul class="org-ul">
+<li>Accès à nos comptes 24/7</li>
+<li>Possibilité de générer des rendements</li>
+<li>Augmentation des fraudes</li>
+<li>Diversification de l'offre des produits financiers</li>
+<li>Augmentation de l'endettement</li>
+<li>Accès plus grand au crédit</li>
+</ul>
+</div>
+</li>
+<li><a id="orgb83bb85"></a>Impacts sur les employés des institutions financières<br />
+<div class="outline-text-6" id="text-1-4-3-4-3">
+<ul class="org-ul">
+<li>Changement dans la nature des tâches</li>
+<li>Changement dans les compétences requises</li>
+<li>Introduction de nouvelles formes de rémunération (fixes et
+variables(performance))</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org62c3b01"></a>Impacts de la <b>domotique</b><br />
+<div class="outline-text-5" id="text-1-4-3-5">
+<ul class="org-ul">
+<li>Gestion optimisée des fonctions de gestion d'une maison (chauffage,
+électricité)</li>
+<li>Amélioration de la sécurité</li>
+<li>Possibilité de diminuer les coûts de gestion</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org176c2d3"></a>Domotique pré '90<br />
+<div class="outline-text-6" id="text-1-4-3-5-1">
+<ul class="org-ul">
+<li>Domotique = échec</li>
+<li>Faible pénétration dans le domaine domiciliaire</li>
+<li>Pas de lien entre les différents systèmes</li>
+<li>Appropriation non réussie</li>
+</ul>
+</div>
+</li>
+<li><a id="org5b1d99a"></a>Domotique post '90 : '90 jusqu'à aujourd'hui<br />
+<div class="outline-text-6" id="text-1-4-3-5-2">
+<ul class="org-ul">
+<li>Introduction d'offre consolidées par le biais des systèmes de sécurité (ADT)</li>
+<li>Cette stratégie va faciliter la pénétration et une plus grande appropriation.</li>
+<li>Multiplicité d'offreurs.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orgab0466a" class="outline-4">
+<h4 id="orgab0466a"><span class="section-number-4">1.4.4</span> Cours 6 - Discussion de l'examen</h4>
+<div class="outline-text-4" id="text-1-4-4">
+<p>
+2 questions sur les textes du recueil (textes 1 à 5) <code>[6/20]</code>
+1 question par cours pour <code>[14/20]</code>
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org1e3b160"></a>Cours 1<br />
+<div class="outline-text-5" id="text-1-4-4-1">
+<p>
+Les 4 raisons qui justifient le cours
+</p>
+<ul class="org-ul">
+<li>Institutionnelles : BCAPG, OIQ</li>
+<li>Sociétale : Omniprésence de la technologie</li>
+<li>Professionnelles : Impacts</li>
+</ul>
+
+<p>
+Notion de sociologie de la technologie.
+</p>
+
+<p>
+Lien Technologie <b>leftrightarrow</b> Société
+</p>
+</div>
+</li>
+<li><a id="org86ce043"></a>Cours 2 Illustration du lien T-S à travers trois périodes<br />
+<div class="outline-text-5" id="text-1-4-4-2">
+<ul class="org-ul">
+<li>Préindustrielle</li>
+<li>Industrielle</li>
+<li>Post industrielle</li>
+</ul>
+
+<p>
+Différentes représentations de la technologie
+</p>
+
+<p>
+Faits technologiquest : 2 faits
+</p>
+<ul class="org-ul">
+<li>Faits sociaux</li>
+<li>Faits technologiques</li>
+</ul>
+
+<p>
+Différentes caractéristiques des nouvelles technologies
+</p>
+</div>
+</li>
+
+<li><a id="org3152dc7"></a>Cours 3<br />
+<div class="outline-text-5" id="text-1-4-4-3">
+<p>
+Notion de convergence technologique
+</p>
+
+<p>
+Modèle de dévelopement social des technologies
+</p>
+<ul class="org-ul">
+<li>Phase 1 Production sociale</li>
+<li>Phase 2 Diffusion Sociale</li>
+<li>Phase 3 Appropriation</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org98584f7"></a>Cours 4<br />
+<div class="outline-text-5" id="text-1-4-4-4">
+<p>
+Impacts des grands projets
+</p>
+<ul class="org-ul">
+<li>Notion d'impacts + Opérationalisation</li>
+<li>Illustrer les impacts des grands projets selon des catégories</li>
+<li>Modèle d'évaluation sociale des technologies.</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org3308872"></a>Cours 5<br />
+<div class="outline-text-5" id="text-1-4-4-5">
+<p>
+Voir retour sur le cours 56
+</p>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orgc1254af" class="outline-4">
+<h4 id="orgc1254af"><span class="section-number-4">1.4.5</span> Cours 7 - INTRA</h4>
+</div>
+<div id="outline-container-orgb02fdbd" class="outline-4">
+<h4 id="orgb02fdbd"><span class="section-number-4">1.4.6</span> Cours 8 - Résistance au changement et Mouvements sociaux</h4>
+<div class="outline-text-4" id="text-1-4-6">
+</div>
+<ol class="org-ol">
+<li><a id="org718bcb3"></a>Plan<br />
+<div class="outline-text-5" id="text-1-4-6-1">
+<ul class="org-ul">
+<li>Partie 1 Résistance au changement
+<ul class="org-ul">
+<li>Définition</li>
+<li>Manifestations</li>
+<li>Raisons</li>
+<li>Résistance vue comme un comportement rationel</li>
+</ul></li>
+<li>Partie 2 Mouvements sociaux
+<ul class="org-ul">
+<li>Définition</li>
+</ul></li>
+</ul>
+</div>
+</li>
+
+<li><a id="org99db185"></a>Choses abordées avant le cours<br />
+<ol class="org-ol">
+<li><a id="org1d2d633"></a>Utilité des indicateurs :<br />
+<div class="outline-text-6" id="text-1-4-6-2-1">
+<p>
+S'assurer que les répondants interprètent ma question sur la même base.  Assurer
+une consistance des réponses.
+</p>
+</div>
+</li>
+<li><a id="orgafcba62"></a>Exemple de grille d'analyse<br />
+<div class="outline-text-6" id="text-1-4-6-2-2">
+<ol class="org-ol">
+<li>Sujet</li>
+<li>Répondants à choisir, échantillon homogène</li>
+<li>Revue de littérature</li>
+<li>Énoncé de l'hypothèse</li>
+<li>Catégories et sous-hypothèses</li>
+<li>Indicateurs + Questionnaire</li>
+<li>Administration des questions</li>
+<li>Réponses = Collecte de données</li>
+</ol>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Catégorie</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">Pers A</th>
+<th scope="col" class="org-left">Pers B</th>
+<th scope="col" class="org-left">Pers C</th>
+<th scope="col" class="org-left">Pers D</th>
+<th scope="col" class="org-left">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Qualité</td>
+<td class="org-left">Amélioration du</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">nombre de reprises</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">----------------------</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Contenu du</td>
+<td class="org-left">Élargissement</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Travail</td>
+<td class="org-left">des tâches</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">-------------</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Communication</td>
+<td class="org-left">Augmentation des</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">liens interdépartement</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Productivité/</td>
+<td class="org-left">Augmentatdion des</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">rendement</td>
+<td class="org-left">livrables</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Ex: Supposons que notre H<sub>0</sub> : Les adjointes administratives utilisant le
+progiciel de gestion &Lambda; connaissent une modification de leur performance.
+</p>
+
+<ul class="org-ul">
+<li>Adjointes administratives (répondants)</li>
+<li>Progiciel de gestion &Lambda; (technologie)</li>
+<li>Modification de la performance (impacts)</li>
+</ul>
+
+<p>
+On va transformer les réponses obtenues sur une échelle de Likeut (0-5, 0-10,
+-5 à +5)
+</p>
+
+<p>
+Analyse pour le rapport:
+</p>
+<ul class="org-ul">
+<li>Analyse interne
+C'est l'analyse intra-entrevue et l'analyse inter-entrevue</li>
+
+<li>Analyse externe
+Comparer nos résultats à ceux de la littérature.</li>
+</ul>
+
+<p>
+L'analyse intra-entrevue est associée à l'axe vertical du tableau.
+</p>
+
+<p>
+L'analyse inter-entrevue est associée à l'axe horizontal du tableau.
+</p>
+
+<p>
+C'est avec l'analyse inter-entrevue qu'on va confirmer ou infirmer l'hypothèse
+générale.
+</p>
+
+<p>
+Noter qu'on doit établir à partir de quel score les réponses indiquent un
+impact significatif.
+</p>
+
+<p>
+Pour pallier à la taille non-significative de notre échantillon, on va comparer
+nos résultats aux résultats de la littérature.
+</p>
+</div>
+</li>
+
+<li><a id="org3f6fdf3"></a>Suite du cours<br />
+<div class="outline-text-6" id="text-1-4-6-2-3">
+<p>
+Cours 4,5,6:  Notion d'impacts, TCS (technologies dans le corps social?)
+</p>
+
+<p>
+Dans les cours qui suivront, nous verrons :
+</p>
+
+<p>
+Réactions générées par les TCS
+</p>
+<ul class="org-ul">
+<li>Oppositions</li>
+<li>Résistance au chamement</li>
+<li>Mouvements sociaux</li>
+<li>Déviances</li>
+</ul>
+
+<p>
+À la suite de ça, on va s'intéresser aux modes de gestion.  Comme ci-haut on a
+une problématique, on va parler de modes de gestions
+</p>
+<ul class="org-ul">
+<li>Dispositifs de régulation</li>
+<li>Gestion du changement</li>
+<li>Normes institutionnelles (comme les normes ISO par exemple)</li>
+</ul>
+
+<p>
+Les <b>modes de gestion</b> sont des modalités pour prendre en compte les réactions.
+</p>
+
+<p>
+Les modes de gestion sucitent des contre-réactions
+</p>
+<ul class="org-ul">
+<li>Groupes de pression</li>
+<li>lobby</li>
+</ul>
+
+<p>
+On va terminer avec les enjeux connexes
+</p>
+<ul class="org-ul">
+<li>Lien technologie &harr; Production</li>
+<li>Gestion des risques</li>
+<li>Post-Taylorisme</li>
+<li>Modèles
+<ul class="org-ul">
+<li>Métier</li>
+<li>Compétences</li>
+</ul></li>
+<li>Transfert de technologie</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+
+<li><a id="org724d119"></a>Le cours<br />
+<ol class="org-ol">
+<li><a id="org3c2cc39"></a>Résistance au changement<br />
+<ol class="org-ol">
+<li><a id="orge348b4d"></a>Définitions<br />
+<div class="outline-text-7" id="text-1-4-6-3-1-1">
+<p>
+<b>Résistance au changement</b> : Ensemble de réactions explicites ou implicites
+visant à montrer son désacocrd par rapport à une technologie ou un projet.
+</p>
+</div>
+</li>
+
+<li><a id="orgb0da2b2"></a>Manifestations<br />
+<div class="outline-text-7" id="text-1-4-6-3-1-2">
+<ul class="org-ul">
+<li>Refus d'utiliser la technologie</li>
+<li>Remise en question de la pertinence de la technologie</li>
+<li>Accent mis sur les difficultés</li>
+<li>Refus de participer à la mise en oeuvre</li>
+<li><p>
+Recours à la convention collective
+</p>
+
+<p>
+Retour sur cours 5 Income -&gt; Outcome
+</p>
+
+<p>
+Inc -&gt; Input -&gt; Processus -&gt; output -&gt; outcome -&gt; Inc
+</p>
+
+<p>
+Et l'implantation de technologies dans ce dessin = efficience (amélioration du
+ratio input/output).
+</p></li>
+<li>Remise en question des compétences de ceux (souvent c'est des ingénieurs) qui
+implantent la technologie dans l'organisation.</li>
+<li>Demander la réalisation d'études (pour retarder la mise en oeuvre).</li>
+
+<li>Un autre enjeux qui est très important à considérer : <b>Remise en question de
+la technologie</b> surtout si l'entreprise va bien.</li>
+</ul>
+</div>
+</li>
+
+<li><a id="orgd52c670"></a>Raisons sous-jacentes<br />
+<div class="outline-text-7" id="text-1-4-6-3-1-3">
+<p>
+Pourquoi les gens résistent-ils au changement.  Qu'est-ce qui pousse les gens à
+adopter cette posture.
+</p>
+
+<ul class="org-ul">
+<li>Peur de l'inconnu</li>
+<li>Perte d'avantages</li>
+<li>Besoin de sécurité</li>
+<li>Refus de réinvestir dans un apprentissage</li>
+<li>Perte de référenciel</li>
+<li>Facilité dans l'habitude qui disparaît.</li>
+</ul>
+</div>
+</li>
+
+<li><a id="orgae1d493"></a>Résistance au changement = Acte rationel<br />
+<div class="outline-text-7" id="text-1-4-6-3-1-4">
+<p>
+Illustration: Un diplômé universitaire 
+</p>
+
+<p>
+Stade 1
+</p>
+
+<p>
+=&gt; Investissement (temps, argent)
+   =&gt; Diplôme
+      =&gt; Emploi, rémunération, poste
+         =&gt; Statut social
+=&gt; Rendement
+</p>
+
+<p>
+Pour avoir l'emploi, rémunération, poste et le statut social, il faut avoir
+l'investissement.
+</p>
+
+<p>
+Le changement touche le rendement.
+</p>
+
+<p>
+Suite à ça, puisque le changemnt touche le rendement, il faut réinvestir pour
+maintenir le rendement.
+</p>
+
+<p>
+La résistance au changement doit être vue comme une protection de
+l'investissement.
+</p>
+
+<p>
+<b>L'idée</b> est que <b>la résistance au changement est une protection des
+investissements et donc est un acte rationnel</b>.
+</p>
+</div>
+</li>
+</ol>
+</li>
+
+
+<li><a id="orgc91ea36"></a>Mouvements sociaux<br />
+<ol class="org-ol">
+<li><a id="org8c75c0c"></a>Définitions<br />
+<div class="outline-text-7" id="text-1-4-6-3-2-1">
+<p>
+<b>Mouvement social</b> :
+</p>
+<ul class="org-ul">
+<li>Action de groupe / Action collective</li>
+<li>Portant sur / Défendant une cause</li>
+<li>Cause d'intérêt général</li>
+<li>But du groupe = faire triompher sa cause
+<ul class="org-ul">
+<li>En modifiant l'état ou la nature du contexte social</li>
+<li>En gardant le statut quo.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+
+<li><a id="orga8b4b44"></a>Visions du mouvement social<br />
+<ol class="org-ol">
+<li><a id="orgbd6ea21"></a>Vision de Sidney Tarrow<br />
+<div class="outline-text-8" id="text-1-4-6-3-2-2-1">
+<ul class="org-ul">
+<li>Présence des élites</li>
+<li>Les élites orientent les décisions collectives dans le sens qui leur est bénéfique.</li>
+<li>Pour pouvoir se faire entendre, les citoyens ordinaires vont se mobiliser en
+mouvement social pour s'opposer aux élites</li>
+</ul>
+</div>
+</li>
+<li><a id="orgc778860"></a>Vision d'Alain Touraine<br />
+<div class="outline-text-8" id="text-1-4-6-3-2-2-2">
+<p>
+(Dans toute situation de pays, vous avez toujours au sein du mouvemnt social
+dans son ensemble, des sous-groupes qui sont discriminés.)
+</p>
+<ul class="org-ul">
+<li>Présence de discrimination au sein des groupes sociaux</li>
+<li>Des sous-groupes discriminés dans leur propre société (Mouvement de libération
+de la femme, droits civiques au US)</li>
+<li>Le sous-groupe discriminé va se mobiliser pour remettre en question l'ordre
+établi.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org71fbe85"></a>Contexte d'apparition<br />
+<div class="outline-text-7" id="text-1-4-6-3-2-3">
+<ul class="org-ul">
+<li>Contestations sociales =&gt; initialement étaient portées par les sindicats +
+sur les rapports de travail</li>
+<li>Évolutions sociales contemporaines
+<ul class="org-ul">
+<li>Diminution de l'influence des syndicats</li>
+<li>Enjeux sociaux dépassaient le cadre du monde du travail + le cadre des frontières géographiques/territoriales</li>
+</ul></li>
+</ul>
+
+<p>
+Tout ça fait que les mouvements sociaux sont devenus des cadres de mobilisation.
+</p>
+</div>
+</li>
+<li><a id="org4b4921b"></a>Caractéristiques des mouvements sociaux<br />
+<div class="outline-text-7" id="text-1-4-6-3-2-4">
+<ul class="org-ul">
+<li>Le mouvement social est un <b>mouvement de masse</b> (qui n'est pas lié à une classe
+sociale en particulier contrairement aux syndicats)</li>
+<li>Le mouvement social <b>présente un projet alternatif</b> (une autre manière de
+concevoir le monde, ou présente des solutions. On n'est pas uniquement dans un
+mode de contestation pure)</li>
+<li>Le mouvement social a tendance à se <b>mondialiser</b> (du fait des nouvelles technologies).</li>
+</ul>
+</div>
+</li>
+<li><a id="org58ff1d0"></a>Évolution et signification du mouvement social<br />
+<div class="outline-text-7" id="text-1-4-6-3-2-5">
+<p>
+On distingue deux évolutions:
+</p>
+<ul class="org-ul">
+<li>Le mouvement social se transforme en parti politique
+<ul class="org-ul">
+<li>Ex: les partis verts</li>
+</ul></li>
+<li>Le mouvement social se transforme élargi sa base et devient (augmenter le
+membership), assure sa légitimité, devient un acteur social important mais
+non-politique.</li>
+</ul>
+</div>
+</li>
+<li><a id="org381ec9d"></a>Mouvement social et Nouvelles technologies<br />
+<div class="outline-text-7" id="text-1-4-6-3-2-6">
+<p>
+Effet paracoxal
+</p>
+
+<ul class="org-ul">
+<li>D'un côté
+<ul class="org-ul">
+<li>Nouvelles technos -&gt; Modification des sturectures sociales -&gt; perte d'emploi
+et destruction de secteurs d'activités -&gt; perte de lien social</li>
+</ul></li>
+
+<li>De l'autre côté
+<ul class="org-ul">
+<li>No du fait des mouvement sociaux permettent de reconstruire du lien social</li>
+<li>On s'engage dans des causess que l'on veut défendre.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org7a6a1b1" class="outline-4">
+<h4 id="org7a6a1b1"><span class="section-number-4">1.4.7</span> Cours 9 Déviances autour des nouvelles technologies</h4>
+<div class="outline-text-4" id="text-1-4-7">
+</div>
+<ol class="org-ol">
+<li><a id="orgc58b08e"></a>Retour cours précédent<br />
+<div class="outline-text-5" id="text-1-4-7-1">
+<p>
+Retour cours précédent
+</p>
+<ul class="org-ul">
+<li>Résistance au changment
+<ul class="org-ul">
+<li></li>
+</ul></li>
+</ul>
+
+<p>
+Vision de Tareau-something et la vision de Tourelle-something
+We need to be able to contrast them
+</p>
+
+<p>
+Caractéristiques des mouvements sociaux.
+</p>
+<ul class="org-ul">
+<li>Mondialisation</li>
+</ul>
+<p>
+&#x2026;
+</p>
+</div>
+</li>
+<li><a id="orgf187f80"></a>Plan<br />
+<div class="outline-text-5" id="text-1-4-7-2">
+<ol class="org-ol">
+<li>XYZ
+<ol class="org-ol">
+<li>Définition de la déviance</li>
+<li>Fondements sociologiques</li>
+<li></li>
+</ol></li>
+</ol>
+</div>
+</li>
+
+<li><a id="orgf7fe3ef"></a>Cours<br />
+<ol class="org-ol">
+<li><a id="orgb86b996"></a>Partie 1<br />
+<ol class="org-ol">
+<li><a id="orge39b3ed"></a>Définition de déviance<br />
+<div class="outline-text-7" id="text-1-4-7-3-1-1">
+<ul class="org-ul">
+<li>Effet indésirables ou inattendus du fait de l'appropriation de la technologie</li>
+<li>Effets qui induisent des &#x2026; négatifs</li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgdefc462"></a>Déviance<br />
+<ol class="org-ol">
+<li><a id="orgb8a3aa6"></a>On pose des actions qui ont des répercussions négatives sur soi-même.<br />
+<div class="outline-text-9" id="text-1-4-7-3-1-1-1-1">
+<p>
+Poster des vidéos de conneries qu'on a fait quand on était drunk.
+</p>
+</div>
+</li>
+<li><a id="org59ddb0f"></a>On pose des actions qui ont des répercussions sur les autres<br />
+<div class="outline-text-9" id="text-1-4-7-3-1-1-1-2">
+<p>
+Scammers indiens, voler des renseignements confidentiels.
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+
+<li><a id="orgdf4dbcc"></a>Fondements sociologiques de la déviance<br />
+<div class="outline-text-7" id="text-1-4-7-3-1-2">
+<p>
+Qu'est-ce qui explique l'écart par rapport à la norme sociale
+</p>
+<ul class="org-ul">
+<li>Sociologie &rArr; Norme Norme sociale impose une régulation &rarr; Contrôle social</li>
+<li>Absence de contrôle sociale favorise la déviance</li>
+<li>Absence du regard des autres ((sur internet)) &uarr;</li>
+</ul>
+<p>
+((Note sur le fait que les distances ne font plus de différences)).
+</p>
+</div>
+</li>
+
+<li><a id="org371eecf"></a>Évolution de la déviance<br />
+<ol class="org-ol">
+<li><a id="org1818076"></a>Lien Appropriation &hArr; Déviance<br />
+<div class="outline-text-8" id="text-1-4-7-3-1-3-1">
+<p>
+Appropriation:
+</p>
+<ul class="org-ul">
+<li>Structure d'accueil</li>
+<li>Usagers</li>
+<li>Contextualisée</li>
+</ul>
+
+<p>
+Technologie &rArr; Appropriation des impacts (positifs et négatifs)
+</p>
+
+<p>
+Rapport T &harr; S &rArr; Évolution du lien T &harr; S 
+</p>
+
+<p>
+Tout ça &rArr; Avec le temps de nouvelles formes de déviances.
+</p>
+</div>
+</li>
+
+<li><a id="orgccc83bb"></a>Illustration de l'évolution de la déviance par la délinquance informatique<br />
+<div class="outline-text-8" id="text-1-4-7-3-1-3-2">
+<p>
+3 périodes
+</p>
+<ol class="org-ol">
+<li>Naissance de la microinformatique
+<ul class="org-ul">
+<li>Actions/Comportements de déviances = vol de programmes</li>
+</ul></li>
+<li>Naissance de d'une architecture locale (réseaux locaux)
+<ul class="org-ul">
+<li>VOl de données dans le serveur local</li>
+</ul></li>
+<li>Naissance et développement du Web
+<ul class="org-ul">
+<li>Actions + Comportements = Virus, Hacking</li>
+</ul></li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+
+<li><a id="org56539e0"></a>Postulats relatifs à la déviance<br />
+<div class="outline-text-7" id="text-1-4-7-3-1-4">
+<ol class="org-ol">
+<li>Toute entité (individu, Organisation, État) possède des informations qui
+intéressent les autres</li>
+<li>Ces informations sont stockées et &#x2026; les systèmes informationels &#x2026;</li>
+<li>Aucun système informatique n'set sure à 100%.  Le risque nul n'existe pas.
+Tout système comporte des failles</li>
+<li>Toute entité ayant un intérêt et des connaissances peut donc s'introduire
+dans le système et commettre ainsi un acte de déviance.</li>
+<li>Lentité le fera d'autant plus facilement que le risque de se faire prendre
+est mince.</li>
+</ol>
+</div>
+</li>
+
+<li><a id="orge546456"></a>Ambivalence de la société face à la déviance<br />
+<div class="outline-text-7" id="text-1-4-7-3-1-5">
+<p>
+Acteurs sociaux &rArr; Individus, Organisations, États
+</p>
+
+<p>
+&dArr;
+</p>
+
+<p>
+&rArr; Posent des actes de déviance
+</p>
+<ul class="org-ul">
+<li>Incapacité à en faire la promoiton dans la mesure où c'est répréhensible</li>
+</ul>
+
+<p>
+&rArr; Subissent les conséquences
+</p>
+<ul class="org-ul">
+<li>Difficultés à se plaindre ((Si on se plain on se condamne soi même parce que
+nous aussi commettons des actes de déviances))</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+
+<li><a id="orgbabc71f"></a>Partie 2 Incursion dans la vie privée<br />
+<ol class="org-ol">
+<li><a id="org6179d8b"></a>2.1 Dispositifs légaux<br />
+<div class="outline-text-7" id="text-1-4-7-3-2-1">
+<ul class="org-ul">
+<li>Différence entre les divers pays</li>
+<li>Exemple Canada/Québec
+<ul class="org-ul">
+<li>Loi sur la protection des informations personnelles.j</li>
+</ul></li>
+</ul>
+</div>
+</li>
+
+
+<li><a id="org880c95f"></a>2.2 Évolution technologique et acteurs sociaux<br />
+<div class="outline-text-7" id="text-1-4-7-3-2-2">
+<ul class="org-ul">
+<li>Illustration dans le domaine de la télévision
+<ol class="org-ol">
+<li><p>
+Modes de production et de diffusion de la télévision sont limités
+</p>
+
+<p>
+Limites technologiques
+</p>
+
+<ul class="org-ul">
+<li>Nombre de canaux limités</li>
+
+<li>T.V appartient à l'état</li>
+
+<li>Les émissions sont diffusées à des périodes données</li>
+
+<li>((La télé a un rôle social important)</li>
+</ul></li>
+
+<li>Évolution technologique (fibre optique, etc)
+<ul class="org-ul">
+<li>Les modes de produciton et de diffusion de la télévision vont changer.</li>
+<li>Les capacités technologiques induisent &#x2026;
+<ul class="org-ul">
+<li>Quantité exponentielle de chaînes</li>
+
+<li>TV appartient au secteur privé</li>
+<li>Le privé tient à rentabiliser la chaîne</li>
+<li>&rArr; Modification des contenus (Mise en relief du citoyen &Lambda;)
+<ul class="org-ul">
+<li>Émergence de la télé-réalité.</li>
+<li>&rArr; On assiste au <b>décloisonnement entre la vie privée et la vie
+publique</b>.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ol></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org9e5154e" class="outline-4">
+<h4 id="org9e5154e"><span class="section-number-4">1.4.8</span> Cours 10 Modes de gestion des oppositions et des déviances</h4>
+<div class="outline-text-4" id="text-1-4-8">
+</div>
+<ol class="org-ol">
+<li><a id="org296ef83"></a>Plan<br />
+<div class="outline-text-5" id="text-1-4-8-1">
+<p>
+Partie 1 Différents modes
+</p>
+<ol class="org-ol">
+<li>Dispositifs de régulation
+<ul class="org-ul">
+<li>Definition</li>
+<li>Composantes</li>
+<li>Limites</li>
+</ul></li>
+<li>Normes ISO
+<ul class="org-ul">
+<li>Definition</li>
+<li>Contexte</li>
+</ul></li>
+</ol>
+</div>
+</li>
+<li><a id="org557aa9e"></a>Rappel Cours 9<br />
+<div class="outline-text-5" id="text-1-4-8-2">
+<p>
+Notion de déviance &rArr; Line avec Fondements Sociologiques
+&rarr; Appropriation
+</p>
+
+<p>
+Caractère évolutif 
+(( Appropriation + Caractere evolutif &rarr; Lien à faire entre les cours 3 et 9))
+</p>
+<ul class="org-ul">
+<li>On a pris comme exemples de la délinquance informatique</li>
+
+<li><p>
+Postulats et Raisons
+</p>
+
+<p>
+((On ne peut pas éviter la déviance))
+</p></li>
+
+<li>Ambivalence des entités sociales face à ce phénomène.</li>
+
+<li>La déviance se matérialise sous deux formes
+<ul class="org-ul">
+<li>Subir la conséquence des actes <b>d'une autre personne</b></li>
+<li>Subir la conséquence des actes <b>de ses propres actes</b></li>
+</ul></li>
+
+<li>Incursion dans la vie privée</li>
+</ul>
+
+<p>
+<b>Ceci amène à considérer les modes de gestion.</b>
+</p>
+</div>
+</li>
+<li><a id="orgb9e5ba0"></a>Cours<br />
+<div class="outline-text-5" id="text-1-4-8-3">
+</div>
+
+<ol class="org-ol">
+<li><a id="org443ec66"></a>Partie 1 Différents modes<br />
+<ol class="org-ol">
+<li><a id="org3c5dff1"></a>Dispositifs de régulation<br />
+<ol class="org-ol">
+<li><a id="org9599fab"></a>Définition<br />
+<div class="outline-text-8" id="text-1-4-8-3-1-1-1">
+<p>
+Ensemble de règles formelles ou informelles visant à encadrer les comportements
+des acteurs sociaux.
+</p>
+
+<p>
+<b>Exemples</b>
+</p>
+<ul class="org-ul">
+<li>Lois</li>
+<li>Règles culturelles</li>
+</ul>
+<p>
+((Ces dispositifs de régulation devienntent des normes, des repères))
+</p>
+</div>
+</li>
+<li><a id="org9818f0e"></a>Composantes<br />
+<div class="outline-text-8" id="text-1-4-8-3-1-1-2">
+<p>
+En sociologie, on distingue trois types de régulation.
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org29d0b28"></a>Régulation de contrôle<br />
+<div class="outline-text-9" id="text-1-4-8-3-1-1-2-1">
+<p>
+Une entité qui établit des règles qui s'appliquent à tous.
+</p>
+
+<p>
+Cette entité <b>a un pouvoir de sanction</b>.
+</p>
+
+<p>
+<b>Exemples</b>
+</p>
+<ul class="org-ul">
+<li>L'état</li>
+</ul>
+</div>
+</li>
+
+<li><a id="orgb537992"></a>Régulation Mixte<br />
+<div class="outline-text-9" id="text-1-4-8-3-1-1-2-2">
+<p>
+L'entité de contrôle délègue son pouvoir à une organisation, généralement
+paritaire qui établit les règles pour un secteur.
+</p>
+
+<p>
+<b>Exemples</b>
+</p>
+<ul class="org-ul">
+<li>Au québec
+<ul class="org-ul">
+<li>CSST</li>
+<li>CNT</li>
+</ul></li>
+<li>Au canada
+<ul class="org-ul">
+<li>CRTC</li>
+</ul></li>
+</ul>
+
+<p>
+{{J'attendais qu'il commence à parler de l'OIQ et pourquoi il parlait du CRTC
+mais dans le fond, l'OIQ régule les ingénieurs, pas vraiment une technologie
+alors que la CSST régule des technologies dans les environnements de travail et
+le CRTC qui régule les technologies de communciation.}}
+</p>
+</div>
+</li>
+<li><a id="orga9b637e"></a>Régulation autonome<br />
+<div class="outline-text-9" id="text-1-4-8-3-1-1-2-3">
+<p>
+Un groupe qui se dote de ses propres règles, celles-ci s'appliquent uniquement
+aux membres du groupe.
+</p>
+
+<p>
+<b>Exemples</b>
+</p>
+<ul class="org-ul">
+<li>Équipe de travail dans un cours</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org60020b5"></a>Application et limites des 3 dispositifs de régulation<br />
+<div class="outline-text-8" id="text-1-4-8-3-1-1-3">
+<ol class="org-ol">
+<li>Régulation de contrôle : ((Fait un affaire socratique pour nous faire dire
+que "NON" la régulation autonome ne peux pas opérer sur l'internet.</li>
+
+<li>Régulation autonome : ((Socratique pour dire que "Non" parce que si l'autre
+est pas dans mon groupe internet whatever,</li>
+
+<li>Régulation mixte : ((Même la régulation mixte ne peut pas donner de réels
+résultats.</li>
+</ol>
+
+<p>
+((On voit que les systèmes de régulations ne peuvent pas tout faire))
+</p>
+</div>
+</li>
+<li><a id="org7bf6c04"></a>Plusieurs limites<br />
+<div class="outline-text-8" id="text-1-4-8-3-1-1-4">
+<ul class="org-ul">
+<li>La <b>technologie évolue plus vite que les lois</b></li>
+<li>Le web ne s'arrête pas aux frontières alors que les lois ne s'appliquent
+uniquenment au sein d'un espace géographique.</li>
+<li>Les organisations policières ne mettent pas les ressources adéquates.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+
+
+
+<li><a id="orgb0fabd3"></a>Normes ISO<br />
+<ol class="org-ol">
+<li><a id="org758472f"></a>Définition<br />
+<div class="outline-text-8" id="text-1-4-8-3-1-2-1">
+<p>
+Ensemble de règles basées sur des dimensions organisationnelles.  Pour être plus
+précis: de gestion organisationnelle
+</p>
+<ul class="org-ul">
+<li>Qualité</li>
+<li>Environnement</li>
+</ul>
+<p>
+visant à établir les pratiques de référence (les "meilleures pratiques").
+</p>
+
+<p>
+<b>NOTE</b> La norme ISO porte le même nom que l'organisation ISO.
+</p>
+
+<p>
+<b>NOTE</b> Les normes ISO sont volontaires.  Une organisation décide de s'y
+conformer.  {{Ça peut être préférable et obligatoire en pratique.}}
+</p>
+</div>
+</li>
+
+<li><a id="org746ceeb"></a>Contexte<br />
+<div class="outline-text-8" id="text-1-4-8-3-1-2-2">
+<ul class="org-ul">
+<li>Étant donné que c'est volontaire, pourquoi les organisation adoptent-elles les
+normes ISO?</li>
+
+<li><p>
+Le constat d'une période industrielle à poste industrielle ((cours 2))
+</p>
+<ul class="org-ul">
+<li>Reconnaissance de la mondialisation &rarr; Règles de l'OMC</li>
+<li>Répartition des zones de production et de consommation</li>
+<li>Concurrence mondialisée alors que les contextes sont différents.</li>
+</ul>
+
+<p>
+&rArr; <b>Nécessité d'évaluer les organisations sur les mêmes bases</b>
+</p></li>
+
+<li>L'économie de la qualité fait que les compagnies veulent la certification ISO
+qui garantit la qualité de leur produit.</li>
+</ul>
+</div>
+</li>
+<li><a id="org565d15d"></a>Démarche d'élaboration par iso<br />
+<div class="outline-text-8" id="text-1-4-8-3-1-2-3">
+<ul class="org-ul">
+<li>Mise en place d'un comité</li>
+<li>Comité (Experts industrie, Société Civile, États).</li>
+<li>ISO Énonce/rédige un mandat</li>
+<li>comité reçoit le mandat établit un plan de travail</li>
+<li>Le comité élabore la proposition, qui est discutée et testée</li>
+<li><b>Le comité établit le cahier de charge</b></li>
+<li>Quand le cahier de charge est établi, il revient à l'organisation ISO d'en
+assurer la mise en oeuvre.</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org8772101"></a>Démarche de certification<br />
+<div class="outline-text-8" id="text-1-4-8-3-1-2-4">
+<p>
+Une entreprise/organisatin voulant être certifiée (ex: ISO 9001 (qui porte sur
+la qualité)).
+</p>
+
+<p>
+L'organisation fait une requête auprès de ISO ou d'un auditeur agréé.
+</p>
+
+
+<ol class="org-ol">
+<li>Audit de l'organisation ((sur la base du cahier de charge)).</li>
+<li>Action à mettre en oeuvre pour se conformer.</li>
+<li><b>Plan de mise en oeuvre</b> ((bonne vieille gestion de projet))
+<ul class="org-ul">
+<li>avec des jalons (milestones)</li>
+</ul></li>
+<li>Exécution (ex implantation des pratiques de qualité)</li>
+<li>Suivi conformité et certification</li>
+</ol>
+
+<p>
+Tout ce processus est à la charge de l'organisation/entreprise requérente
+</p>
+</div>
+</li>
+
+<li><a id="orgf211d83"></a>Avantages d'être certifié ISO<br />
+<div class="outline-text-8" id="text-1-4-8-3-1-2-5">
+<ul class="org-ul">
+<li>On se démarque des par rapport aux entreprises concurrentes.</li>
+<li>C'est souvent un prérequies pour certaines soumissions
+((Ex: pour la stm, les "rammes" de métro {{pas sur quel mot il a dit}},
+l'appel d'offre demandait une compagnie ISO bla bla))</li>
+<li>C'est une amélioration substantielle des pratiques de gestion &rArr; Efficience.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+
+<li><a id="org3b2e958"></a>Gestion du changemnt<br />
+<ol class="org-ol">
+<li><a id="org107975f"></a>Définition<br />
+<div class="outline-text-8" id="text-1-4-8-3-1-3-1">
+<ul class="org-ul">
+<li>Gestion fait référence aux activités de P.O.D.C. (Planifier, Organiser,
+Diriger, Contrôler)</li>
+
+<li>Gestion du changement correspond aux activités de PODC permettant à une
+organisation de se transformer, de s'adapter. De passer d'une situation
+non-performante à une situation perforamnte.</li>
+</ul>
+
+<hr />
+</div>
+</li>
+
+<li><a id="org756e16a"></a>Gestion du changement et Gestion de projet<br />
+<div class="outline-text-8" id="text-1-4-8-3-1-3-2">
+<ul class="org-ul">
+<li>Gestion du changement = gestion de projet
+<ul class="org-ul">
+<li>Contrainte de temps : Échéancier</li>
+<li>Obligation de résultats</li>
+<li>Des ressources dédiées</li>
+<li>Perspective multidisciplinaire</li>
+</ul></li>
+<li>Nécessité de distinguer Projet vs Gestion Conventionnelle</li>
+<li>Comment se déploie un projet
+<ul class="org-ul">
+<li>Idéation {{WTF is that word lol}}</li>
+<li>Conception/Étude</li>
+<li>Planification/Réalisation</li>
+<li>Tests</li>
+<li>Transfert a l'exploitant</li>
+</ul></li>
+</ul>
+
+<p>
+<b>Le PMI</b> project management institute, PM BOOK
+</p>
+</div>
+</li>
+
+<li><a id="org97075a2"></a>Activités<br />
+<div class="outline-text-8" id="text-1-4-8-3-1-3-3">
+<ul class="org-ul">
+<li>Enquête auprès de ceux qui doivent changer leurs pratiques.</li>
+<li>Analyse des besoins des employés</li>
+<li>Établir un plan de formation</li>
+<li>Établir un plan de communication</li>
+<li>Mettre en place un comité paritaire</li>
+<li>Mettre un place un cservice d'accompagnement</li>
+<li>Mettre en place un système d'incitatifs</li>
+</ul>
+</div>
+</li>
+<li><a id="orgbdaef58"></a>Cadres théoriques<br />
+<div class="outline-text-8" id="text-1-4-8-3-1-3-4">
+<p>
+Comment les acteurs sociaux pensent et structurent les projets de changement.
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org2e2fd25"></a>Tableau<br />
+<div class="outline-text-9" id="text-1-4-8-3-1-3-4-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Cadres théoriques</th>
+<th scope="col" class="org-left">Technologie</th>
+<th scope="col" class="org-left">Acteur</th>
+<th scope="col" class="org-left">Organisation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Déterminisme</td>
+<td class="org-left">Objet Abstrait</td>
+<td class="org-left">Rôle faible</td>
+<td class="org-left">Déterminée</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">subit</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Théorie du</td>
+<td class="org-left">Offre des</td>
+<td class="org-left">Exerce un choix</td>
+<td class="org-left">Variable</td>
+</tr>
+
+<tr>
+<td class="org-left">choix rationnel</td>
+<td class="org-left">Possibilités</td>
+<td class="org-left">d'adaptation</td>
+<td class="org-left">Modératirice</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">d'adaptation</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Internationalisme</td>
+<td class="org-left">Combinaison de</td>
+<td class="org-left">En interaction</td>
+<td class="org-left">Réseau</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Facteur humain</td>
+<td class="org-left">base du succès</td>
+<td class="org-left">d'acteurs</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">+</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Facteurs matériels</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<ol class="org-ol">
+<li><p>
+Déterminisme = Le succès d'une technologie est déterminé uniquement par les
+fonctions de la technologie.
+</p>
+
+<p>
+((on met l'accetn sur l'outil, si j'ai le bon outil tout va vien aller))
+</p></li>
+
+<li><p>
+Théorie du choix rationnel
+</p>
+
+<ul class="org-ul">
+<li>Une technologie offre des possibilités.</li>
+<li>Celles-ci vont être utilisées par les acteurs sociaux.</li>
+</ul>
+
+<p>
+((être rationnel signifie prendre la décision qui maximise bla bla, ce qui
+peut mener à une situation ou tout le monde tire la couverture de son bord))
+</p></li>
+
+<li><p>
+Interactionnisme
+</p>
+
+<ul class="org-ul">
+<li>La technologie est appropriée</li>
+<li>Réseau d'acteurs</li>
+</ul>
+
+<p>
+&rArr; Concensus
+</p>
+
+<ol class="org-ol">
+<li>Interaction entre les acteurs sociaux</li>
+<li>Négociation</li>
+<li>Concensus</li>
+</ol></li>
+</ol>
+
+<p>
+((Les gestionnaires et ingénieurs peuvent faire l'erreur de tomber dans le
+déterminisme ou la théorie du choix rationnel et négliger l'appropriation de la technologie.
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+
+
+<li><a id="org5fd3529"></a>Partie 2 Groupes de pression<br />
+<ol class="org-ol">
+<li><a id="org5908507"></a>Groupes de pression<br />
+<div class="outline-text-7" id="text-1-4-8-3-2-1">
+<p>
+Cours 4,5,6 &rArr; Impacts, Techno, TCS
+</p>
+
+<p>
+&dArr;
+</p>
+
+<p>
+Cours 8,9 &rArr; Réactions, Oppositions/Déviances
+</p>
+
+<p>
+&dArr;
+</p>
+
+<p>
+Cours 10 &rArr;  Modes de gestion, de régulation Règles &rArr; Suscitent des
+contre-réactions, ex: Groupes de pression et Lobbys.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgb7a708f"></a>Définition de groupes de pression (Lobby)<br />
+<div class="outline-text-8" id="text-1-4-8-3-2-1-1">
+<p>
+Un groupe de pression représente un groupe d'acteurs sociaux représentant des
+intérêts privés.
+</p>
+
+<p>
+<b>But</b>: Agir auprès des déscideurs afin que les dispositifs (règles)
+touchent/affectant le moins possible les intérêts qu'ils défendent.
+</p>
+</div>
+</li>
+
+<li><a id="orga8bc634"></a>Ressources et acteurs<br />
+<div class="outline-text-8" id="text-1-4-8-3-2-1-2">
+<ul class="org-ul">
+<li>GP bénificient des ressources de secteurs défendus</li>
+<li>Plus un secteur est économiquement important, plus le G.P. dispose de
+ressources.</li>
+<li>Financer les activités sociales (tournois, concours, fête, etc (ex: Le
+GrandPrix de Montréal était financé jusqu'à y'a pas longtemps par les
+compagnies de cigarettes)).</li>
+<li>Acheter des encarts publicitaires</li>
+<li>Financer des études, des experts</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org0f13919"></a>Deux visions des groupes de pression<br />
+<div class="outline-text-8" id="text-1-4-8-3-2-1-3">
+<p>
+Les deux visions voient le groupe de pression comme un mécanisme pour faire
+valoir des intérêts spécifiques.
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org00c346c"></a>Vision corporatiste<br />
+<div class="outline-text-9" id="text-1-4-8-3-2-1-3-1">
+<p>
+Le groupe de pression a légalement le droit d'exister ((Il a parlé de M. Landry
+qui a fait passer une loi pour donner un cadre législatif aux groupes de
+pression)).
+</p>
+
+<p>
+Analyse d'Adam Smith, il a écrit un livre important en économie.
+</p>
+<ul class="org-ul">
+<li>Chaque nation a une dotation natureelle en ressoursces</li>
+<li>Étant donné ces dotations, je vais exploiter mes ressoursces et les échanger
+avec d'autres nations.  Exploiter les ressources à moindre coûte aussi</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org86feea9"></a>Vision démocratique<br />
+<div class="outline-text-9" id="text-1-4-8-3-2-1-3-2">
+<p>
+La vision démocratique nous sommes dans un système de démocratie: 1 personne -
+une voix.
+</p>
+
+<p>
+Élection des élus qui  rennent des décisions auprès de tous.
+</p>
+
+<p>
+Les intérêts spécifiques sont pris en compte dans le processus démocratique
+((donc on n'a pas besoin des GP pour veiller à des intérêts spécifiques)).
+</p>
+</div>
+</li>
+
+<li><a id="org8d704b4"></a>Tableau<br />
+<div class="outline-text-9" id="text-1-4-8-3-2-1-3-3">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Vision Corporatiste</th>
+<th scope="col" class="org-left">Vision démocratique</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">GP est légal et légitime</td>
+<td class="org-left">GP est certes légal, mais illégitime</td>
+</tr>
+
+<tr>
+<td class="org-left">Basée sur l'analyse d'Adam Smith</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">En laissant les individus s'occuper des intérets particuliers, on sert l'intérêt généralement</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&rArr; Les GP s&lt;occupent des intérêts sectoriels et donc servent l'intérêt général</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<p>
+Les deux ont en partie raison et en partie tort.
+</p>
+
+<ul class="org-ul">
+<li>Les intérêts particuliers ne sont pas toujours servis par la démocratie à
+cause de la bullshit de ligne de partie.  Le député de ton cartier ne vote pas
+selon les besoins mais bien selon la ligne de parti.</li>
+</ul>
+
+<p>
+d'autre part
+</p>
+
+<ul class="org-ul">
+<li>La vision corporatiste est empreinte de malversation ((commission charbonneau)).</li>
+</ul>
+
+
+<p>
+Les deux visions nous donne une image de groupes de pression.
+</p>
+</div>
+</li>
+</ol>
+</li>
+
+<li><a id="orgc8815f7"></a>Arguments pour et contre<br />
+<ol class="org-ol">
+<li><a id="orgdd32d7d"></a>Contre<br />
+<div class="outline-text-9" id="text-1-4-8-3-2-1-4-1">
+<ul class="org-ul">
+<li>Le groupe de pression participe à différentes pratiques délictuelles</li>
+<li>Les gp font peu état de transparence</li>
+<li>Les GP établissent des rapports de force vis à vis les autres acteurs sociaux
+(ex: chantage à l'emploi).</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org390a269"></a>Pour<br />
+<div class="outline-text-9" id="text-1-4-8-3-2-1-4-2">
+<ul class="org-ul">
+<li>Peuvent contribuer au développement d'un secteur d'activité. Ex: Le secteur du
+multimédia au Québec (ubisoft, nanoquébec).</li>
+<li>Contribuent aussi développement des connaissances en finançant les recherches.</li>
+<li>Peuvent enrichir le débat social</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org313d8dd" class="outline-4">
+<h4 id="org313d8dd"><span class="section-number-4">1.4.9</span> Cours 11 Notes de Saïf et de Cristain</h4>
+</div>
+<div id="outline-container-orgcc003cd" class="outline-4">
+<h4 id="orgcc003cd"><span class="section-number-4">1.4.10</span> Cours 12, 13 manquants</h4>
+</div>
+</div>
+
+<div id="outline-container-orgb9b6b94" class="outline-3">
+<h3 id="orgb9b6b94"><span class="section-number-3">1.5</span> Retour sur l'intra</h3>
+<div class="outline-text-3" id="text-1-5">
+</div>
+<div id="outline-container-orga4b15f4" class="outline-4">
+<h4 id="orga4b15f4"><span class="section-number-4">1.5.1</span> Question 1</h4>
+<div class="outline-text-4" id="text-1-5-1">
+<p>
+Délégations : Citoyens vs État
+2 Délégation : Profane vs profs + chercheurs + scientifiques
+</p>
+
+<p>
+Les cultures s'approprient
+</p>
+</div>
+</div>
+<div id="outline-container-org928550a" class="outline-4">
+<h4 id="org928550a"><span class="section-number-4">1.5.2</span> Question 2</h4>
+<div class="outline-text-4" id="text-1-5-2">
+<p>
+Première page de l'article.  L'auteur indique trois phases
+</p>
+
+<p>
+Constitution d'un marché (concepteurs et R&amp;D qui agissent)
+</p>
+
+<p>
+Diffusion (Expérimentation et tests). C'est la période des retours et
+coinventions
+</p>
+
+<p>
+Impacts.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8b610c4" class="outline-4">
+<h4 id="org8b610c4"><span class="section-number-4">1.5.3</span> Question 1</h4>
+<div class="outline-text-4" id="text-1-5-3">
+<p>
+Modèle de développement social de la technologie
+</p>
+
+<p>
+3 représentations de l'appropriation
+</p>
+<ul class="org-ul">
+<li>Utiliser la technologie conformément à sa conception</li>
+<li>Adapter la technologie à ses propres besoins</li>
+<li>La technologie devient un prétexte pour de nouvelles interactions sociales</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb1a07cd" class="outline-4">
+<h4 id="orgb1a07cd"><span class="section-number-4">1.5.4</span> Question 2</h4>
+<div class="outline-text-4" id="text-1-5-4">
+<ul class="org-ul">
+<li>Impacts sur l'emploi (reference aux postes) &checkmark;</li>
+<li>Impacts sur le travail (ref aux taches) &checkmark;</li>
+<li>Impacts sur la culture (normes et pratiques sociales)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4324b94" class="outline-4">
+<h4 id="org4324b94"><span class="section-number-4">1.5.5</span> Question 3</h4>
+<div class="outline-text-4" id="text-1-5-5">
+<ul class="org-ul">
+<li>Performance sociale &#x2026;</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1cf1aac" class="outline-4">
+<h4 id="org1cf1aac"><span class="section-number-4">1.5.6</span> Question 4</h4>
+<div class="outline-text-4" id="text-1-5-6">
+<p>
+3/3 !!!
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5dfa308" class="outline-4">
+<h4 id="org5dfa308"><span class="section-number-4">1.5.7</span> Question 5</h4>
+<div class="outline-text-4" id="text-1-5-7">
+<p>
+Objectifs
+</p>
+<ul class="org-ul">
+<li>Parler des interactions générées dans le corps social (la techno modifie le
+corps social &#x2026;)</li>
+</ul>
+<p>
+Relation
+</p>
+<ul class="org-ul">
+<li>La société influence la techno et vice versa</li>
+</ul>
+
+<p>
+Exemple
+</p>
+<ul class="org-ul">
+<li></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgaaac3e2" class="outline-3">
+<h3 id="orgaaac3e2"><span class="section-number-3">1.6</span> Textes du recueil</h3>
+<div class="outline-text-3" id="text-1-6">
+</div>
+<div id="outline-container-org7a6f07f" class="outline-4">
+<h4 id="org7a6f07f"><span class="section-number-4">1.6.1</span> Lejeune, M. L'apport de la sociologie de la technologie à la professionnalisation de l'ingénieur.</h4>
+<div class="outline-text-4" id="text-1-6-1">
+<p>
+La professionalisation de l'ingénieur, sous l'angle de la sociologie de la
+technologie, s'iscrit dans les énoncés de principe et les normes canadiennes
+d'agrément des programmes universitaires d'ingénierie. La question du
+féveloppement des technologies (production, diffusion et appropriation) se
+rattache en tous ses points aux qualistés personnelles et sociales de
+l'ingénieur auxquelles féfèrent les écoles d'ingénierie et leurs organismes de
+régulation. La profession d'ingénieur s'enracine d'ailleurs dans les milieux
+industriels et sociaux ede plus en plus sensibles aux dimesnions sociales de la
+technologie, considérant les nouvelles dynamiques qui s'y rattachent en regard
+des impacts de la technologie sur la société et dans les entreprises.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc12798d" class="outline-4">
+<h4 id="orgc12798d"><span class="section-number-4">1.6.2</span> Texte 7 Les <b>Trois leviers stratégiques</b> de la réussite du changement technologique</h4>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Philippe Carphin</p>
+<p class="date">Created: 2019-01-19 Sat 15:52</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

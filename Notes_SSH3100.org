@@ -1,0 +1,974 @@
+#+TITLE: SSH3100 Sociologie de l'ingénieur
+
+* SSH3100 Sociologie de l'ingénieur
+** Team notes for travail de session
+
+Notes for the team should go in this shared file
+
+[[file:~/Dropbox/PolyMtl_AUT2018/SSH3100/SSH3100A_TravailDeSession/Notes_TravailSession.org]]
+
+There is also a google doc at [[https://docs.google.com/document/d/1_EFlC3fcEQfcdxR8pWZtQ0WZNIo54kQitghTT-efDUI/edit?usp=sharing]]
+** Team
+Oumaima Kidari <oumaima.kidari@polymtl.ca>
+Jules Lefebvre <jltlefebvre@gmail.com>
+Cristian Fredes Salvador <cristian.fredes-salvador@polymtl.ca>
+Philippe Carphin <philippe.carphin@polymtl.ca>
+Victor Walgenwitz <victor.walgenwitz@etu.unistra.fr>
+** Évaluations
+*** Examen intra 20%
+| 2 questions | textes du recueil 1 à 5 |
+| 6 questions | matière des cours 1 à 6 |
+*** Projet de session 40%
+- Doit être auprès d'un organisation ou entreprise
+- Doit concerner l'adoption d'une technologie
+ 
+#+BEGIN_QUOTE
+Les impacts d'une technologie dans une organisation *du point de vue des
+utilisateurs*.
+
+Ce qui importe est le point de vue des utilisateurs.
+#+END_QUOTE
+
+**** Fiche de projet
+- Membres
+- 1 courriel pour rejoindre l'équipe
+- QUelle organisation
+- Qui on va interviewer
+** Cours
+*** Cours 1
+1. Présentation des étudiants
+2. Présentation du Plan de cours et évaluations
+3. Concepts du cours
+Voir section évaluations.
+*** Cours 6 <2018-10-15 Mon 12:46> Impacts des nouvelles technologies dans la vie quotidienne
+**** Retour sur le cours 5:
+- La technologie dans une organisation.
+- Finalité de Réponse \Rightarrow Production (P/S)
+- Production \Rightarrow Ressources \Rightarrow Notion de performance(Critère
+  d'éfficience, d'efficacité et d'économie)
+- Multiples représentations de l'*organisation* 
+- Catégories d'impacts:
+  - Emploi : Postes, pas le travail effectué
+  - Travail : Les tâches effectuées
+  - Dynamique Organisationnelle
+**** Mise en contexte Nouvelles technologies de l'information et de la communcation *(NTIC)*
+- Omniprésence des NTIC
+- Impacts au près des usagers + Appropriation (voir cours 3)
+- NTIC \Rightarrow génèrent différents effets:
+  -* Effet de complémentarité* (Ex: Cellulaire et téléphones intelligents vs
+    Téléphones fixes.
+    - Genre les deux peuvent communiquer ensemble, c'est ça qu'il veut dire par complémentarité
+  - *Effet de substitution* : un disparaît au profit de l'autre (Ex: Agenda
+    remplacé par téléphones intelligents (lien à faire avec le cours sur la
+    convergence technologique).
+  - *Effets de réduction* :  On utilise plus une technologie par rapport à
+    une autre. (Ex: Utilisation de ipod réduite par les téléphones intelligents)
+ 
+**** Exemple d'impacts d'Internet
+***** Vie familiale
+- Diminution du temps passé en famille
+- Communication simplifiée
+- Facilité de maintenir le contact avec les membres éloignés
+- Contribue à une meilleure gestion du budget familial
+  On est mieu en mesure de trouver des escomptes
+  - Augmentation de l'épargne familiale
+- Augmentation du temps passé ... suivre des activités d'intérêt commun.
+***** Vie Sociale
+Défini weirdement par le prof comme étant les interactions hors-famille
+- Formation de nouveaux liens sociaux (Communautés).
+  Les communautés étaient plus formées par des facteurs comme la proximité et
+  autres facteurs.  Maintenant, ça devient plus des intérêts communs
+- Intérêts plus ou moins grands des dynamiques sociales (hors-frontières)
+- Intérêt pour les facettes d'autres cultures (Musique, Nourriture etc.)
+- Intérêt pour l'engagement dans diverses causes de nature sociale
+- Participation à des mobilisations citoyennes
+***** Education
+Nous allons distinguer les impacts qu'on peut caractériser comme *négatifs* et
+*positifs*.
+
+****** Positifs
+- Facilite les recherches
+- Facilite une plus grande production scientifique et une plus grande diffusion scientifique.
+- Accès à un plus grand nombre de bibliothèques
+- Meilleure coordination du travail d'équipe
+- Offre plus importante de cours et de programmes
+- Autonomisation plus importante des participants
+
+****** Négatifs
+- Augmentation des formes de tricherie (plagiat, sous-traitance)
+- Augmentation des fausses informations (faux documents de référence, faux
+  articles)
+- L'éducation est devenue un objet de consommation qui répond à la réalité de
+  l'offre et de la demande. (PHIL: I don't know if this wasn't true before the
+  Internet. But he explained it in a nice way.  Education is supposed to have
+  some sort of vocation to teach what the teacher thinks he needs to teach vs
+  what the students want (as customers))
+
+****** Enjeux relatifs de l'internet dans le milieu de l'Éducation
+******* Confusion entre Donnée, Informations, Savoir
+
+- *Donnée* : fait brut observable (ex: 5%)
+- *Information* : Une donnée contextualisée
+              Ex : Le taux de la banque du canada est égal à 1.5%
+- *Connaissance* : Sachant que le taux de Bance du Canada mes 1.5% et projette des
+               placements et d'investissements.  La connaissance requiert des
+               connaissances préalables.
+
+******* Émergence d'un savoir Flou vs Savoir Précis
+******* L'aspect marchand, ce qui fait qu'à l'absence de contrôle et vérification, il devient difficile d'en assurer la qualité
+
+**** Impacts de la *monétique*
+
+Monétique : Contraction de "monnaie" et "informatique".
+
+"La monnaie est réduite à {0,1}"
+
+***** Impacts dans les institutions financières
+  - Amélioration du volume d'affaires
+  - Concentration des cervices variés au sein d'une même entité
+  - Diversité de l'offre des services
+  - Augmentation de la concurrence
+  - Augmentation des fraudes.
+
+***** Impacts sur les clients 
+- Accès à nos comptes 24/7
+- Possibilité de générer des rendements
+- Augmentation des fraudes
+- Diversification de l'offre des produits financiers
+- Augmentation de l'endettement
+- Accès plus grand au crédit
+***** Impacts sur les employés des institutions financières
+- Changement dans la nature des tâches
+- Changement dans les compétences requises
+- Introduction de nouvelles formes de rémunération (fixes et
+  variables(performance))
+**** Impacts de la *domotique*
+- Gestion optimisée des fonctions de gestion d'une maison (chauffage,
+  électricité)
+- Amélioration de la sécurité
+- Possibilité de diminuer les coûts de gestion
+***** Domotique pré '90
+- Domotique = échec
+- Faible pénétration dans le domaine domiciliaire
+- Pas de lien entre les différents systèmes
+- Appropriation non réussie
+***** Domotique post '90 : '90 jusqu'à aujourd'hui
+- Introduction d'offre consolidées par le biais des systèmes de sécurité (ADT)
+- Cette stratégie va faciliter la pénétration et une plus grande appropriation.
+- Multiplicité d'offreurs.
+
+*** Cours 6 - Discussion de l'examen
+2 questions sur les textes du recueil (textes 1 à 5) [6/20]
+1 question par cours pour [14/20]
+**** Cours 1
+Les 4 raisons qui justifient le cours
+- Institutionnelles : BCAPG, OIQ
+- Sociétale : Omniprésence de la technologie 
+- Professionnelles : Impacts
+ 
+Notion de sociologie de la technologie.
+
+Lien Technologie *leftrightarrow* Société
+**** Cours 2 Illustration du lien T-S à travers trois périodes
+- Préindustrielle
+- Industrielle
+- Post industrielle 
+
+Différentes représentations de la technologie
+
+Faits technologiquest : 2 faits
+- Faits sociaux
+- Faits technologiques
+
+Différentes caractéristiques des nouvelles technologies
+
+**** Cours 3
+
+Notion de convergence technologique
+
+Modèle de dévelopement social des technologies
+- Phase 1 Production sociale
+- Phase 2 Diffusion Sociale
+- Phase 3 Appropriation
+
+**** Cours 4
+
+Impacts des grands projets
+- Notion d'impacts + Opérationalisation
+- Illustrer les impacts des grands projets selon des catégories
+- Modèle d'évaluation sociale des technologies.
+
+**** Cours 5
+Voir retour sur le cours 56
+
+*** Cours 7 - INTRA
+*** Cours 8 - Résistance au changement et Mouvements sociaux
+
+**** Plan
+- Partie 1 Résistance au changement
+  - Définition
+  - Manifestations
+  - Raisons
+  - Résistance vue comme un comportement rationel
+- Partie 2 Mouvements sociaux
+  - Définition
+
+**** Choses abordées avant le cours
+***** Utilité des indicateurs :
+S'assurer que les répondants interprètent ma question sur la même base.  Assurer
+une consistance des réponses.
+***** Exemple de grille d'analyse
+
+ 1. Sujet
+ 2. Répondants à choisir, échantillon homogène
+ 3. Revue de littérature
+ 4. Énoncé de l'hypothèse
+ 5. Catégories et sous-hypothèses
+ 6. Indicateurs + Questionnaire
+ 7. Administration des questions
+ 8. Réponses = Collecte de données
+
+ |---------------+------------------------+--------+--------+--------+--------+-------|
+ | Catégorie     |                        | Pers A | Pers B | Pers C | Pers D | Total |
+ |---------------+------------------------+--------+--------+--------+--------+-------|
+ | Qualité       | Amélioration du        |        |        |        |        |       |
+ |               | nombre de reprises     |        |        |        |        |       |
+ |               | ---------------------- |        |        |        |        |       |
+ |               |                        |        |        |        |        |       |
+ |---------------+------------------------+--------+--------+--------+--------+-------|
+ | Contenu du    | Élargissement          |        |        |        |        |       |
+ | Travail       | des tâches             |        |        |        |        |       |
+ |               | -------------          |        |        |        |        |       |
+ |               |                        |        |        |        |        |       |
+ |---------------+------------------------+--------+--------+--------+--------+-------|
+ | Communication | Augmentation des       |        |        |        |        |       |
+ |               | liens interdépartement |        |        |        |        |       |
+ |               |                        |        |        |        |        |       |
+ |---------------+------------------------+--------+--------+--------+--------+-------|
+ | Productivité/ | Augmentatdion des      |        |        |        |        |       |
+ | rendement     | livrables              |        |        |        |        |       |
+ |---------------+------------------------+--------+--------+--------+--------+-------|
+
+ Ex: Supposons que notre H_0 : Les adjointes administratives utilisant le
+ progiciel de gestion \Lambda connaissent une modification de leur performance.
+
+ - Adjointes administratives (répondants)
+ - Progiciel de gestion \Lambda (technologie)
+ - Modification de la performance (impacts)
+ 
+ On va transformer les réponses obtenues sur une échelle de Likeut (0-5, 0-10,
+ -5 à +5)
+
+ Analyse pour le rapport:
+ - Analyse interne
+   C'est l'analyse intra-entrevue et l'analyse inter-entrevue
+
+ - Analyse externe
+   Comparer nos résultats à ceux de la littérature.
+
+ L'analyse intra-entrevue est associée à l'axe vertical du tableau.
+
+ L'analyse inter-entrevue est associée à l'axe horizontal du tableau.
+
+ C'est avec l'analyse inter-entrevue qu'on va confirmer ou infirmer l'hypothèse
+ générale.
+
+ Noter qu'on doit établir à partir de quel score les réponses indiquent un
+ impact significatif.
+
+ Pour pallier à la taille non-significative de notre échantillon, on va comparer
+ nos résultats aux résultats de la littérature.
+
+***** Suite du cours
+
+ Cours 4,5,6:  Notion d'impacts, TCS (technologies dans le corps social?)
+
+ Dans les cours qui suivront, nous verrons :
+
+ Réactions générées par les TCS
+ - Oppositions
+ - Résistance au chamement
+ - Mouvements sociaux
+ - Déviances
+
+ À la suite de ça, on va s'intéresser aux modes de gestion.  Comme ci-haut on a
+ une problématique, on va parler de modes de gestions
+ - Dispositifs de régulation
+ - Gestion du changement
+ - Normes institutionnelles (comme les normes ISO par exemple)
+
+ Les *modes de gestion* sont des modalités pour prendre en compte les réactions.
+
+ Les modes de gestion sucitent des contre-réactions
+ - Groupes de pression
+ - lobby
+
+ On va terminer avec les enjeux connexes
+ - Lien technologie \leftrightarrow Production
+ - Gestion des risques
+ - Post-Taylorisme
+ - Modèles
+   - Métier
+   - Compétences
+ - Transfert de technologie
+
+**** Le cours
+
+***** Résistance au changement
+****** Définitions
+
+ *Résistance au changement* : Ensemble de réactions explicites ou implicites
+ visant à montrer son désacocrd par rapport à une technologie ou un projet.
+
+****** Manifestations
+
+ - Refus d'utiliser la technologie
+ - Remise en question de la pertinence de la technologie
+ - Accent mis sur les difficultés
+ - Refus de participer à la mise en oeuvre
+ - Recours à la convention collective
+
+   Retour sur cours 5 Income -> Outcome
+  
+   Inc -> Input -> Processus -> output -> outcome -> Inc
+  
+   Et l'implantation de technologies dans ce dessin = efficience (amélioration du
+   ratio input/output).
+ - Remise en question des compétences de ceux (souvent c'est des ingénieurs) qui
+   implantent la technologie dans l'organisation.
+ - Demander la réalisation d'études (pour retarder la mise en oeuvre).
+
+ - Un autre enjeux qui est très important à considérer : *Remise en question de
+   la technologie* surtout si l'entreprise va bien.
+
+****** Raisons sous-jacentes
+
+ Pourquoi les gens résistent-ils au changement.  Qu'est-ce qui pousse les gens à
+ adopter cette posture.
+
+ - Peur de l'inconnu
+ - Perte d'avantages
+ - Besoin de sécurité
+ - Refus de réinvestir dans un apprentissage
+ - Perte de référenciel
+ - Facilité dans l'habitude qui disparaît.
+
+****** Résistance au changement = Acte rationel
+
+ Illustration: Un diplômé universitaire 
+
+ Stade 1
+
+ => Investissement (temps, argent)
+    => Diplôme
+       => Emploi, rémunération, poste
+          => Statut social
+ => Rendement
+
+ Pour avoir l'emploi, rémunération, poste et le statut social, il faut avoir
+ l'investissement.
+
+ Le changement touche le rendement.
+
+ Suite à ça, puisque le changemnt touche le rendement, il faut réinvestir pour
+ maintenir le rendement.
+
+ La résistance au changement doit être vue comme une protection de
+ l'investissement.
+
+ *L'idée* est que *la résistance au changement est une protection des
+ investissements et donc est un acte rationnel*.
+
+
+***** Mouvements sociaux
+
+****** Définitions
+*Mouvement social* :
+- Action de groupe / Action collective
+- Portant sur / Défendant une cause
+- Cause d'intérêt général
+- But du groupe = faire triompher sa cause
+  - En modifiant l'état ou la nature du contexte social
+  - En gardant le statut quo.
+
+****** Visions du mouvement social
+
+******* Vision de Sidney Tarrow
+- Présence des élites
+- Les élites orientent les décisions collectives dans le sens qui leur est bénéfique.
+- Pour pouvoir se faire entendre, les citoyens ordinaires vont se mobiliser en
+  mouvement social pour s'opposer aux élites
+******* Vision d'Alain Touraine
+(Dans toute situation de pays, vous avez toujours au sein du mouvemnt social
+dans son ensemble, des sous-groupes qui sont discriminés.)
+- Présence de discrimination au sein des groupes sociaux
+- Des sous-groupes discriminés dans leur propre société (Mouvement de libération
+  de la femme, droits civiques au US)
+- Le sous-groupe discriminé va se mobiliser pour remettre en question l'ordre
+  établi. 
+****** Contexte d'apparition
+- Contestations sociales => initialement étaient portées par les sindicats +
+  sur les rapports de travail
+- Évolutions sociales contemporaines
+  - Diminution de l'influence des syndicats
+  - Enjeux sociaux dépassaient le cadre du monde du travail + le cadre des frontières géographiques/territoriales
+
+Tout ça fait que les mouvements sociaux sont devenus des cadres de mobilisation.
+****** Caractéristiques des mouvements sociaux
+- Le mouvement social est un *mouvement de masse* (qui n'est pas lié à une classe
+  sociale en particulier contrairement aux syndicats)
+- Le mouvement social *présente un projet alternatif* (une autre manière de
+  concevoir le monde, ou présente des solutions. On n'est pas uniquement dans un
+  mode de contestation pure)
+- Le mouvement social a tendance à se *mondialiser* (du fait des nouvelles technologies).
+****** Évolution et signification du mouvement social
+On distingue deux évolutions:
+- Le mouvement social se transforme en parti politique
+  - Ex: les partis verts
+- Le mouvement social se transforme élargi sa base et devient (augmenter le
+  membership), assure sa légitimité, devient un acteur social important mais
+  non-politique.
+****** Mouvement social et Nouvelles technologies
+
+Effet paracoxal
+
+- D'un côté
+  - Nouvelles technos -> Modification des sturectures sociales -> perte d'emploi
+    et destruction de secteurs d'activités -> perte de lien social 
+
+- De l'autre côté
+  - No du fait des mouvement sociaux permettent de reconstruire du lien social
+  - On s'engage dans des causess que l'on veut défendre.
+  
+*** Cours 9 Déviances autour des nouvelles technologies
+**** Retour cours précédent
+Retour cours précédent
+- Résistance au changment
+  - 
+
+Vision de Tareau-something et la vision de Tourelle-something
+We need to be able to contrast them
+
+Caractéristiques des mouvements sociaux.
+- Mondialisation
+...
+**** Plan
+1. XYZ
+   1. Définition de la déviance
+   2. Fondements sociologiques
+   3. 
+
+**** Cours
+
+***** Partie 1
+****** Définition de déviance
+ - Effet indésirables ou inattendus du fait de l'appropriation de la technologie
+ - Effets qui induisent des ... négatifs
+
+******* Déviance
+
+******** On pose des actions qui ont des répercussions négatives sur soi-même.
+ Poster des vidéos de conneries qu'on a fait quand on était drunk.
+******** On pose des actions qui ont des répercussions sur les autres
+ Scammers indiens, voler des renseignements confidentiels.
+
+****** Fondements sociologiques de la déviance
+
+Qu'est-ce qui explique l'écart par rapport à la norme sociale
+ - Sociologie \Rightarrow Norme Norme sociale impose une régulation \rightarrow Contrôle social
+ - Absence de contrôle sociale favorise la déviance
+ - Absence du regard des autres ((sur internet)) \uparrow
+ ((Note sur le fait que les distances ne font plus de différences)).
+
+****** Évolution de la déviance
+
+******* Lien Appropriation \Leftrightarrow Déviance
+ Appropriation:
+ - Structure d'accueil
+ - Usagers
+ - Contextualisée
+
+ Technologie \Rightarrow Appropriation des impacts (positifs et négatifs)
+
+ Rapport T \leftrightarrow S \Rightarrow Évolution du lien T \leftrightarrow S 
+
+ Tout ça \Rightarrow Avec le temps de nouvelles formes de déviances.
+
+******* Illustration de l'évolution de la déviance par la délinquance informatique
+
+ 3 périodes
+ 1. Naissance de la microinformatique
+    - Actions/Comportements de déviances = vol de programmes
+ 2. Naissance de d'une architecture locale (réseaux locaux)
+    - VOl de données dans le serveur local
+ 3. Naissance et développement du Web
+    - Actions + Comportements = Virus, Hacking
+
+****** Postulats relatifs à la déviance
+
+ 1. Toute entité (individu, Organisation, État) possède des informations qui
+    intéressent les autres
+ 2. Ces informations sont stockées et ... les systèmes informationels ...
+ 3. Aucun système informatique n'set sure à 100%.  Le risque nul n'existe pas.
+    Tout système comporte des failles 
+ 4. Toute entité ayant un intérêt et des connaissances peut donc s'introduire
+    dans le système et commettre ainsi un acte de déviance.
+ 5. Lentité le fera d'autant plus facilement que le risque de se faire prendre
+    est mince.
+
+****** Ambivalence de la société face à la déviance
+
+ Acteurs sociaux \Rightarrow Individus, Organisations, États
+
+ \Downarrow
+
+ \Rightarrow Posent des actes de déviance
+   - Incapacité à en faire la promoiton dans la mesure où c'est répréhensible
+
+ \Rightarrow Subissent les conséquences
+   - Difficultés à se plaindre ((Si on se plain on se condamne soi même parce que
+     nous aussi commettons des actes de déviances))
+
+***** Partie 2 Incursion dans la vie privée
+****** 2.1 Dispositifs légaux
+ - Différence entre les divers pays
+ - Exemple Canada/Québec
+   - Loi sur la protection des informations personnelles.j
+
+
+****** 2.2 Évolution technologique et acteurs sociaux
+- Illustration dans le domaine de la télévision
+  1. Modes de production et de diffusion de la télévision sont limités
+     
+     Limites technologiques
+     
+     - Nombre de canaux limités
+
+     - T.V appartient à l'état
+
+     - Les émissions sont diffusées à des périodes données
+
+     - ((La télé a un rôle social important)
+
+  2. Évolution technologique (fibre optique, etc)
+     - Les modes de produciton et de diffusion de la télévision vont changer.
+     - Les capacités technologiques induisent ...
+       - Quantité exponentielle de chaînes
+
+       - TV appartient au secteur privé
+       - Le privé tient à rentabiliser la chaîne
+       - \Rightarrow Modification des contenus (Mise en relief du citoyen \Lambda)
+         - Émergence de la télé-réalité.
+         - \Rightarrow On assiste au *décloisonnement entre la vie privée et la vie
+           publique*. 
+*** Cours 10 Modes de gestion des oppositions et des déviances
+**** Plan
+Partie 1 Différents modes
+1. Dispositifs de régulation
+   - Definition
+   - Composantes
+   - Limites
+2. Normes ISO
+   - Definition
+   - Contexte
+**** Rappel Cours 9
+Notion de déviance \Rightarrow Line avec Fondements Sociologiques
+\rightarrow Appropriation
+
+Caractère évolutif 
+(( Appropriation + Caractere evolutif \rightarrow Lien à faire entre les cours 3 et 9))
+- On a pris comme exemples de la délinquance informatique
+
+- Postulats et Raisons
+  
+  ((On ne peut pas éviter la déviance))
+
+- Ambivalence des entités sociales face à ce phénomène.
+
+- La déviance se matérialise sous deux formes
+  - Subir la conséquence des actes *d'une autre personne*
+  - Subir la conséquence des actes *de ses propres actes*
+
+- Incursion dans la vie privée
+
+*Ceci amène à considérer les modes de gestion.*
+**** Cours
+:PROPERTIES:
+:toc: 5
+:END:
+
+***** Partie 1 Différents modes
+****** Dispositifs de régulation
+******* Définition
+
+ Ensemble de règles formelles ou informelles visant à encadrer les comportements
+ des acteurs sociaux.
+
+ *Exemples*
+ - Lois
+ - Règles culturelles
+ ((Ces dispositifs de régulation devienntent des normes, des repères))
+******* Composantes
+ En sociologie, on distingue trois types de régulation.
+******** Régulation de contrôle
+ Une entité qui établit des règles qui s'appliquent à tous.
+
+ Cette entité *a un pouvoir de sanction*.
+
+ *Exemples*
+ - L'état
+
+******** Régulation Mixte
+ L'entité de contrôle délègue son pouvoir à une organisation, généralement
+ paritaire qui établit les règles pour un secteur.
+
+ *Exemples*
+ - Au québec
+   - CSST
+   - CNT
+ - Au canada
+   - CRTC
+
+ {{J'attendais qu'il commence à parler de l'OIQ et pourquoi il parlait du CRTC
+ mais dans le fond, l'OIQ régule les ingénieurs, pas vraiment une technologie
+ alors que la CSST régule des technologies dans les environnements de travail et
+ le CRTC qui régule les technologies de communciation.}}
+******** Régulation autonome
+
+ Un groupe qui se dote de ses propres règles, celles-ci s'appliquent uniquement
+ aux membres du groupe.
+
+ *Exemples*
+ - Équipe de travail dans un cours
+******* Application et limites des 3 dispositifs de régulation
+ 1. Régulation de contrôle : ((Fait un affaire socratique pour nous faire dire
+    que "NON" la régulation autonome ne peux pas opérer sur l'internet.
+
+ 2. Régulation autonome : ((Socratique pour dire que "Non" parce que si l'autre
+    est pas dans mon groupe internet whatever,
+
+ 3. Régulation mixte : ((Même la régulation mixte ne peut pas donner de réels
+    résultats.
+
+ ((On voit que les systèmes de régulations ne peuvent pas tout faire))
+******* Plusieurs limites
+ - La *technologie évolue plus vite que les lois*
+ - Le web ne s'arrête pas aux frontières alors que les lois ne s'appliquent
+   uniquenment au sein d'un espace géographique.
+ - Les organisations policières ne mettent pas les ressources adéquates.
+
+
+
+****** Normes ISO
+
+******* Définition
+Ensemble de règles basées sur des dimensions organisationnelles.  Pour être plus
+précis: de gestion organisationnelle
+- Qualité
+- Environnement
+visant à établir les pratiques de référence (les "meilleures pratiques").
+
+*NOTE* La norme ISO porte le même nom que l'organisation ISO.
+
+*NOTE* Les normes ISO sont volontaires.  Une organisation décide de s'y
+conformer.  {{Ça peut être préférable et obligatoire en pratique.}}
+
+******* Contexte
+
+- Étant donné que c'est volontaire, pourquoi les organisation adoptent-elles les
+  normes ISO?
+
+- Le constat d'une période industrielle à poste industrielle ((cours 2))
+  - Reconnaissance de la mondialisation \rightarrow Règles de l'OMC
+  - Répartition des zones de production et de consommation
+  - Concurrence mondialisée alors que les contextes sont différents.
+
+  \Rightarrow *Nécessité d'évaluer les organisations sur les mêmes bases*
+
+- L'économie de la qualité fait que les compagnies veulent la certification ISO
+  qui garantit la qualité de leur produit.
+******* Démarche d'élaboration par iso
+
+- Mise en place d'un comité
+- Comité (Experts industrie, Société Civile, États).
+- ISO Énonce/rédige un mandat
+- comité reçoit le mandat établit un plan de travail
+- Le comité élabore la proposition, qui est discutée et testée
+- *Le comité établit le cahier de charge*
+- Quand le cahier de charge est établi, il revient à l'organisation ISO d'en
+  assurer la mise en oeuvre.
+
+******* Démarche de certification
+
+Une entreprise/organisatin voulant être certifiée (ex: ISO 9001 (qui porte sur
+la qualité)).
+
+L'organisation fait une requête auprès de ISO ou d'un auditeur agréé.
+
+
+1. Audit de l'organisation ((sur la base du cahier de charge)).
+2. Action à mettre en oeuvre pour se conformer.
+3. *Plan de mise en oeuvre* ((bonne vieille gestion de projet))
+   - avec des jalons (milestones) 
+4. Exécution (ex implantation des pratiques de qualité)
+5. Suivi conformité et certification
+
+Tout ce processus est à la charge de l'organisation/entreprise requérente
+
+******* Avantages d'être certifié ISO
+
+- On se démarque des par rapport aux entreprises concurrentes.
+- C'est souvent un prérequies pour certaines soumissions
+  ((Ex: pour la stm, les "rammes" de métro {{pas sur quel mot il a dit}},
+  l'appel d'offre demandait une compagnie ISO bla bla))
+- C'est une amélioration substantielle des pratiques de gestion \Rightarrow Efficience.
+
+****** Gestion du changemnt
+******* Définition
+- Gestion fait référence aux activités de P.O.D.C. (Planifier, Organiser,
+  Diriger, Contrôler)
+
+- Gestion du changement correspond aux activités de PODC permettant à une
+  organisation de se transformer, de s'adapter. De passer d'une situation
+  non-performante à une situation perforamnte.
+
+----------
+
+******* Gestion du changement et Gestion de projet
+
+- Gestion du changement = gestion de projet
+  - Contrainte de temps : Échéancier
+  - Obligation de résultats
+  - Des ressources dédiées
+  - Perspective multidisciplinaire
+- Nécessité de distinguer Projet vs Gestion Conventionnelle
+- Comment se déploie un projet
+  - Idéation {{WTF is that word lol}}
+  - Conception/Étude
+  - Planification/Réalisation
+  - Tests
+  - Transfert a l'exploitant
+
+*Le PMI* project management institute, PM BOOK
+
+******* Activités
+- Enquête auprès de ceux qui doivent changer leurs pratiques.
+- Analyse des besoins des employés
+- Établir un plan de formation
+- Établir un plan de communication
+- Mettre en place un comité paritaire
+- Mettre un place un cservice d'accompagnement
+- Mettre en place un système d'incitatifs
+******* Cadres théoriques
+
+Comment les acteurs sociaux pensent et structurent les projets de changement.
+******** Tableau
+|-------------------+--------------------+-----------------+--------------|
+| Cadres théoriques | Technologie        | Acteur          | Organisation |
+|-------------------+--------------------+-----------------+--------------|
+|-------------------+--------------------+-----------------+--------------|
+| Déterminisme      | Objet Abstrait     | Rôle faible     | Déterminée   |
+|                   |                    | subit           |              |
+|-------------------+--------------------+-----------------+--------------|
+| Théorie du        | Offre des          | Exerce un choix | Variable     |
+| choix rationnel   | Possibilités       | d'adaptation    | Modératirice |
+|                   | d'adaptation       |                 |              |
+|-------------------+--------------------+-----------------+--------------|
+| Internationalisme | Combinaison de     | En interaction  | Réseau       |
+|                   | Facteur humain     | base du succès  | d'acteurs    |
+|                   | +                  |                 |              |
+|                   | Facteurs matériels |                 |              |
+|-------------------+--------------------+-----------------+--------------|
+
+1. Déterminisme = Le succès d'une technologie est déterminé uniquement par les
+   fonctions de la technologie.
+   
+   ((on met l'accetn sur l'outil, si j'ai le bon outil tout va vien aller))
+
+2. Théorie du choix rationnel
+
+   - Une technologie offre des possibilités.
+   - Celles-ci vont être utilisées par les acteurs sociaux.
+
+   ((être rationnel signifie prendre la décision qui maximise bla bla, ce qui
+   peut mener à une situation ou tout le monde tire la couverture de son bord))
+
+3. Interactionnisme
+
+   - La technologie est appropriée
+   - Réseau d'acteurs
+  
+   \Rightarrow Concensus
+
+   1. Interaction entre les acteurs sociaux
+   2. Négociation
+   3. Concensus
+
+((Les gestionnaires et ingénieurs peuvent faire l'erreur de tomber dans le
+déterminisme ou la théorie du choix rationnel et négliger l'appropriation de la technologie.
+
+
+***** Partie 2 Groupes de pression
+
+****** Groupes de pression
+
+Cours 4,5,6 \Rightarrow Impacts, Techno, TCS
+
+\Downarrow
+
+Cours 8,9 \Rightarrow Réactions, Oppositions/Déviances
+
+\Downarrow
+
+Cours 10 \Rightarrow  Modes de gestion, de régulation Règles \Rightarrow Suscitent des
+contre-réactions, ex: Groupes de pression et Lobbys.
+
+******* Définition de groupes de pression (Lobby)
+
+Un groupe de pression représente un groupe d'acteurs sociaux représentant des
+intérêts privés.
+
+*But*: Agir auprès des déscideurs afin que les dispositifs (règles)
+touchent/affectant le moins possible les intérêts qu'ils défendent.
+
+******* Ressources et acteurs
+
+- GP bénificient des ressources de secteurs défendus
+- Plus un secteur est économiquement important, plus le G.P. dispose de
+  ressources.
+- Financer les activités sociales (tournois, concours, fête, etc (ex: Le
+  GrandPrix de Montréal était financé jusqu'à y'a pas longtemps par les
+  compagnies de cigarettes)).
+- Acheter des encarts publicitaires
+- Financer des études, des experts
+
+******* Deux visions des groupes de pression
+
+Les deux visions voient le groupe de pression comme un mécanisme pour faire
+valoir des intérêts spécifiques.
+******** Vision corporatiste
+
+Le groupe de pression a légalement le droit d'exister ((Il a parlé de M. Landry
+qui a fait passer une loi pour donner un cadre législatif aux groupes de
+pression)).
+
+Analyse d'Adam Smith, il a écrit un livre important en économie.
+- Chaque nation a une dotation natureelle en ressoursces
+- Étant donné ces dotations, je vais exploiter mes ressoursces et les échanger
+  avec d'autres nations.  Exploiter les ressources à moindre coûte aussi
+
+******** Vision démocratique
+
+La vision démocratique nous sommes dans un système de démocratie: 1 personne -
+une voix.
+
+Élection des élus qui  rennent des décisions auprès de tous.
+
+Les intérêts spécifiques sont pris en compte dans le processus démocratique
+((donc on n'a pas besoin des GP pour veiller à des intérêts spécifiques)).
+
+******** Tableau
+
+| Vision Corporatiste                                                                           | Vision démocratique                  |
+|-----------------------------------------------------------------------------------------------+--------------------------------------|
+| GP est légal et légitime                                                                      | GP est certes légal, mais illégitime |
+| Basée sur l'analyse d'Adam Smith                                                              |                                      |
+| En laissant les individus s'occuper des intérets particuliers, on sert l'intérêt généralement |                                      |
+| \Rightarrow Les GP s<occupent des intérêts sectoriels et donc servent l'intérêt général                 |                                      |
+
+
+
+Les deux ont en partie raison et en partie tort.
+
+- Les intérêts particuliers ne sont pas toujours servis par la démocratie à
+  cause de la bullshit de ligne de partie.  Le député de ton cartier ne vote pas
+  selon les besoins mais bien selon la ligne de parti.
+
+d'autre part
+
+- La vision corporatiste est empreinte de malversation ((commission charbonneau)).
+
+
+Les deux visions nous donne une image de groupes de pression.
+
+******* Arguments pour et contre
+
+******** Contre
+- Le groupe de pression participe à différentes pratiques délictuelles
+- Les gp font peu état de transparence
+- Les GP établissent des rapports de force vis à vis les autres acteurs sociaux
+  (ex: chantage à l'emploi).
+
+******** Pour
+- Peuvent contribuer au développement d'un secteur d'activité. Ex: Le secteur du
+  multimédia au Québec (ubisoft, nanoquébec).
+- Contribuent aussi développement des connaissances en finançant les recherches.
+- Peuvent enrichir le débat social
+*** Cours 11 Notes de Saïf et de Cristain
+
+** Retour sur l'intra
+
+*** Question 1
+Délégations : Citoyens vs État
+2 Délégation : Profane vs profs + chercheurs + scientifiques
+
+Les cultures s'approprient
+*** Question 2
+
+Première page de l'article.  L'auteur indique trois phases
+
+Constitution d'un marché (concepteurs et R&D qui agissent)
+
+Diffusion (Expérimentation et tests). C'est la période des retours et
+coinventions
+
+Impacts.
+
+*** Question 1
+
+Modèle de développement social de la technologie
+
+3 représentations de l'appropriation
+- Utiliser la technologie conformément à sa conception
+- Adapter la technologie à ses propres besoins
+- La technologie devient un prétexte pour de nouvelles interactions sociales
+
+*** Question 2
+
+- Impacts sur l'emploi (reference aux postes) \check 
+- Impacts sur le travail (ref aux taches) \check
+- Impacts sur la culture (normes et pratiques sociales) 
+
+*** Question 3
+
+- Performance sociale ...
+
+*** Question 4 
+
+3/3 !!!
+
+*** Question 5
+
+Objectifs
+- Parler des interactions générées dans le corps social (la techno modifie le
+  corps social ...)
+Relation
+- La société influence la techno et vice versa
+
+Exemple
+- 
+** Textes du recueil
+*** Lejeune, M. L'apport de la sociologie de la technologie à la professionnalisation de l'ingénieur.
+
+La professionalisation de l'ingénieur, sous l'angle de la sociologie de la
+technologie, s'iscrit dans les énoncés de principe et les normes canadiennes
+d'agrément des programmes universitaires d'ingénierie. La question du
+féveloppement des technologies (production, diffusion et appropriation) se
+rattache en tous ses points aux qualistés personnelles et sociales de
+l'ingénieur auxquelles féfèrent les écoles d'ingénierie et leurs organismes de
+régulation. La profession d'ingénieur s'enracine d'ailleurs dans les milieux
+industriels et sociaux ede plus en plus sensibles aux dimesnions sociales de la
+technologie, considérant les nouvelles dynamiques qui s'y rattachent en regard
+des impacts de la technologie sur la société et dans les entreprises.
+
+*** Texte 7 Les *Trois leviers stratégiques* de la réussite du changement technologique

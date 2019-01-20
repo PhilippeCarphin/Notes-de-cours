@@ -1,0 +1,4828 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-01-19 Sat 15:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Économie de l'ingénieur</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Philippe Carphin" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Économie de l'ingénieur</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orga4412c7">1. Économie de l'ingénieur</a>
+<ul>
+<li><a href="#org3d1745f">1.1. Cours</a>
+<ul>
+<li><a href="#orgdff1f98">1.1.1. Cours 1</a></li>
+<li><a href="#org20f0294">1.1.2. Cours 2 État des flux de trésorie &amp; Ratios financiers</a></li>
+<li><a href="#org741c142">1.1.3. Cours 3 Immobilisations et amortissement</a></li>
+<li><a href="#org4c4e620">1.1.4. Cours 4 Intérêt et valeur de l'argent dans le temps</a></li>
+<li><a href="#org5b4dec5">1.1.5. Cours 5 Taux d'intérêts nominal et réel</a></li>
+<li><a href="#org16d70c8">1.1.6. Cours 6 Seuil de rentabilité = Point Mort et analyse marginale</a></li>
+<li><a href="#org4add436">1.1.7. Cours 7 VAN, IR, DR, TRI, TRIM</a></li>
+<li><a href="#orgae00fab">1.1.8. Cours 8(Anas)</a></li>
+<li><a href="#org3a71894">1.1.9. Cours 8 Métriques de comparaison (AE, CAE, RC, DUE), remplacement</a></li>
+<li><a href="#org5180c55">1.1.10. Cours 9,10 : Impôt</a></li>
+<li><a href="#org7564418">1.1.11. Cours 11,12 : Risque</a></li>
+</ul>
+</li>
+<li><a href="#org79d032e">1.2. Don't forget:</a></li>
+<li><a href="#org0f89d3b">1.3. Matière</a>
+<ul>
+<li><a href="#orga74140f">1.3.1. États financiers</a></li>
+<li><a href="#org5ef27c6">1.3.2. Ratios : Voir Cours 2.1 Ratios.pdf</a></li>
+<li><a href="#org7a359bd">1.3.3. Immobilisations et amortissement</a></li>
+<li><a href="#org1a5ca44">1.3.4. Intérêt et valeur de l'argent dans le temps</a></li>
+<li><a href="#org98c2332">1.3.5. Interpolations:</a></li>
+</ul>
+</li>
+<li><a href="#orgdbff311">1.4. Travaux Pratiques (TP)</a></li>
+<li><a href="#org26ece3d">1.5. Feuille de formules</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga4412c7" class="outline-2">
+<h2 id="orga4412c7"><span class="section-number-2">1</span> Économie de l'ingénieur</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org3d1745f" class="outline-3">
+<h3 id="org3d1745f"><span class="section-number-3">1.1</span> Cours</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-orgdff1f98" class="outline-4">
+<h4 id="orgdff1f98"><span class="section-number-4">1.1.1</span> Cours 1</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+<b>J'ai manqué ce cours</b>.
+Le sujet est les états financiers.
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org80e4cb0"></a>Plan<br />
+<div class="outline-text-5" id="text-1-1-1-1">
+<ul class="org-ul">
+<li>Introduction</li>
+<li>Objectifs Généraux du cours</li>
+<li>Formes d'entreprise</li>
+<li>États financiers (présentation)
+<ul class="org-ul">
+<li>État de la situation financière</li>
+<li>État des résultats</li>
+<li>État des variations des capitaux propres</li>
+<li>État des flux de trésorie (prochain cours)</li>
+</ul></li>
+<li>Exemple</li>
+</ul>
+</div>
+</li>
+
+<li><a id="orgdda4c96"></a>Formes d'entreprise<br />
+<ol class="org-ol">
+<li><a id="orgc8073ea"></a>Formes Juridiques<br />
+<ol class="org-ol">
+<li><a id="org3a34335"></a>Entreprise individuelle<br /></li>
+<li><a id="org199fddc"></a>Société de personnes<br /></li>
+<li><a id="org0466f5b"></a>Société de capitaux<br /></li>
+<li><a id="org06ed2ff"></a>Coopérative<br /></li>
+</ol>
+</li>
+<li><a id="orgcc7c887"></a>Formes économiques<br />
+<ol class="org-ol">
+<li><a id="org42b75ab"></a>Entreprise industrielle<br /></li>
+<li><a id="org05682ad"></a>Entreprise comemrciale<br /></li>
+<li><a id="orgf0312c0"></a>Entreprise de services<br /></li>
+</ol>
+</li>
+
+<li><a id="org467ebf6"></a>Tableau sur les formes juridiques<br /></li>
+</ol>
+</li>
+
+<li><a id="orgc02dfd2"></a>Comptabilité<br />
+<ol class="org-ol">
+<li><a id="orgc00ad5a"></a>Définition<br />
+<div class="outline-text-6" id="text-1-1-1-3-1">
+<p>
+C’est unsystème d’informationfinancière permettant de:
+-enregistrerles opérations d’une entreprise
+-lesregrouper
+-les classer
+-les présenter(dans les états financiers É/F) pour eninterpréter les résultats.
+</p>
+</div>
+</li>
+<li><a id="orgd7ac7e0"></a>Rôle<br />
+<div class="outline-text-6" id="text-1-1-1-3-2">
+<p>
+Transformerl’ensemble des données financières en informations utiles et
+pertinentes(É/F) pour les divers groupes qui forment l’environnement économique
+de l’entreprise.
+</p>
+
+<p>
+Depuis janvier 2011, les sociétés ouvertes (cotées en bourse) doivent adopter
+les Normes internationales d'information financière (IFRS).
+</p>
+</div>
+</li>
+</ol>
+</li>
+
+<li><a id="orgf11bfac"></a>Notions de base<br />
+<div class="outline-text-5" id="text-1-1-1-4">
+<ul class="org-ul">
+<li>Personnalité de l’entreprise (entité séparée)</li>
+<li>Indépendance des exercices et rattachement des
+charges aux produits</li>
+<li>Coût historique (valeur d’acquisition)</li>
+<li>Comptabilisation (constatation des produits et charges)</li>
+<li>Permanence des méthodes comptables</li>
+<li>Prudence</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org721dea3"></a>étapes du système comptable<br />
+<div class="outline-text-5" id="text-1-1-1-5">
+<p>
+<b>NOTE</b> Seule la partie «Établissement des états financiers» sera traitée dans ce cours
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="orgc97628c"></a>enregistrement des opérations<br />
+<div class="outline-text-6" id="text-1-1-1-5-1">
+<p>
+journal général
+</p>
+</div>
+</li>
+
+<li><a id="orga742046"></a>report dans le grand livre général<br />
+<div class="outline-text-6" id="text-1-1-1-5-2">
+<p>
+comptes en T
+</p>
+</div>
+</li>
+
+<li><a id="org7b60b93"></a>Établissement de la balance de vérification<br /></li>
+
+<li><a id="orgd361a94"></a>Régularisation et clôture des comptes<br />
+<div class="outline-text-6" id="text-1-1-1-5-4">
+<p>
+Charges, Produits
+</p>
+</div>
+</li>
+
+<li><a id="org7c6963b"></a>Établissement des états financiers<br />
+<div class="outline-text-6" id="text-1-1-1-5-5">
+<ul class="org-ul">
+<li>état des résultats</li>
+<li>état des variations des capitatux propres</li>
+<li>état de la situation financière</li>
+<li>état des flux de trésorerie</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+
+<li><a id="orga67fedf"></a>Compte en T<br /></li>
+<li><a id="org4d90847"></a>Présentation des états financiers<br />
+<ol class="org-ol">
+<li><a id="orgcf8af27"></a>État des résultats<br />
+<ol class="org-ol">
+<li><a id="org58a5b34"></a>Tableau<br />
+<div class="outline-text-7" id="text-1-1-1-7-1-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&lt;Nom compagnie&gt;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">État des résultats</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">du j j-mm-aaaa au jj-mm-aaaa</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><span class="underline">produits</span></td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Ventes</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">- Couts des ventes</td>
+<td class="org-left">(x)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Résultats bruts</b></td>
+<td class="org-left">XX</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Produits de location</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Produits d'intérêts</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Gains sur disposition (prix de vente - valeur comptable)</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left"><span class="underline">Charges</span></td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Écliectricité</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Salaires</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Assurances</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Amortissement (Sans effet sur la trésorie)</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Dépréciation des comptes client (Sans effet sur la trésorie)</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Pertes sur disposition d'actif</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left"><span class="underline">Resultat net</span></td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">= Sum(Produits) - Somme(Charges)</td>
+<td class="org-left">XX</td>
+</tr>
+
+<tr>
+<td class="org-left"><span class="underline">Resultat net après impôts</span></td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">= Resultat net - impot</td>
+<td class="org-left">XX</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><a id="org40ed0a5"></a>Composantes<br />
+<div class="outline-text-7" id="text-1-1-1-7-1-2">
+<ul class="org-ul">
+<li>Actifs(A):ressources économiques que l’entreprise possède ou sur lesquelles
+elle exerce un contrôle et qui devraient lui procurer des avantages
+économiques maintenant ou dans le futur.</li>
+
+<li>Passifs(P):obligations qu’a l’entreprise envers des tiers et dont le
+règlement se fera par transfert d’actifs, la prestation de services ou tout
+autre avantage.</li>
+
+<li>Capitauxpropres(C): mise(s) defonds du(des) propriétaire(s) auxquelles
+s’ajoutent les résultats non distribués aux actionnaires sous forme de
+dividendes (société par actions) et le surplus d’apport.</li>
+</ul>
+</div>
+</li>
+<li><a id="org7b2606c"></a>Vérifications<br />
+<div class="outline-text-7" id="text-1-1-1-7-1-3">
+<p>
+Les éléments ici influencent l'état de variations des capitaux propres et la
+situation financière qui est vérifié avec l'équation comptable.
+</p>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org298023e"></a>État des variations des capitaux propres<br />
+<ol class="org-ol">
+<li><a id="org565f73c"></a>Tableau<br />
+<div class="outline-text-7" id="text-1-1-1-7-2-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&lt;nom de la compagine&gt;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">État des variations des capitaux propres</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">Période terminée le &lt;jj-mm-aa&gt;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Capital Social</td>
+<td class="org-left">RND</td>
+<td class="org-left">Surplus d'apport</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Solde de début</td>
+<td class="org-left">a</td>
+<td class="org-left">b</td>
+<td class="org-left">c</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Surplus d'apport de la période</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">h</td>
+</tr>
+
+<tr>
+<td class="org-left">Emission d'actions</td>
+<td class="org-left">d</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Rachat d'actions</td>
+<td class="org-left">(e)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Resultats de la periode</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">f</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Dividendes déclarés</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">(g)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Solde de fin</td>
+<td class="org-left">a + d - e</td>
+<td class="org-left">b + f - g</td>
+<td class="org-left">c + h</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+
+<li><a id="org1275713"></a>Explications<br />
+<div class="outline-text-7" id="text-1-1-1-7-2-2">
+<p>
+On prend a, b, c, de l'état des résultats.
+</p>
+
+<p>
+Émettre des actions augmente le capital social.  Les RDN de fin est notre RND
+précédent plus nos résultats de la période moins la partie des résultats qu'on a
+versé en dividendes.  Finalement le surplus d'apport est le surplus d'apport n-1
+plus le surplus d'apport que les propriétaires on mis durant la période.
+</p>
+</div>
+</li>
+<li><a id="org2cefe53"></a>Vérifications<br />
+<div class="outline-text-7" id="text-1-1-1-7-2-3">
+<p>
+Les éléments ici influencent l'état de la situation financière qui est vérifié
+avec l'équation comptable.
+</p>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org94c2325"></a>État de la situation financière<br />
+<ol class="org-ol">
+<li><a id="org15e6bc9"></a>Tableau<br />
+<div class="outline-text-7" id="text-1-1-1-7-3-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&lt;Nom de la compagnie&gt;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">État de la situation financière</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">Au 31 décembre 2017</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">2017</td>
+<td class="org-left">2018</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><span class="underline">Actifs</span></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><span class="underline">Actifs courants</span> (&lt; 12 mois)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Encaisse</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Stocks</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Comptes Clients</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Placements à court terme</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">(Provision pour dépréciation des CC)</td>
+<td class="org-left">(x)</td>
+<td class="org-left">(x)</td>
+</tr>
+
+<tr>
+<td class="org-left">Produits à recevoir</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Charges payées d'avance</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Total actifs courants</b></td>
+<td class="org-left">XX</td>
+<td class="org-left">XX</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><span class="underline">Actifs non-courants</span></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Immobilisation corporelles</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Équipement/Machines</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">(Amortissement cumulé Équipement/Machine)</td>
+<td class="org-left">(x)</td>
+<td class="org-left">(x)</td>
+</tr>
+
+<tr>
+<td class="org-left">Immeubles</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">(Amortissement cumulé immeubles)</td>
+<td class="org-left">(x)</td>
+<td class="org-left">(x)</td>
+</tr>
+
+<tr>
+<td class="org-left">Immobilisations incorporelles (breuvets, licences)</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Placements à long terme</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Total actifs non-courants</b></td>
+<td class="org-left">XX</td>
+<td class="org-left">XX</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><b>Total Actifs</b></td>
+<td class="org-left">XXX</td>
+<td class="org-left">XXX</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Passifs et Capitaux propres</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><span class="underline">Passifs courants</span></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Comptes fournisseurs</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Charges à payer</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Dividendes à payer</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Emprunts à court terme</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Obligations à court terme</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Produits différés (we owe merch to someone)</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Total pasifs courants</b></td>
+<td class="org-left">XX</td>
+<td class="org-left">XX</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><span class="underline">Passifs non courants</span></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Emprunts à long terme</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Hypothèque</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Total passifs non courants</b></td>
+<td class="org-left">XX</td>
+<td class="org-left">XX</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><span class="underline">Capitaux propres</span></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Capital social</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Résultats non distribués</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Surplus d'apport</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Total Capitaux Propres</b></td>
+<td class="org-left">XX</td>
+<td class="org-left">XX</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><b>Total passifs et capitaux propres</b></td>
+<td class="org-left">XXX</td>
+<td class="org-left">XXX</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><a id="orge4ee60e"></a>Vérifications:<br />
+<div class="outline-text-7" id="text-1-1-1-7-3-2">
+<p>
+Voir équation comptable A = P + CP
+Les éléments ici influencent l'état des flux de trésorie qui a ses propres vérifications.
+</p>
+</div>
+</li>
+<li><a id="org9f6bff6"></a>Remarques :<br />
+<div class="outline-text-7" id="text-1-1-1-7-3-3">
+<p>
+Document de synthèse qui expose à une date donnée la situation financière d'une
+entreprise en fournissant un résumé de l'ensemble de ses éléments d'actif (A),
+de passif(P)et de capitaux propres (C).
+</p>
+
+<ol class="org-ol">
+<li>La situation financière se compose de deux parties principales: les
+éléments d'actif et les sources d'actif (passif et capitaux propres).</li>
+<li>Le total des éléments d'actif doit toujours égaler le total des sources
+d'actif.
+L'ÉQUATION COMPTABLE : A = P + C doit toujours être vérifiée.</li>
+<li>À tout moment, il est possible d'établir les capitaux propres d'une
+entreprise.
+A - P = C</li>
+</ol>
+</div>
+</li>
+<li><a id="orgca94c37"></a>Équation comptable<br />
+<div class="outline-text-7" id="text-1-1-1-7-3-4">
+<p>
+L'ÉQUATION COMPTABLE : A = P + C doit toujours être vérifiée.
+</p>
+</div>
+</li>
+</ol>
+</li>
+
+<li><a id="orgfc60f5b"></a>État des flux de trésorie (prochain cours)<br />
+<ol class="org-ol">
+<li><a id="org40284ed"></a>Tableau<br />
+<div class="outline-text-7" id="text-1-1-1-7-4-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Compagnie YY</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">État des flux de trésorie (méthode indirecte)</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">Du 1er Janvier au 31 décembre 2018</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Activités de opérationnelles</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">+ Resultat net</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Éléments sans effets sur la trésorie</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">(amortissement)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">(Dépréciation des comptes clients)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Delta PC (Fin - Début) (exclure prov pour dépréc CC)</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Delta AC (Début - Fin) (exclure encaisse et placements CT)</td>
+<td class="org-left">x</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><b>Total Activités Opérationnelles</b></td>
+<td class="org-left">XX</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Activités de financement</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">+ Émission d'actions</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">- Versement de dividendes</td>
+<td class="org-left">(x)</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Nouvel emprunts</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">- Remboursement d'emprunts</td>
+<td class="org-left">(x)</td>
+</tr>
+
+<tr>
+<td class="org-left">- Frais financiers</td>
+<td class="org-left">(x)</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><b>Total activités de financement</b></td>
+<td class="org-left">XX</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Activité d'investissement</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">- Achat d'actifs non courant</td>
+<td class="org-left">(x)</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Disposition d'actif non courant</td>
+<td class="org-left">x</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><b>Total Activités d'Investissement</b></td>
+<td class="org-left">XX</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Variation de la trésorie</td>
+<td class="org-left">XXX</td>
+</tr>
+
+<tr>
+<td class="org-left">Trésorie de début</td>
+<td class="org-left">XX</td>
+</tr>
+
+<tr>
+<td class="org-left">Trésorie de fin</td>
+<td class="org-left">XX</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+
+<li><a id="org20f2cfc"></a>Vérifications<br />
+<div class="outline-text-7" id="text-1-1-1-7-4-2">
+<blockquote>
+<p>
+&Delta;<sub>Tr</sub> = &Sigma;<sub>AO</sub> + &Sigma;<sub>AF</sub> + &Sigma;<sub>AI</sub>
+= &Delta;<sub>Encaisse</sub> + &Delta;<sub>PlacementsCT</sub>
+</p>
+
+<p>
+Tr<sub>Début</sub> = Encaisse<sub>Début</sub> + PlacementsCT<sub>Début</sub>
+</p>
+
+<p>
+Tr<sub>Fin</sub> = Encaisse<sub>Fin</sub> + PlacementsCT<sub>Fin</sub>
+</p>
+</blockquote>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org20f0294" class="outline-4">
+<h4 id="org20f0294"><span class="section-number-4">1.1.2</span> Cours 2 État des flux de trésorie &amp; Ratios financiers</h4>
+<div class="outline-text-4" id="text-1-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="orgbbc81c6"></a>Etat de flux de trésorie mis avec les états financiers dans cours 1<br /></li>
+<li><a id="org0067f42"></a>Ratios : Voir <a href="https://moodle.polymtl.ca/pluginfile.php/512706/mod_folder/content/0/Cours%202.1%20-%20Ratios.pdf?forcedownload=0">Cours 2.1 Ratios.pdf</a><br />
+<ol class="org-ol">
+<li><a id="orgb86af6a"></a>Ratios de liquidité<br />
+<ol class="org-ol">
+<li><a id="org004eb0e"></a>Ratio de liquidité courante (ratio du fond de roulement)<br />
+<div class="outline-text-7" id="text-1-1-2-2-1-1">
+<pre class="example">
+actif courants
+---------------
+passif courants
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="org47e3d23"></a>Interprétation<br />
+<div class="outline-text-8" id="text-1-1-2-2-1-1-1">
+<p>
+<b>Capacité d'une entreprise à faire face à ses obligations financières à court
+terme lorsqu'elles viennent à échéance</b>
+</p>
+<ul class="org-ul">
+<li>&lt; 1: la compagnie a de la misère à rembourser ses dettes</li>
+<li>&gt; 2: L'entreprise a trop de stocks</li>
+<li>[1.2, 2.0] : La majorité des analystes estiment que c'est idéal</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orga6249b8"></a>Ratio de liquidité relative (Ratio de liquidité immédiate)<br />
+<div class="outline-text-7" id="text-1-1-2-2-1-2">
+<pre class="example">
+actif courant - stocks - frais payés d'avance
+---------------------------------------------
+              passif courant
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="orgb8f667a"></a>Interprétation<br />
+<div class="outline-text-8" id="text-1-1-2-2-1-2-1">
+<p>
+*Indique si on peut rembourser le passif à court terme sans avoir à vendre les
+stocks. Si le ratio est nettement inférieur au ratio de liquidé courante, cela
+signifie que l'actif à court terme dépend étroitement des stocks.*
+</p>
+<ul class="org-ul">
+<li>Idéal : [1,2]</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a id="orge8633bf"></a>Ratios d'endettement<br />
+<ol class="org-ol">
+<li><a id="orgd150f40"></a>Ratio d'endettement<br />
+<div class="outline-text-7" id="text-1-1-2-2-2-1">
+<pre class="example">
+passif total
+------------
+actif total
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="org444dc4e"></a>Interprétation<br />
+<div class="outline-text-8" id="text-1-1-2-2-2-1-1">
+<p>
+Capacité de respecter ses engagements à long terme
+</p>
+<ul class="org-ul">
+<li>&lt; 30% : Excellent</li>
+<li>[30%, 36%] : bon</li>
+<li>&gt; 40% : Problématique</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgac3610a"></a>Ratio de la couverture des intérêts<br />
+<div class="outline-text-7" id="text-1-1-2-2-2-2">
+<pre class="example">
+Résultat avant intérêts et impôts
+---------------------------------
+       Intérêts
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="org8bbd4b3"></a>Interprétation<br />
+<div class="outline-text-8" id="text-1-1-2-2-2-2-1">
+<p>
+Indique dans quelle mesure les intérêts débiteurs sont couverts par les flux de
+trésorie de la société.
+</p>
+<ul class="org-ul">
+<li>&lt; 1 : La société peut éprouver de véritables difficultés à régler ses intérêts
+débiteurs et le risque de défaut de paiement est jugé élevé.</li>
+<li>&gt; 1.5 : Idéal</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a id="org6cdffdf"></a>Ratios de performance<br />
+<ol class="org-ol">
+<li><a id="org861660f"></a>Ratio de rotation de l'actif<br />
+<div class="outline-text-7" id="text-1-1-2-2-3-1">
+<pre class="example">
+      Ventes nettes
+-------------------------
+Valeur moyenne de l'actif
+
+Valeur moyenne = (montant de fin + montant de début) / 2
+Ventes nettes = ventes moins les rendus, rabais et escomptes sur les ventes
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="org8d3fc93"></a>Interprétation<br />
+<div class="outline-text-8" id="text-1-1-2-2-3-1-1">
+<ul class="org-ul">
+<li>Il indique le montant du chiffre d'affaires généré par chaque dollar investi
+dans l'actif total.</li>
+<li>Habituellement, plus le ratio est élevé, plus la gestion des actifs est
+optimale.</li>
+<li>Par exemple, un ratio de 0,60 $ indique que chaque dollar investi rapporte
+0,60 $ de ventes nettes.</li>
+<li>Ce ratio est utile pour se comparer à ses concurrents.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgb51328b"></a>Ratio de rotation des comptes clients<br />
+<div class="outline-text-7" id="text-1-1-2-2-3-2">
+<pre class="example">
+         ventes nettes
+----------------------------------
+Valeur moyenne des comptes clients
+
+Valeur moyenne = (montant de fin + montant de début) / 2
+Ventes nettes = ventes moins les rendus, rabais et escomptes sur les ventes
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="orga3a310f"></a>Interprétation<br />
+<div class="outline-text-8" id="text-1-1-2-2-3-2-1">
+<ul class="org-ul">
+<li>Il mesure le nombre de fois qu’une entreprise transforme ses créances clients en
+ventes.</li>
+<li>Plus ce ratio est faible, plus l’entreprise s’expose aux risques de non-paiement de la
+part de ses partenaires, et plus elle devra revoir sa politique de crédit. Il s’agit donc,
+pour l’entreprise, de trouver un juste milieu entre les créances accordées et les ventes
+à générer via le crédit.</li>
+<li>Un ratio de 15 signifie que l’entreprise collecte 15 fois ses compte-client par année. On
+peut également conclure que ça lui prend en moyenne 24,3 jours pour collecter ses
+clients (ratio du délai de recouvrement des c.c. 365/15).</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org044a96e"></a>Ratio du délai de recouvrement des comptes clients<br />
+<div class="outline-text-7" id="text-1-1-2-2-3-3">
+<pre class="example">
+         365 jours
+----------------------------
+Rotation des Comptes Clients
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="org7031a28"></a>Interprétation<br />
+<div class="outline-text-8" id="text-1-1-2-2-3-3-1">
+<ul class="org-ul">
+<li>Mesure le nombre moyen de jours qu’il faut aux clients pour payer leurs comptes.</li>
+<li>Donne une indication de l’efficacité des politiques de crédit et de recouvrement en
+vigueur dans l’entreprise.</li>
+<li>Permet de déterminer si les modalités de crédit dont se sert l’entreprise sont réalistes.</li>
+<li>Pour déterminer si le délai moyen de recouvrement des comptes clients est adéquat, il
+suffit de le comparer aux modalités de crédit que vous offrez à vos clients.
+<ul class="org-ul">
+<li>Par exemple, si vous donnez à vos clients 30 jours pour payer leur facture et que
+votre délai moyen de recouvrement des comptes clients est de 45 jours, il y a un
+problème; en revanche, si le délai moyen est inférieur à 30 jours, c’est une bonne
+nouvelle.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgab3e7a5"></a>Ratio de rotation stocks<br />
+<div class="outline-text-7" id="text-1-1-2-2-3-4">
+<pre class="example">
+    Coûts des ventes
+-------------------------
+Valeur moyenne des stocks
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="org7ab06e0"></a>Interprétation<br />
+<div class="outline-text-8" id="text-1-1-2-2-3-4-1">
+<ul class="org-ul">
+<li>Un faible ratio de rotation est généralement de mauvais augure, car les produits ont
+tendance à s'abîmer s'ils restent trop longtemps dans un entrepôt.</li>
+<li>Les sociétés qui vendent des biens périssables ont un ratio de rotation très élevé.</li>
+<li>Ce ratio est utile pour se comparer à ses concurrents.</li>
+<li>Voici un lien utile afin de pouvoir comparer le ratio de votre entreprise à celui de votre
+secteur d’activité :
+<a href="https://www.bdc.ca/fr/articles-outils/boite-outils-entrepreneur/evaluation-entreprise/pages/rotation-stocks-outil-analyse-comparative.aspx?ChangeIndustry=1">https://www.bdc.ca/fr/articles-outils/boite-outils-entrepreneur/evaluation-entreprise/pages/rotation-stocks-outil-analyse-comparative.aspx?ChangeIndustry=1</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orge0b4826"></a>Ratio de rotation de l'actif immobilisé<br />
+<div class="outline-text-7" id="text-1-1-2-2-3-5">
+<pre class="example">
+            ventes nettes
+--------------------------------------
+valeur moyenne des actifs non courants
+
+Valeur moyenne = (montant de fin + montant de début) / 2
+Ventes nettes = ventes moins les rendus, rabais et escomptes sur les ventes
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="org7832de4"></a>Interprétation<br />
+<div class="outline-text-8" id="text-1-1-2-2-3-5-1">
+<ul class="org-ul">
+<li>Le ratio de rotation des immobilisations (rotation de l’actif immobilisé)
+indique combien de revenus génère chaque dollar investi dans les
+immobilisations.</li>
+<li>Habituellement, plus le ratio est élevé, plus la gestion des actifs
+immobilisés est optimale.</li>
+<li>Attention à l’interprétation du ratio: Une entreprise bien installée possédant
+de vieux équipements fortement amortie aurait un meilleur résultat en
+opposition à une plus jeune entreprise possédant de nouveaux équipements.</li>
+<li>Il faut donc comparer des entreprises possédant des immobilisations d’âge
+comparable.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a id="org74137fc"></a>Ratios de rentabilité (rendement)<br />
+<ol class="org-ol">
+<li><a id="org0a2ba01"></a>Ratio de la marge nette<br />
+<div class="outline-text-7" id="text-1-1-2-2-4-1">
+<pre class="example">
+Résultats nets
+--------------
+Ventes nettes
+
+Ventes nettes : ventes moins les rendus, rabais et escomptes sur les ventes
+Résultat net : résultat brut moins les charges
+Résultat brut : ventes moins le coût des vente
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="orgfd60152"></a>Interprétation<br />
+<div class="outline-text-8" id="text-1-1-2-2-4-1-1">
+<p>
+Rentabilité de l'exploitation
+Ce ratio indique la partie des ventes qui contribue au bénéfice de l'entreprise.
+</p>
+<ul class="org-ul">
+<li>Le ratio ne sert à rien si l'entreprise perd de l'argent, car elle ne fait
+alors pas de profit.</li>
+<li>Lorsque le ratio de marge bénéficiaire nette (marge nette) est faible, cela
+peut être attribuable à la stratégie prix et/ou à l'incidence que la
+concurrence a sur la marge.</li>
+<li>Une marge élevée est un bon signe</li>
+<li>Ce ratio est utile pour se comparer à ses concurrents.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org52fd5d0"></a>Ratio de la marge brute<br />
+<div class="outline-text-7" id="text-1-1-2-2-4-2">
+<pre class="example">
+Resultats bruts
+---------------
+ Ventes nettes
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="orgc354d7e"></a>Interprétation<br />
+<div class="outline-text-8" id="text-1-1-2-2-4-2-1">
+<p>
+Indique le niveau de bénéfice généré par l'entreprise.
+</p>
+
+<p>
+Ce ratio témoigne de la politique de fixation des prix de la société et de la majoration
+réelle des prix.
+</p>
+
+<p>
+Par exemple, si le ration de la marge bénéficiaire brute (marge brute) est de 33 %,
+cela signifie que le prix des produits est majoré de 50 % (1/(1-33 %))-100 %).
+</p>
+<ul class="org-ul">
+<li>Les résultats peuvent être biaisés si l'éventail de produits de la société est
+très large.</li>
+<li>Ce ratio se révèle très utile lorsqu'il est comparé à ceux des exercices
+antérieurs.</li>
+<li>En général, la marge bénéficiaire brute doit être stable. Elle ne doit pas
+fluctuer d'une période à l'autre.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgf2c4702"></a>Ratio de rentabilité<br />
+<div class="outline-text-7" id="text-1-1-2-2-4-3">
+<pre class="example">
+         résultats nets
+-----------------------------------
+valeur moyenne des capitaux propres
+
+Valeur moyenne = (Montant de fin + montant début)/2
+Résultat net = résultat brut moins les charges
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="org12628c9"></a>Interprétation<br />
+<div class="outline-text-8" id="text-1-1-2-2-4-3-1">
+<p>
+Ce ratio indique le taux de rendement que l'entreprise tire de l'investissement
+de ses propriétaires ou que les actionnaires obtiennent de leurs actions.
+</p>
+
+<p>
+Par exemple, si le ratio s'élève à 10 %, cela signifie que chaque dollar investi
+à l'origine produit un actif de 10 cents.
+</p>
+
+<ul class="org-ul">
+<li>Les sociétés à forte croissance devraient obtenir un rendement élevé des capitaux
+propres.</li>
+<li>Le rendement moyen des capitaux propres au cours des 5 à 10 dernières années
+donne une meilleure idée de la croissance à long terme.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+
+<li><a id="orgdc08cb2"></a>Ratios de la valeur marchande<br />
+<ol class="org-ol">
+<li><a id="org45566bf"></a>Ratio du résultat par action<br />
+<div class="outline-text-7" id="text-1-1-2-2-5-1">
+<pre class="example">
+            Résultats nets
+------------------------------------------
+Nombre d'actions ordinaires en circulation
+
+Résultats net = résultat brut moins les charges
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="orgd2acc71"></a>Interprétation<br />
+<div class="outline-text-8" id="text-1-1-2-2-5-1-1">
+<p>
+C'est le ratio le plus utilisé. Il indique le montant du bénéfice généré par la
+société, par action.
+</p>
+<ul class="org-ul">
+<li>On compare ce ratio avec les exercices précédents ainsi qu’avec d’autres
+entreprises.</li>
+<li>Lorsque la société émet de nouvelles actions, il est beaucoup plus difficile
+de comparer le BPA de l'exercice en cours et des exercices précédents.</li>
+<li>Le ratio du bénéfice par action (BPA ou du résultat par action) est
+principalement utilisé pour les sociétés cotées en bourse. En soi, le BPA
+n'indique pas grand-chose. Par contre, si vous le comparez au BPA d'un
+trimestre ou d'un exercice antérieur, vous pouvez calculer le taux de
+croissance du bénéfice (par action) de la société. Par exemple, une entreprise
+qui augmente de 50 % en un an possède un excellent taux de croissance.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org10b9545"></a>Ratio du cours/résultats<br />
+<div class="outline-text-7" id="text-1-1-2-2-5-2">
+<pre class="example">
+Cours du marché ordinaire
+-------------------------
+Résultat par action
+
+Résultats net = résultat brut moins les charges
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="org8b154f8"></a>Interprétation<br />
+<div class="outline-text-8" id="text-1-1-2-2-5-2-1">
+<p>
+L'un des ratios les plus utilisés, il permet de comparer le prix courant au
+bénéfice afin de déterminer si le titre est surévalué ou sous-évalué. Il
+représente une attente quant au rendement futur de l'entreprise.
+</p>
+<ul class="org-ul">
+<li>En règle générale, lorsque le ratio est élevé, cela signifie que les
+investisseurs prévoient une forte croissance dans le futur.</li>
+<li>Le ratio cours/bénéfice (cours/résultats, C/B) moyen du marché est de 20 à 25
+fois le bénéfice.</li>
+<li>Les sociétés qui perdent de l'argent n'ont pas de ratio C/B.</li>
+<li>On compare ce ratio avec les exercices précédents ainsi qu’avec d’autres
+entreprises.</li>
+<li>Le ratio C/B ne détermine pas le cours de l'action. Un ratio C/B bas peut
+indiquer que le bénéfice de l'entreprise est stable ou qu'il croît lentement,
+comme il peut signifier que l'entreprise éprouve des difficultés financières.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org741c142" class="outline-4">
+<h4 id="org741c142"><span class="section-number-4">1.1.3</span> Cours 3 Immobilisations et amortissement</h4>
+<div class="outline-text-4" id="text-1-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="org10bc0e6"></a>Vocabulaire<br />
+<div class="outline-text-5" id="text-1-1-3-1">
+<p>
+<b>Actif immobilisé/Immobilisations</b> : 
+</p>
+<ul class="org-ul">
+<li>Destinés à être utilisés pour la production de bien ou pour gagner du revenu.</li>
+<li>Destinés à être utilisés de façon durable</li>
+<li>Non destinés à être vendus</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org7873bbc"></a>Catégories d'immobilisations<br />
+<ol class="org-ol">
+<li><a id="org541398c"></a>Immobilisations corporelles<br />
+<div class="outline-text-7" id="text-1-1-3-1-1-1">
+<ul class="org-ul">
+<li>Biens amortissables : 
+<ul class="org-ul">
+<li>Immeubles</li>
+<li>Biens qui s'épuisent</li>
+</ul></li>
+<li>Biens non-ammortissables : 
+<ul class="org-ul">
+<li>Terrain</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org85889f2"></a>Immobilisations incorporelles<br />
+<div class="outline-text-7" id="text-1-1-3-1-1-2">
+<ul class="org-ul">
+<li>R&amp;D</li>
+<li>Droits d'auteur</li>
+<li>Franchises</li>
+<li>Licenses</li>
+<li>Marque de commerce</li>
+<li>Autres propriétés intellectuelles</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+
+<li><a id="org73fc4cb"></a>Coût d'un actif immobilisé<br />
+<div class="outline-text-5" id="text-1-1-3-2">
+<p>
+L'idée est de prendre en compte 
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Coût de l'actif (prix affiché)</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Coûts de mise en service</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Autres frais comme transport, préparation, installation</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+
+
+<li><a id="org4f63072"></a>Amortissement<br />
+<ol class="org-ol">
+<li><a id="orgb68d382"></a>Amortissement linéaire<br />
+<div class="outline-text-6" id="text-1-1-3-3-1">
+<p>
+L'immobilisation passe du coût initial <b>P</b> à sa valeur résiduelle <b>R</b> en <b>n</b>
+années en perdant <b>(P-R)/n</b> à chaque année (sauf la première année où on prend
+une fraction de ce montant correspondant à la fraction d'année d'utilisation(m/12)).
+</p>
+
+<p>
+D<sub>1</sub> = (m/12) * (P-R)/n
+</p>
+
+<p>
+D<sub>t</sub> = (P-R)/n
+</p>
+</div>
+</li>
+
+<li><a id="orge2f6d90"></a>Amortissement à taux dégressif à taux constant<br />
+<div class="outline-text-6" id="text-1-1-3-3-2">
+<p>
+Aller de <b>P</b> à <b>R</b> en <b>n</b> étapes en multipliant par un facteur.
+</p>
+
+<p>
+L'idée est en fait de multiplier la valeur de l'année précédente par un facteur
+de sorte qu'après avoir multiplié par ce facteur <b>n</b> fois, on fini par avoir
+multiplié par <b>R/P</b>.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Année</th>
+<th scope="col" class="org-left">Valeur comptable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-left">P</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">P (R/P)<sup>1/n</sup></td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">P (R/P)<sup>1/n</sup> (R/P)<sup>1/n</sup></td>
+</tr>
+
+<tr>
+<td class="org-right">&hellip;</td>
+<td class="org-left">&hellip;</td>
+</tr>
+
+<tr>
+<td class="org-right">n</td>
+<td class="org-left">P ( (R/P)<sup>1/n</sup> )<sup>n</sup> = P (R/P) = R</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+En pratique, on utilise la terminologie suivante:
+On calcule un taux basé sur <b>P</b>, <b>R</b> et <b>n</b>:
+</p>
+
+<p>
+d = 1 - (R/P)<sup>1/n</sup>
+</p>
+
+<p>
+et au lieu de soustraire le même montant à chaque année, on ammortit de
+</p>
+
+<p>
+D<sub>t</sub> = CNA<sub>t-1</sub> * d
+</p>
+
+<p>
+Ce qui correspond à multiplier par (R/P)<sup>1/n</sup>:
+</p>
+
+<p>
+CNA<sub>t</sub> = CNA<sub>t-1</sub> - CNA<sub>t-1</sub> * d = CNA<sub>t-1</sub> * (1 - d) = CNA<sub>t-1</sub> * (R/P)<sup>1/n</sup>
+</p>
+</div>
+</li>
+
+<li><a id="org8baf2cf"></a>Amortissement Proportionnel à l'ordre inversé des années<br />
+<div class="outline-text-6" id="text-1-1-3-3-3">
+<p>
+Soit U<sub>t</sub> = (P-R)(n - t + 1)/k la perte de valeur dans la première année <b>d'utilisation</b>.
+</p>
+
+<p>
+Si les années d'utilisation sont désynchronisées avec les périodes d'éxercice,
+chaque année d'exercice ira chercher une partie de chaque année d'utilisation qui
+la chevauchent.
+</p>
+
+<p>
+Par exemple, pour une machinne achetée en fin avril de l'année 1: on a
+U<sub>1</sub> = (P-R)(n-1+1)/k, mais seulement (8/12)U<sub>1</sub> sera mis dans les livres pour
+l'année 1.
+</p>
+
+<p>
+D<sub>1</sub> = (8/12)U<sub>1</sub>
+</p>
+
+<p>
+À l'année fiscale 2, on a 4 mois qui font partie de la première année
+d'utilisation (U<sub>1</sub>).  L'amortissement à l'année 2 incluera (4/12)D<sub>1</sub> et aussi (8/12)D<sub>2</sub>
+où
+</p>
+
+<p>
+D<sub>2</sub> = (4/12)U<sub>1</sub> + (8/12)U<sub>2</sub>
+</p>
+
+<p>
+<b>En passant, k = n(n+1)/2.</b>
+</p>
+
+<p>
+/Sti que ça vaut pas la peine d'apprendre cet esti d'amortissement, come on.
+R'garde, si j'ai besoin de faire un amortissement comme ça, j'ouvrirai un
+livre./
+</p>
+</div>
+</li>
+
+
+<li><a id="orgf4a638c"></a>Amortissement Proportionnel à l'utilisation<br />
+<div class="outline-text-6" id="text-1-1-3-3-4">
+<p>
+Ben simple: on remplace le <b>n</b> par un volume total d'utilisation <b>V</b>.
+</p>
+
+<p>
+on a donc d = (P-R)/V
+</p>
+
+<p>
+L'amortissement à l'année <b>t</b> sera donné par le volume d'utilisation de v<sub>t</sub> de
+l'année <b>t</b>.
+</p>
+
+<p>
+D<sub>t</sub> = d*v<sub>t</sub>
+</p>
+
+<p>
+Par exemple, ça pourrait être une voiture, <b>V</b> serait le nombre total de
+kilomètres qu'on prévoit faire avec la voiture et v<sub>t</sub> serait le nombre de
+kilomètres faits durant l'année <b>t</b>.
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org4c4e620" class="outline-4">
+<h4 id="org4c4e620"><span class="section-number-4">1.1.4</span> Cours 4 Intérêt et valeur de l'argent dans le temps</h4>
+<div class="outline-text-4" id="text-1-1-4">
+<p>
+À cause des intérêts ou de l'inflation, un montant X<sub>1</sub> à un temps T<sub>1</sub> n'aura pas
+la même valeur à un temps T<sub>2</sub>.  Les méthodes dans cette sections permettent de
+trouver des équivalences entre des montants d'argents à différents temps.
+</p>
+
+<p>
+Les facteurs d'actualisations permettent d'établire ces équivalences.
+</p>
+
+<p>
+Les taux effectifs permettent de comparer des situations avec des fréquences de
+capitalisations différentes.
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org7db19fb"></a>Valeur de l'argent dans le temps<br />
+<ol class="org-ol">
+<li><a id="org1910782"></a>La base (P/F;i;n), (F/P;i;n)<br />
+<div class="outline-text-6" id="text-1-1-4-1-1">
+<p>
+Avec un taux i, un montant est multiplié par (1+i) à chaque période de
+capitalisation.
+</p>
+
+<p>
+Ainsi, un montant à l'année 0 aura été mutiplié par (1+i)<sup>n</sup> rendu à l'année n.
+</p>
+
+<p>
+Ainsi, si on connait le montant à l'année n, on peut connaître le montant à
+l'année 0 en multipliant par (1+i)<sup>-n</sup>.  Donc:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">(P/F, i, n)</td>
+<td class="org-left">(1+i)<sup>-n</sup></td>
+</tr>
+
+<tr>
+<td class="org-left">(F/P, i, n)</td>
+<td class="org-left">(1+i)<sup>n</sup></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+
+<li><a id="org5bd4d01"></a>Le reste<br />
+<div class="outline-text-6" id="text-1-1-4-1-2">
+<p>
+Avec des annuités, on dépose un montant A à chaque période. Au bout de n années,
+le premier montant A déposé à l'année vaudrait A(1+i)<sup>-1</sup> à l'année 0, le montant
+déposé à l'année 2 vaudrait A(1+i)<sup>-2</sup> à l'année 0.  Finalement le montant déposé
+à l'année n vaudrait A(1+i)<sup>-n</sup> à l'année 0.
+</p>
+
+<p>
+La somme est donc
+</p>
+
+<p>
+A((1+i)<sup>-1</sup> + (1+i)<sup>-2</sup> + &hellip; + (1+i)<sup>-n</sup>) = P
+</p>
+
+<p>
+Si on fait le même truc qu'avec une série géométrique pour trouver P/A = &xi;, nous
+avons
+</p>
+
+<p>
+&xi; = (1+i)<sup>-1</sup> + (1+i)<sup>-2</sup> + &hellip; + (1+i)<sup>-n</sup>
+</p>
+
+<p>
+et
+</p>
+
+<p>
+(1+i)&xi; = 1 + (1+i)<sup>-1</sup> + (1+i)<sup>-2</sup> + &hellip; + (1+i)<sup>-(n-1)</sup> 
+</p>
+
+<p>
+donc &xi; - (1+i)&xi; = -i&xi; = (1+i)<sup>-n</sup> - 1.
+</p>
+
+<p>
+ou bien i&xi; = 1 - (1+i)<sup>-n</sup> et donc &xi; = (P/A;i;n) = (1 - (1+i)<sup>-n</sup>)/i
+</p>
+
+<p>
+On peut multiplier par (1+i)<sup>n</sup>/(1+i)<sup>n</sup> = 1 pour obtenir
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">(P/A, i, n)</td>
+<td class="org-left">((1+i)<sup>n</sup> - 1)/(i(1+i)<sup>n</sup>)</td>
+</tr>
+
+<tr>
+<td class="org-left">(A/P, i, n)</td>
+<td class="org-left">1/(P/A, i, n)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+pour avoir une formule sans exposants négatifs.
+(setq org-pretty-entities nil)
+</p>
+
+<p>
+Les autres formules peuvent être obtenues ainsi:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">(F/A, i, n)</td>
+<td class="org-left">((1+i)<sup>n</sup> - 1)/i</td>
+</tr>
+
+<tr>
+<td class="org-left">(A/F, i, n)</td>
+<td class="org-left">i / ((1+i)<sup>n</sup> - 1)</td>
+</tr>
+
+<tr>
+<td class="org-left">(P/G, i, n)</td>
+<td class="org-left">&#x2026;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+
+<li><a id="org689192c"></a>A<sub>&infin;</sub><br />
+<div class="outline-text-6" id="text-1-1-4-1-3">
+<p>
+On veut que l'intérêt annuel nous donne un montant A<sub>&infin;</sub> à chaque année.
+</p>
+
+<p>
+P * (1 + i) = P + A<sub>&infin;</sub> 
+</p>
+
+<p>
+et on retire le A<sub>&infin;</sub> pour faire quelque chose avec, et on s'en fait donner un
+autre l'année d'après jusqu'à la fin des temps.
+</p>
+
+<p>
+Donc A<sub>&infin;</sub> = i * P &hArr; P = A<sub>&infin;</sub> / i
+</p>
+
+<p>
+Le P dans P = A<sub>&infin;</sub> / i est appelé le coût immobilisé
+</p>
+</div>
+</li>
+
+<li><a id="org89173ce"></a>Règle du 72<br />
+<div class="outline-text-6" id="text-1-1-4-1-4">
+<p>
+n = 0.72 / i ~ nombre d'années pour doubler au taux i
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+
+<div id="outline-container-org5b4dec5" class="outline-4">
+<h4 id="org5b4dec5"><span class="section-number-4">1.1.5</span> Cours 5 Taux d'intérêts nominal et réel</h4>
+<div class="outline-text-4" id="text-1-1-5">
+<p>
+Formules pour convertir entre différens taux d'intérêts équivalents et exprimés.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org8a13e00"></a>Taux nominal et périodes de capitalisation<br />
+<div class="outline-text-5" id="text-1-1-5-1">
+<p>
+Les termes d'un prêt ou d'un investissement expriment les taux sous la forme
+</p>
+
+<p>
+"Un taux nominal de i<sub>nominal</sub> par année capitalisée m fois par année"
+</p>
+
+<p>
+Ceci veux dire que m fois par année, le montant sera multiplié par (1 + i/m).
+Au bout d'une année, le montant aura été multiplié par (1 + i/m)<sup>m</sup>.
+</p>
+
+<p>
+On appelle i<sub>eff</sub> = (1 + i<sub>nom</sub>/m)<sup>m</sup>.
+</p>
+
+<p>
+Afin de pouvoir travailler avec des flux monétaires avec diverses fréquences de
+capitalisation, nous devons transformer ces taux en taux effectifs de la même fréquence.
+</p>
+</div>
+</li>
+
+<li><a id="orgd48d004"></a>Comparaisons<br />
+<div class="outline-text-5" id="text-1-1-5-2">
+<p>
+(1 + i<sub>1</sub>/m)<sup>m</sup> = (1 + i<sub>2</sub>/&nu;)^&nu;
+</p>
+
+<p>
+(1 + i<sub>1</sub>/m)<sup>m/&nu;</sup> = 1 + i<sub>2</sub>/&nu;
+</p>
+
+<p>
+i<sub>2</sub>/&nu; = (1 + i<sub>1</sub>/m)<sup>m/&nu;</sup> - 1
+</p>
+</div>
+</li>
+</ol>
+</div>
+
+
+<div id="outline-container-org16d70c8" class="outline-4">
+<h4 id="org16d70c8"><span class="section-number-4">1.1.6</span> Cours 6 Seuil de rentabilité = Point Mort et analyse marginale</h4>
+<div class="outline-text-4" id="text-1-1-6">
+</div>
+<ol class="org-ol">
+<li><a id="org97e171c"></a>Contexte<br />
+<div class="outline-text-5" id="text-1-1-6-1">
+<p>
+On suppose que les ventes et côuts suivent une relation
+</p>
+
+<p>
+Ventes = PV<sub>u</sub> * U
+</p>
+
+<p>
+Coûts = CV<sub>u</sub> * U + CF
+</p>
+
+<p>
+Coûts variables totaux = CV<sub>u</sub> * U
+</p>
+
+<p>
+où U est le nombre d'unités vendues d'un produit, PV<sub>u</sub>, CV<sub>u</sub> et CF sont des
+constantes en $/u, $/u et $ respectivement.
+</p>
+</div>
+</li>
+
+<li><a id="org56b10db"></a>Point Mort (Nombre d'unités qui rend les ventes égales aux coûts)<br />
+<div class="outline-text-5" id="text-1-1-6-2">
+<p>
+Le point mort U<sup>*</sup> est la solution de l'équation des recettes et des coûts.
+</p>
+
+<blockquote>
+<p>
+Pv * U<sup>*</sup> = CT(U<sup>*</sup>) = CV<sub>u</sub> * U<sup>*</sup> + CF
+</p>
+</blockquote>
+
+<p>
+Ça nous donne un nombre d'unités:
+</p>
+
+<p>
+&hArr; (PV - CV<sub>u</sub>) * U<sup>*</sup> = CF
+</p>
+
+<p>
+&hArr; U<sup>*</sup> = CF / (PV - CV<sub>u</sub>)
+</p>
+</div>
+</li>
+
+<li><a id="orgec93ec1"></a>Différentes expressions du point mort<br />
+<div class="outline-text-5" id="text-1-1-6-3">
+<p>
+SR(Q) = U<sup>*</sup> = CF / (PV<sub>u</sub> - CV<sub>u</sub>) = CF / CM<sub>u</sub> &hArr; CF = U<sup>*</sup> * CM<sub>u</sub>
+</p>
+
+<p>
+SR($) = U<sup>*</sup> * PV<sub>u</sub> = (U<sup>*</sup> * CM<sub>u</sub>) * (PV<sub>u</sub>/CM<sub>u</sub>) = CF * 1/CM_%
+</p>
+</div>
+</li>
+
+<li><a id="org15938b9"></a>Contributions marginales<br />
+<div class="outline-text-5" id="text-1-1-6-4">
+<p>
+CM<sub>u</sub> = PV<sub>u</sub> - CV<sub>u</sub> contribution marginale unitaire.
+</p>
+
+<p>
+CM_% = CM<sub>u</sub> / PV<sub>u</sub> marginale en pourcentage
+</p>
+
+<p>
+CM_$(U) = Ventes - Coûts Variables Totaux = PV<sub>u</sub> * U - CV<sub>u</sub> * U : (contribution marginale totale)
+</p>
+
+<p>
+C'est le profit qu'on ferait si les couts fixes disparaissaient.
+</p>
+
+<p>
+NOTE: CM_$(U<sup>*</sup>) = CF
+</p>
+</div>
+</li>
+
+<li><a id="org9ec76ef"></a>Méthode des points extrêmes<br />
+<div class="outline-text-5" id="text-1-1-6-5">
+<p>
+On se fait donner un tableau avec des lignes (x,y) = (quantité, couts).
+</p>
+
+<p>
+On suppose que ces coûts suivent une règle y = ax + b avec a = CV<sub>u</sub> et b = CF.
+</p>
+
+<p>
+On choisi deux points (x<sub>1</sub>, y<sub>1</sub>), (x<sub>2</sub>, y<sub>2</sub>) éloignés dans le tableau:
+</p>
+
+<p>
+a = (y<sub>2</sub> - y<sub>1</sub>) / (x<sub>2</sub> - x<sub>1</sub>)
+</p>
+
+<p>
+maintenant qu'on a calculé a, on peut utiliser un des points pour calculer b:
+</p>
+
+<p>
+y<sub>1</sub> = a x<sub>1</sub> + b &hArr; b = y<sub>1</sub> - a x<sub>1</sub>
+</p>
+</div>
+</li>
+
+<li><a id="org18e4164"></a>Point d'équivalence de deux projets<br />
+<div class="outline-text-5" id="text-1-1-6-6">
+<p>
+Ah point d'équivalence entre deux options pour produire la même chose. Soit deux
+options données par CV<sub>u1</sub>, CF<sub>1</sub> et CV<sub>u2</sub>, CF<sub>2</sub>.  Alors CV<sub>U1</sub> * U<sub>eq</sub> + CF<sub>1</sub> = CV<sub>U2</sub> *
+U<sub>eq</sub> + CF<sub>2</sub> nous donne
+</p>
+
+<p>
+PE(Q) = U<sub>eq</sub> = (CF<sub>2</sub> - CF<sub>1</sub>) / (CV<sub>u1</sub> - CV<sub>u2</sub>)
+</p>
+
+<p>
+CM_%1 * PE(\() - CF_1 = CM_%2 * PE(\)) - CF<sub>2</sub>
+</p>
+
+<p>
+PE($) = (CF<sub>1</sub> - CF<sub>2</sub>) / (CM_%2 - CM_%1)
+</p>
+</div>
+</li>
+
+<li><a id="org01cb4b3"></a>Marge de sécurité<br />
+<div class="outline-text-5" id="text-1-1-6-7">
+<p>
+Soit U un nombre d'unités
+</p>
+
+<p>
+MS($) = RevenusTotauxPrévus - RevenusAuSeulDeRentabilité = PV<sub>u</sub> * U - PV<sub>u</sub> * U<sup>*</sup>
+</p>
+
+<p>
+MS(Q) = U - U<sup>*</sup> = (nombre d'unités vendues de plus que le point mort)
+</p>
+
+<p>
+MS(%) = MS($)/(PV<sub>u</sub> * U) = PV<sub>u</sub>(U-U<sup>*</sup>)/(PV<sub>u</sub>*U) = 
+</p>
+</div>
+</li>
+
+<li><a id="org6ebe1f0"></a>Profit/Perte par unité<br />
+<div class="outline-text-5" id="text-1-1-6-8">
+<p>
+Profit(U) = PV<sub>u</sub> * U - (CV<sub>u</sub> * U + CF)
+</p>
+
+<p>
+Profit(U) / U = ProfitParUnité
+</p>
+
+<p>
+= (PV<sub>u</sub> * U - (CV<sub>u</sub> * U + CF)) / u
+</p>
+
+<p>
+= ((PV<sub>u</sub> - CV<sub>u</sub>) * U - CF) / U
+</p>
+
+<p>
+= (PV<sub>u</sub> - CV<sub>u</sub>) - CF/U
+</p>
+</div>
+</li>
+
+
+
+<li><a id="orge59bdc1"></a>Vocabulaire<br />
+<ol class="org-ol">
+<li><a id="org078de4a"></a>Composantes du coût de fabrication (ou de production)<br />
+<div class="outline-text-6" id="text-1-1-6-9-1">
+<ul class="org-ul">
+<li>Matières premières (MP) <br />
+Note: C'est un coût variable</li>
+<li>Main d'oeuvre directe (MOD) <br />
+Salaires de ceux qui travaillent <i>directement</i> à la transofrmation des
+matières premières en produits finis.</li>
+<li>Frais généraux de fabrication (FGF) autres que la <i>Main d'oeuvre directe</i> et les
+<i>matières premières</i>.</li>
+</ul>
+</div>
+</li>
+
+<li><a id="orgb5ca31b"></a>Frais généraux de fabrication<br />
+<div class="outline-text-6" id="text-1-1-6-9-2">
+<p>
+<b>Definition</b> : Tous les autres coûts que main d'oeuvre directe (MOD) et la
+matière première (MP).
+</p>
+
+<p>
+<b>Exemples</b> : 
+</p>
+<ul class="org-ul">
+<li>Amortissements</li>
+<li>Chauffage et éclairage</li>
+<li>Entretien des équipements</li>
+<li>Assurances, impôt foncier</li>
+<li>Main-d'oeuvre indirecte: 
+<ul class="org-ul">
+<li>Salaires des contremaîtres</li>
+<li>employés de bureau,</li>
+<li>ingénieurs</li>
+<li>programmeurs</li>
+</ul></li>
+</ul>
+
+<p>
+<b>Notes</b> : Certains FGF peuvent être des coûts fixes et d'autres peuvent être des
+coûts variables.
+</p>
+
+<p>
+Les FGF sont répartis aux produits.
+</p>
+</div>
+</li>
+
+<li><a id="org8d0dcb5"></a>Coûts pertinents<br />
+<div class="outline-text-6" id="text-1-1-6-9-3">
+<ul class="org-ul">
+<li>Coûts différentiels et coûts stables</li>
+<li>Coûts engagés et coûts d'opportunité</li>
+<li>Coûts passés</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+
+<li><a id="org9812ccd"></a>État des flux de trésorie différentiel<br />
+<div class="outline-text-5" id="text-1-1-6-10">
+<p>
+Voir <a href="https://moodle.polymtl.ca/pluginfile.php/163307/mod_resource/content/35/SSH3201%20Cours%206%20Couts_PM_A2018_modifi%C3%A9_PDF.pdf">https://moodle.polymtl.ca/pluginfile.php/163307/mod_resource/content/35/SSH3201 Cours 6 Couts_PM_A2018_modifié_PDF.pdf</a>
+</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org4add436" class="outline-4">
+<h4 id="org4add436"><span class="section-number-4">1.1.7</span> Cours 7 VAN, IR, DR, TRI, TRIM</h4>
+<div class="outline-text-4" id="text-1-1-7">
+</div>
+<ol class="org-ol">
+<li><a id="org1978062"></a>VAN : Valeur Actualisée Nette<br />
+<div class="outline-text-5" id="text-1-1-7-1">
+<p>
+C'est la somme des valeurs actualisées de tous les flux monétaires d'un projet.
+</p>
+
+<p>
+La VAN est fonction du taux utilisé pour les actualisations.  On peut donc
+généraliser la définition:
+</p>
+
+<p>
+VAN(i) : La somme des flux monétaires actualisés au taux i du projet
+</p>
+
+<p>
+On utilise généralement i = TRAM en l'absence d'indication contraire.
+</p>
+</div>
+</li>
+
+<li><a id="org71a5182"></a>TRI : Le taux<br />
+<div class="outline-text-5" id="text-1-1-7-2">
+<p>
+Le TRI est la solution i<sup>*</sup> de l'équation VAN(i<sup>*</sup>) = 0.
+</p>
+
+<p>
+Soient V<sub>1</sub> = VAN(i<sub>1</sub>), V<sub>2</sub> = VAN(i<sub>2</sub>), V<sup>*</sup> = VAN(i<sup>*</sup>) = 0.
+</p>
+</div>
+</li>
+
+<li><a id="org56d57dd"></a>Calcul du TRI par interpolation<br />
+<div class="outline-text-5" id="text-1-1-7-3">
+<p>
+Alors par un argument de triangles semblables, on a
+</p>
+
+<p>
+(i<sup>*</sup> - i<sub>1</sub>)/(V<sup>*</sup> - V<sub>1</sub>) = (i<sub>2</sub> - i<sub>1</sub>)/(V<sub>2</sub> - V<sub>1</sub>)
+</p>
+
+<p>
+Ce qui nous permet d'isoler i<sup>*</sup>:
+</p>
+
+<p>
+&hArr; i<sup>*</sup> - i<sub>1</sub> = (V<sup>*</sup> - V<sub>1</sub>) * (i<sub>2</sub> - i<sub>1</sub>)/(V<sub>2</sub> - V<sub>1</sub>)
+</p>
+
+<p>
+&hArr; i<sup>*</sup> =  i<sub>1</sub> + (V<sup>*</sup> - V<sub>1</sub>) * (i<sub>2</sub> - i<sub>1</sub>)/(V<sub>2</sub> - V<sub>1</sub>)
+</p>
+
+<p>
+&hArr; i<sup>*</sup> =  i<sub>1</sub> - V<sub>1</sub> * (i<sub>2</sub> - i<sub>1</sub>)/(V<sub>2</sub> - V<sub>1</sub>),  (parce que V<sup>*</sup> = 0)
+</p>
+
+<p>
+Et si on veut la formule donnée dans certains powerpoints, on a jsute à changer
+le + pour un - et inverser l'ordre de V<sub>1</sub>, V<sub>2</sub> dans le dénominateur.
+</p>
+
+<blockquote>
+<p>
+&hArr; i<sup>*</sup> =  i<sub>1</sub> + V<sub>1</sub> * (i<sub>2</sub> - i<sub>1</sub>)/(V<sub>1</sub> - V<sub>2</sub>) <span class="underline">FF</span>
+</p>
+</blockquote>
+</div>
+</li>
+
+<li><a id="org0dc9e4a"></a>TRIM<br />
+<div class="outline-text-5" id="text-1-1-7-4">
+<p>
+MP = Somme des <b>valeurs actuelles</b> des flux monétaires nets négatifs
+</p>
+
+<p>
+MF = Somme des <b>valeurs futures</b> des flux monétaires positifs
+</p>
+
+<p>
+MP = MF(1 + TRIM)<sup>-n</sup>
+</p>
+
+<p>
+MP/MF = (1 + TRIM)<sup>-n</sup>
+</p>
+
+<p>
+MF/MP = (1 + TRIM)<sup>n</sup>
+</p>
+
+<p>
+(MF/MP)<sup>1/n</sup> - 1 = TRIM
+</p>
+</div>
+</li>
+
+<li><a id="org23580ba"></a>Indice de rentabilité<br />
+<div class="outline-text-5" id="text-1-1-7-5">
+<p>
+IR = (VA des Flux Monétaires) / (VA des investissements) <br />
+Parce que VAN = VA<sub>Recettes</sub> - |VA<sub>INV</sub>| (ce qui rentre - ce qui sort) <br />
+donc VA<sub>Recettes</sub> / |VA<sub>INV</sub>| = (VAN + |VA<sub>INV</sub>|) / |VA<sub>INV</sub>| = VAN/|VA<sub>INV</sub>| + 1 <br />
+</p>
+</div>
+</li>
+<li><a id="org6691a59"></a>Comparaison de projets de durées différentes<br />
+<div class="outline-text-5" id="text-1-1-7-6">
+<p>
+Ramener à un m
+Critére du service égales
+PPCM
+</p>
+
+<p>
+Période d'étude
+</p>
+</div>
+</li>
+
+<li><a id="orgb4509ad"></a>Annuité Équivalente<br />
+<div class="outline-text-5" id="text-1-1-7-7">
+<p>
+Étant donné un projet avec des flux monétaires FMN<sub>t</sub> et une durée de vie n, et un
+TRAM i,
+</p>
+
+<p>
+AE = VAN * (A/P;i;n)
+</p>
+</div>
+</li>
+
+<li><a id="org7daada1"></a>Charges d'exploitation annuelle<br />
+<div class="outline-text-5" id="text-1-1-7-8">
+<p>
+CEA = (&Sigma;<sub>t</sub> CH<sub>t</sub>(P/F;i;t) ) * (A/P;i;n)
+</p>
+
+<p>
+Transformer les coûts en annuité équivalente
+</p>
+</div>
+</li>
+
+<li><a id="orge4ff013"></a>Cout annuel équivalent<br />
+<div class="outline-text-5" id="text-1-1-7-9">
+<ol class="org-ol">
+<li>DI = somme des valeurs actualisées des investissements <br /></li>
+<li>VAC = somme des valeurs actualisées des coûts <br /></li>
+<li>VAR = somme des valeurs actualisées des valeurs de revente <br /></li>
+</ol>
+
+<p>
+CAE = -(|DI| + |VAC| - |VAR|) * (A/P;i;n)
+</p>
+
+<p>
+Attention aux signes, puisque DI &lt; 0, VAC &lt; 0, VAR &gt; 0 en tant que flux
+monétaires, CAE = (DI + VAC + VAR) * (A/P;i;n) mais les valeurs absolues sont là
+pour qu' on voit quels doivent être les signes des affaires.
+</p>
+</div>
+</li>
+
+<li><a id="org8de8640"></a>Recouvrement du capital<br />
+<div class="outline-text-5" id="text-1-1-7-10">
+<p>
+RC = (|DI| - |VAR|) * (A/P;i;n)
+</p>
+</div>
+</li>
+
+<li><a id="orgbd38ac1"></a>Délai de recouvrement<br />
+<ol class="org-ol">
+<li><a id="orgc8422af"></a>Input: Un tableau<br />
+<div class="outline-text-6" id="text-1-1-7-11-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">Année</td>
+<td class="org-left">FMN</td>
+</tr>
+
+<tr>
+<td class="org-right">0</td>
+<td class="org-left">FMN<sub>0</sub></td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">FMN<sub>1</sub></td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">FMN<sub>2</sub></td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">FMN<sub>3</sub></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+
+<li><a id="orge3b5355"></a>Output: Les cumuls<br />
+<div class="outline-text-6" id="text-1-1-7-11-2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">Année</td>
+<td class="org-left">FMN</td>
+<td class="org-left">CUMUL</td>
+</tr>
+
+<tr>
+<td class="org-right">0</td>
+<td class="org-left">FMN<sub>0</sub></td>
+<td class="org-left">FMN<sub>0</sub></td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">FMN<sub>1</sub></td>
+<td class="org-left">CUMUL<sub>0</sub> + FMN<sub>1</sub></td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">FMN<sub>2</sub></td>
+<td class="org-left">CUMUL<sub>1</sub> + FMN<sub>2</sub></td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">FMN<sub>3</sub></td>
+<td class="org-left">CUMUL<sub>2</sub> + FMN<sub>3</sub></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+On trouve plus petit <b>n</b> tel que CUMUL<sub>n</sub> &lt; 0 &lt; CUMUL<sub>n+1</sub>
+</p>
+</div>
+</li>
+
+<li><a id="orgb7bb535"></a>Interpolation pour le nombre de jours<br />
+<div class="outline-text-6" id="text-1-1-7-11-3">
+<p>
+Ensuite, on interpole sur une droite passant par (0, cumul<sub>n</sub>) et (1, cumul<sub>n+1</sub>)
+</p>
+
+<p>
+cumul(k) = (cumul<sub>n+1</sub> - cumul<sub>n</sub>) * k + cumul<sub>n</sub>
+</p>
+
+<p>
+juste pour être sur :<br />
+cumul(0) = cumul<sub>n</sub> <br />
+cumul(1) = cumul<sub>n+1</sub> - cumul<sub>n</sub> + cumul<sub>n</sub> = cumul<sub>n+1</sub> <br />
+</p>
+
+<p>
+cumul(&xi;) = 0 &hArr; &xi; = cumul<sub>n</sub> / (cumul<sub>n+1</sub> - cumul<sub>n</sub>) = cumul<sub>n</sub> / FMN<sub>n+1</sub>
+</p>
+
+<p>
+On donne la réponse sous la forme suivante: Le délai de recouvrement du projet
+donné par les flux monétaires FMN<sub>i</sub> a un délai de recouvrement 
+</p>
+</div>
+</li>
+
+<li><a id="org9fe6824"></a>Valeur<br />
+<div class="outline-text-6" id="text-1-1-7-11-4">
+<blockquote>
+<p>
+DR = n années et 365&sdot;&xi; jours
+</p>
+</blockquote>
+
+<p>
+Le fait que cumul<sub>n</sub> et cumul<sub>n+1</sub> soient de signes différents garanti que x &isin; [0,1].
+</p>
+</div>
+</li>
+
+<li><a id="orga2945d2"></a>Conclusions<br />
+<div class="outline-text-6" id="text-1-1-7-11-5">
+<p>
+On peut comparer le DR au délai maximal fixé par les gestionnaires et décider de
+faire ou ne pas faire le projet
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgae00fab" class="outline-4">
+<h4 id="orgae00fab"><span class="section-number-4">1.1.8</span> Cours 8(Anas)</h4>
+<div class="outline-text-4" id="text-1-1-8">
+</div>
+<ol class="org-ol">
+<li><a id="org58433eb"></a>+ ANalyse marginale<br />
+<div class="outline-text-5" id="text-1-1-8-1">
+<p>
+Pourcentage des bénéfices = BénéficeNet
+</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org3a71894" class="outline-4">
+<h4 id="org3a71894"><span class="section-number-4">1.1.9</span> Cours 8 Métriques de comparaison (AE, CAE, RC, DUE), remplacement</h4>
+</div>
+<div id="outline-container-org5180c55" class="outline-4">
+<h4 id="org5180c55"><span class="section-number-4">1.1.10</span> Cours 9,10 : Impôt</h4>
+<div class="outline-text-4" id="text-1-1-10">
+</div>
+<ol class="org-ol">
+<li><a id="org6fcaeb0"></a>Taux fiscal effectif<br />
+<div class="outline-text-5" id="text-1-1-10-1">
+<p>
+Impôt à Payer = Revenu Imposable * T
+</p>
+</div>
+</li>
+
+<li><a id="orge322d46"></a>Règle de mise en service et de la demie année<br />
+<ol class="org-ol">
+<li><a id="org15166ed"></a>Règle de mise en service<br />
+<div class="outline-text-6" id="text-1-1-10-2-1">
+<p>
+Bien autre qu'un batiment : date de première utilisiation
+Bâtiment : date à partir de laquelle 90% ou plus du bâtiment est utilisé
+Bâtiment que je construit : date de 
+</p>
+<ul class="org-ul">
+<li>fin de construction, reno ou modification ou</li>
+<li>90% est utilisé</li>
+</ul>
+</div>
+</li>
+
+<li><a id="orge935402"></a>Règle de la demie année<br />
+<div class="outline-text-6" id="text-1-1-10-2-2">
+<p>
+Chaque actif est amorti comme s'il avait été mis en service au milieu de son
+année d'acquisition.  On verra l'effet de ça dans les formules de déductions
+pour amortissement.
+</p>
+</div>
+</li>
+
+<li><a id="org855cc08"></a>Déductions pour amortissement (dégressif)<br />
+<div class="outline-text-6" id="text-1-1-10-2-3">
+<p>
+DPA<sub>1</sub> = (DI * d) / 2 <br />
+FNACC<sub>1</sub> = DI - DPA<sub>1</sub>
+</p>
+
+<p>
+FNACC<sub>n</sub> = FNACC<sub>1</sub> * (1-d)<sup>n-1</sup> = DI * (1 - d/2) * (1-d)<sup>n-1</sup> <br />
+(On multiplie n fois par quelque chose, (1-d/2) la première fois et (1-d) toutes
+les autres fois)
+</p>
+
+<p>
+DPA<sub>n</sub> = d * FNACC<sub>n-1 </sub><br />
+= d * DI * (1 - d/2) * (1 - d)<sup>n-2</sup>
+</p>
+</div>
+</li>
+
+<li><a id="org5ef8dde"></a>Revenu imposable<br />
+<div class="outline-text-6" id="text-1-1-10-2-4">
+<p>
+Revenu imposable = BénéficeNet - DPA
+</p>
+</div>
+</li>
+
+<li><a id="org33656b9"></a>Impôt<br />
+<div class="outline-text-6" id="text-1-1-10-2-5">
+<p>
+Impot = RevenuImposable * T
+</p>
+</div>
+</li>
+
+<li><a id="org52fb6be"></a>BénéficeNetAprèsImpôt<br />
+<div class="outline-text-6" id="text-1-1-10-2-6">
+<p>
+BN après Impôt = BénéviceNet - Impôt
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+
+
+
+
+<div id="outline-container-org7564418" class="outline-4">
+<h4 id="org7564418"><span class="section-number-4">1.1.11</span> Cours 11,12 : Risque</h4>
+</div>
+</div>
+<div id="outline-container-org79d032e" class="outline-3">
+<h3 id="org79d032e"><span class="section-number-3">1.2</span> Don't forget:</h3>
+<div class="outline-text-3" id="text-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="org1c20291"></a>Remplacer ou pas un actif<br /></li>
+</ol>
+</div>
+<div id="outline-container-org0f89d3b" class="outline-3">
+<h3 id="org0f89d3b"><span class="section-number-3">1.3</span> Matière</h3>
+<div class="outline-text-3" id="text-1-3">
+</div>
+<div id="outline-container-orga74140f" class="outline-4">
+<h4 id="orga74140f"><span class="section-number-4">1.3.1</span> États financiers</h4>
+<div class="outline-text-4" id="text-1-3-1">
+</div>
+<ol class="org-ol">
+<li><a id="org4d8f192"></a>État des résultats<br />
+<ol class="org-ol">
+<li><a id="org2cfdba0"></a>Tableau<br />
+<div class="outline-text-6" id="text-1-3-1-1-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&lt;Nom compagnie&gt;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">État des résultats</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">du j j-mm-aaaa au jj-mm-aaaa</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><span class="underline">produits</span></td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Ventes</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">- Couts des ventes</td>
+<td class="org-left">(x)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Résultats bruts</b></td>
+<td class="org-left">XX</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Produits de location</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Produits d'intérêts</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Gains sur disposition (prix de vente - valeur comptable)</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left"><span class="underline">Charges</span></td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Écliectricité</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Salaires</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Assurances</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Amortissement (Sans effet sur la trésorie)</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Dépréciation des comptes client (Sans effet sur la trésorie)</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Pertes sur disposition d'actif</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left"><span class="underline">Resultat net</span></td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">= Sum(Produits) - Somme(Charges)</td>
+<td class="org-left">XX</td>
+</tr>
+
+<tr>
+<td class="org-left"><span class="underline">Resultat net après impôts</span></td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">= Resultat net - impot</td>
+<td class="org-left">XX</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><a id="org803603c"></a>Vérifications<br />
+<div class="outline-text-6" id="text-1-3-1-1-2">
+<p>
+Les éléments ici influencent l'état de variations des capitaux propres et la
+situation financière qui est vérifié avec l'équation comptable.
+</p>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orga50fabc"></a>État des variations des capitaux propres<br />
+<ol class="org-ol">
+<li><a id="orgb21c181"></a>Tableau<br />
+<div class="outline-text-6" id="text-1-3-1-2-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&lt;nom de la compagine&gt;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">État des variations des capitaux propres</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">Période terminée le &lt;jj-mm-aa&gt;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Capital Social</td>
+<td class="org-left">RND</td>
+<td class="org-left">Surplus d'apport</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Solde de début</td>
+<td class="org-left">a</td>
+<td class="org-left">b</td>
+<td class="org-left">c</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Surplus d'apport de la période</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">h</td>
+</tr>
+
+<tr>
+<td class="org-left">Emission d'actions</td>
+<td class="org-left">d</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Rachat d'actions</td>
+<td class="org-left">(e)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Resultats de la periode</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">f</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Dividendes déclarés</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">(g)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Solde de fin</td>
+<td class="org-left">a + d - e</td>
+<td class="org-left">b + f - g</td>
+<td class="org-left">c + h</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+
+<li><a id="org937b792"></a>Explications<br />
+<div class="outline-text-6" id="text-1-3-1-2-2">
+<p>
+On prend a, b, c, de l'état des résultats.
+</p>
+
+<p>
+Émettre des actions augmente le capital social.  Les RDN de fin est notre RND
+précédent plus nos résultats de la période moins la partie des résultats qu'on a
+versé en dividendes.  Finalement le surplus d'apport est le surplus d'apport n-1
+plus le surplus d'apport que les propriétaires on mis durant la période.
+</p>
+</div>
+</li>
+<li><a id="orgfae6cd9"></a>Vérifications<br />
+<div class="outline-text-6" id="text-1-3-1-2-3">
+<p>
+Les éléments ici influencent l'état de la situation financière qui est vérifié
+avec l'équation comptable.
+</p>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orga05c34e"></a>État de la situation financière<br />
+<ol class="org-ol">
+<li><a id="org10cdea2"></a>Tableau<br />
+<div class="outline-text-6" id="text-1-3-1-3-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&lt;Nom de la compagnie&gt;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">État de la situation financière</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">Au 31 décembre 2017</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">2017</td>
+<td class="org-left">2018</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><span class="underline">Actifs</span></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><span class="underline">Actifs courants</span> (&lt; 12 mois)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Encaisse</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Stocks</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Comptes Clients</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">(Provision pour dépréciation des CC)</td>
+<td class="org-left">(x)</td>
+<td class="org-left">(x)</td>
+</tr>
+
+<tr>
+<td class="org-left">Placements à court terme</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Produits à recevoir</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Charges payées d'avance</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Total actifs courants</b></td>
+<td class="org-left">XX</td>
+<td class="org-left">XX</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><span class="underline">Actifs non-courants</span></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Immobilisation corporelles</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Équipement/Machines</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">(Amortissement cumulé Équipement/Machine)</td>
+<td class="org-left">(x)</td>
+<td class="org-left">(x)</td>
+</tr>
+
+<tr>
+<td class="org-left">Immeubles</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">(Amortissement cumulé immeubles)</td>
+<td class="org-left">(x)</td>
+<td class="org-left">(x)</td>
+</tr>
+
+<tr>
+<td class="org-left">Immobilisations incorporelles (breuvets, licences)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Placements à long terme</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Total actifs non-courants</b></td>
+<td class="org-left">XX</td>
+<td class="org-left">XX</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><b>Total Actifs</b></td>
+<td class="org-left">XXX</td>
+<td class="org-left">XXX</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Passifs et Capitaux propres</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><span class="underline">Passifs courants</span></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Comptes fournisseurs</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Charges à payer</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Dividendes à payer</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Emprunts à court terme</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Obligations à court terme</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Produits différés (we owe merch to someone)</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Total pasifs courants</b></td>
+<td class="org-left">XX</td>
+<td class="org-left">XX</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><span class="underline">Passifs non courants</span></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Emprunts à long terme</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Hypothèque</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Total passifs non courants</b></td>
+<td class="org-left">XX</td>
+<td class="org-left">XX</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><span class="underline">Capitaux propres</span></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Capital social</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Résultats non distribués</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">Surplus d'apport</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Total Capitaux Propres</b></td>
+<td class="org-left">XX</td>
+<td class="org-left">XX</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><b>Total passifs et capitaux propres</b></td>
+<td class="org-left">XXX</td>
+<td class="org-left">XXX</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><a id="orga5733e0"></a>Composantes<br />
+<div class="outline-text-6" id="text-1-3-1-3-2">
+<ul class="org-ul">
+<li>Actifs(A):ressources économiques que l’entreprise possède ou sur lesquelles
+elle exerce un contrôle et qui devraient lui procurer des avantages
+économiques maintenant ou dans le futur.</li>
+
+<li>Passifs(P):obligations qu’a l’entreprise envers des tiers et dont le
+règlement se fera par transfert d’actifs, la prestation de services ou tout
+autre avantage.</li>
+
+<li>Capitauxpropres(C): mise(s) defonds du(des) propriétaire(s) auxquelles
+s’ajoutent les résultats non distribués aux actionnaires sous forme de
+dividendes (société par actions) et le surplus d’apport.</li>
+</ul>
+</div>
+</li>
+<li><a id="org25d030e"></a>Vérifications:<br />
+<div class="outline-text-6" id="text-1-3-1-3-3">
+<p>
+Voir équation comptable A = P + CP
+Les éléments ici influencent l'état des flux de trésorie qui a ses propres vérifications.
+</p>
+</div>
+</li>
+<li><a id="org7ec1e8c"></a>Remarques :<br />
+<div class="outline-text-6" id="text-1-3-1-3-4">
+<p>
+Document de synthèse qui expose à une date donnée la situation financière d'une
+entreprise en fournissant un résumé de l'ensemble de ses éléments d'actif (A),
+de passif(P)et de capitaux propres (C).
+</p>
+
+<ol class="org-ol">
+<li>La situation financière se compose de deux parties principales: les
+éléments d'actif et les sources d'actif (passif et capitaux propres).</li>
+<li>Le total des éléments d'actif doit toujours égaler le total des sources
+d'actif.
+L'ÉQUATION COMPTABLE : A = P + C doit toujours être vérifiée.</li>
+<li>À tout moment, il est possible d'établir les capitaux propres d'une
+entreprise.
+A - P = C</li>
+</ol>
+</div>
+</li>
+<li><a id="orgef1e44b"></a>Équation comptable<br />
+<div class="outline-text-6" id="text-1-3-1-3-5">
+<p>
+L'ÉQUATION COMPTABLE : A = P + C doit toujours être vérifiée.
+</p>
+</div>
+</li>
+</ol>
+</li>
+
+<li><a id="org405f34f"></a>État des flux de trésorie (prochain cours)<br />
+<ol class="org-ol">
+<li><a id="org54634a4"></a>Tableau<br />
+<div class="outline-text-6" id="text-1-3-1-4-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Compagnie YY</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">État des flux de trésorie (méthode indirecte)</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">Du 1er Janvier au 31 décembre 2018</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Activités de opérationnelles</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">+ Resultat net</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Éléments sans effets sur la trésorie</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">(amortissement)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">(Dépréciation des comptes clients)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Delta PC (Fin - Début) (exclure prov pour dépréc CC)</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Delta AC (Début - Fin) (exclure encaisse et placements CT)</td>
+<td class="org-left">x</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><b>Total Activités Opérationnelles</b></td>
+<td class="org-left">XX</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Activité d'investissement</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">- Achat d'actifs non courant</td>
+<td class="org-left">(x)</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Vente d'actif non courant</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Placements LT: (Debut - fin - perte + gains)</td>
+<td class="org-left">x</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><b>Total Activités d'Investissement</b></td>
+<td class="org-left">XX</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Activités de financement</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">+ Émission d'actions</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">- Rachat d'actions</td>
+<td class="org-left">(x)</td>
+</tr>
+
+<tr>
+<td class="org-left">- Versement de dividendes</td>
+<td class="org-left">(x)</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Nouvel emprunts</td>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">- Remboursement d'emprunts</td>
+<td class="org-left">(x)</td>
+</tr>
+
+<tr>
+<td class="org-left">- Frais financiers</td>
+<td class="org-left">(x)</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><b>Total activités de financement</b></td>
+<td class="org-left">XX</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Variation de la trésorie</td>
+<td class="org-left">XXX</td>
+</tr>
+
+<tr>
+<td class="org-left">Trésorie de début</td>
+<td class="org-left">XX</td>
+</tr>
+
+<tr>
+<td class="org-left">Trésorie de fin</td>
+<td class="org-left">XX</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+
+<li><a id="orgdf42983"></a>Vérifications<br />
+<div class="outline-text-6" id="text-1-3-1-4-2">
+<blockquote>
+<p>
+&Delta;<sub>Tr</sub> = &Sigma;<sub>AO</sub> + &Sigma;<sub>AF</sub> + &Sigma;<sub>AI</sub>
+= &Delta;<sub>Encaisse</sub> + &Delta;<sub>PlacementsCT</sub>
+</p>
+
+<p>
+Tr<sub>Début</sub> = Encaisse<sub>Début</sub> + PlacementsCT<sub>Début</sub>
+</p>
+
+<p>
+Tr<sub>Fin</sub> = Encaisse<sub>Fin</sub> + PlacementsCT<sub>Fin</sub>
+</p>
+</blockquote>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org5ef27c6" class="outline-4">
+<h4 id="org5ef27c6"><span class="section-number-4">1.3.2</span> Ratios : Voir <a href="https://moodle.polymtl.ca/pluginfile.php/512706/mod_folder/content/0/Cours%202.1%20-%20Ratios.pdf?forcedownload=0">Cours 2.1 Ratios.pdf</a></h4>
+<div class="outline-text-4" id="text-1-3-2">
+</div>
+<ol class="org-ol">
+<li><a id="org4a5b6b6"></a>Ratios de liquidité<br />
+<ol class="org-ol">
+<li><a id="org25fb0aa"></a>Ratio de liquidité courante (ratio du fond de roulement)<br />
+<div class="outline-text-6" id="text-1-3-2-1-1">
+<pre class="example">
+actif courants
+---------------
+passif courants
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="orgbbe91d4"></a>Interprétation<br />
+<div class="outline-text-7" id="text-1-3-2-1-1-1">
+<p>
+<b>Capacité d'une entreprise à faire face à ses obligations financières à court
+terme lorsqu'elles viennent à échéance</b>
+</p>
+<ul class="org-ul">
+<li>&lt; 1: la compagnie a de la misère à rembourser ses dettes</li>
+<li>&gt; 2: L'entreprise a trop de stocks</li>
+<li>[1.2, 2.0] : La majorité des analystes estiment que c'est idéal</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org3c14078"></a>Ratio de liquidité relative (Ratio de liquidité immédiate)<br />
+<div class="outline-text-6" id="text-1-3-2-1-2">
+<pre class="example">
+actif courant - stocks - frais payés d'avance
+---------------------------------------------
+              passif courant
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="org1949788"></a>Interprétation<br />
+<div class="outline-text-7" id="text-1-3-2-1-2-1">
+<p>
+*Indique si on peut rembourser le passif à court terme sans avoir à vendre les
+stocks. Si le ratio est nettement inférieur au ratio de liquidé courante, cela
+signifie que l'actif à court terme dépend étroitement des stocks.*
+</p>
+<ul class="org-ul">
+<li>Idéal : [1,2]</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a id="orgd805c00"></a>Ratios d'endettement<br />
+<ol class="org-ol">
+<li><a id="orgb56cbcb"></a>Ratio d'endettement<br />
+<div class="outline-text-6" id="text-1-3-2-2-1">
+<pre class="example">
+passif total
+------------
+actif total
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="orgf8a7c8a"></a>Interprétation<br />
+<div class="outline-text-7" id="text-1-3-2-2-1-1">
+<p>
+Capacité de respecter ses engagements à long terme
+</p>
+<ul class="org-ul">
+<li>&lt; 30% : Excellent</li>
+<li>[30%, 36%] : bon</li>
+<li>&gt; 40% : Problématique</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org6760a01"></a>Ratio de la couverture des intérêts<br />
+<div class="outline-text-6" id="text-1-3-2-2-2">
+<pre class="example">
+Résultat avant intérêts et impôts
+---------------------------------
+       Intérêts
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="orge93bd49"></a>Interprétation<br />
+<div class="outline-text-7" id="text-1-3-2-2-2-1">
+<p>
+Indique dans quelle mesure les intérêts débiteurs sont couverts par les flux de
+trésorie de la société.
+</p>
+<ul class="org-ul">
+<li>&lt; 1 : La société peut éprouver de véritables difficultés à régler ses intérêts
+débiteurs et le risque de défaut de paiement est jugé élevé.</li>
+<li>&gt; 1.5 : Idéal</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a id="org7a59f81"></a>Ratios de performance<br />
+<ol class="org-ol">
+<li><a id="org645e2dd"></a>Ratio de rotation de l'actif<br />
+<div class="outline-text-6" id="text-1-3-2-3-1">
+<pre class="example">
+      Ventes nettes
+-------------------------
+Valeur moyenne de l'actif
+
+Valeur moyenne = (montant de fin + montant de début) / 2
+Ventes nettes = ventes moins les rendus, rabais et escomptes sur les ventes
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="org71f5a4f"></a>Interprétation<br />
+<div class="outline-text-7" id="text-1-3-2-3-1-1">
+<ul class="org-ul">
+<li>Il indique le montant du chiffre d'affaires généré par chaque dollar investi
+dans l'actif total.</li>
+<li>Habituellement, plus le ratio est élevé, plus la gestion des actifs est
+optimale.</li>
+<li>Par exemple, un ratio de 0,60 $ indique que chaque dollar investi rapporte
+0,60 $ de ventes nettes.</li>
+<li>Ce ratio est utile pour se comparer à ses concurrents.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orga0fde6b"></a>Ratio de rotation des comptes clients<br />
+<div class="outline-text-6" id="text-1-3-2-3-2">
+<pre class="example">
+         ventes nettes
+----------------------------------
+Valeur moyenne des comptes clients
+
+Valeur moyenne = (montant de fin + montant de début) / 2
+Ventes nettes = ventes moins les rendus, rabais et escomptes sur les ventes
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="org85ed874"></a>Interprétation<br />
+<div class="outline-text-7" id="text-1-3-2-3-2-1">
+<ul class="org-ul">
+<li>Il mesure le nombre de fois qu’une entreprise transforme ses créances clients en
+ventes.</li>
+<li>Plus ce ratio est faible, plus l’entreprise s’expose aux risques de non-paiement de la
+part de ses partenaires, et plus elle devra revoir sa politique de crédit. Il s’agit donc,
+pour l’entreprise, de trouver un juste milieu entre les créances accordées et les ventes
+à générer via le crédit.</li>
+<li>Un ratio de 15 signifie que l’entreprise collecte 15 fois ses compte-client par année. On
+peut également conclure que ça lui prend en moyenne 24,3 jours pour collecter ses
+clients (ratio du délai de recouvrement des c.c. 365/15).</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org8560ea6"></a>Ratio du délai de recouvrement des comptes clients<br />
+<div class="outline-text-6" id="text-1-3-2-3-3">
+<pre class="example">
+         365 jours
+----------------------------
+Rotation des Comptes Clients
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="org93b88d5"></a>Interprétation<br />
+<div class="outline-text-7" id="text-1-3-2-3-3-1">
+<ul class="org-ul">
+<li>Mesure le nombre moyen de jours qu’il faut aux clients pour payer leurs comptes.</li>
+<li>Donne une indication de l’efficacité des politiques de crédit et de recouvrement en
+vigueur dans l’entreprise.</li>
+<li>Permet de déterminer si les modalités de crédit dont se sert l’entreprise sont réalistes.</li>
+<li>Pour déterminer si le délai moyen de recouvrement des comptes clients est adéquat, il
+suffit de le comparer aux modalités de crédit que vous offrez à vos clients.
+<ul class="org-ul">
+<li>Par exemple, si vous donnez à vos clients 30 jours pour payer leur facture et que
+votre délai moyen de recouvrement des comptes clients est de 45 jours, il y a un
+problème; en revanche, si le délai moyen est inférieur à 30 jours, c’est une bonne
+nouvelle.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org573a5e5"></a>Ratio de rotation stocks<br />
+<div class="outline-text-6" id="text-1-3-2-3-4">
+<pre class="example">
+    Coûts des ventes
+-------------------------
+Valeur moyenne des stocks
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="org3beeb0c"></a>Interprétation<br />
+<div class="outline-text-7" id="text-1-3-2-3-4-1">
+<ul class="org-ul">
+<li>Un faible ratio de rotation est généralement de mauvais augure, car les produits ont
+tendance à s'abîmer s'ils restent trop longtemps dans un entrepôt.</li>
+<li>Les sociétés qui vendent des biens périssables ont un ratio de rotation très élevé.</li>
+<li>Ce ratio est utile pour se comparer à ses concurrents.</li>
+<li>Voici un lien utile afin de pouvoir comparer le ratio de votre entreprise à celui de votre
+secteur d’activité :
+<a href="https://www.bdc.ca/fr/articles-outils/boite-outils-entrepreneur/evaluation-entreprise/pages/rotation-stocks-outil-analyse-comparative.aspx?ChangeIndustry=1">https://www.bdc.ca/fr/articles-outils/boite-outils-entrepreneur/evaluation-entreprise/pages/rotation-stocks-outil-analyse-comparative.aspx?ChangeIndustry=1</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgf20cdd5"></a>Ratio de rotation de l'actif immobilisé<br />
+<div class="outline-text-6" id="text-1-3-2-3-5">
+<pre class="example">
+            ventes nettes
+--------------------------------------
+valeur moyenne des actifs non courants
+
+Valeur moyenne = (montant de fin + montant de début) / 2
+Ventes nettes = ventes moins les rendus, rabais et escomptes sur les ventes
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="org79cff19"></a>Interprétation<br />
+<div class="outline-text-7" id="text-1-3-2-3-5-1">
+<ul class="org-ul">
+<li>Le ratio de rotation des immobilisations (rotation de l’actif immobilisé)
+indique combien de revenus génère chaque dollar investi dans les
+immobilisations.</li>
+<li>Habituellement, plus le ratio est élevé, plus la gestion des actifs
+immobilisés est optimale.</li>
+<li>Attention à l’interprétation du ratio: Une entreprise bien installée possédant
+de vieux équipements fortement amortie aurait un meilleur résultat en
+opposition à une plus jeune entreprise possédant de nouveaux équipements.</li>
+<li>Il faut donc comparer des entreprises possédant des immobilisations d’âge
+comparable.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a id="org635159c"></a>Ratios de rentabilité (rendement)<br />
+<ol class="org-ol">
+<li><a id="orgc4ce0e0"></a>Ratio de la marge nette<br />
+<div class="outline-text-6" id="text-1-3-2-4-1">
+<pre class="example">
+Résultats nets
+--------------
+Ventes nettes
+
+Ventes nettes : ventes moins les rendus, rabais et escomptes sur les ventes
+Résultat net : résultat brut moins les charges
+Résultat brut : ventes moins le coût des vente
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="orgffe5083"></a>Interprétation<br />
+<div class="outline-text-7" id="text-1-3-2-4-1-1">
+<p>
+Rentabilité de l'exploitation
+Ce ratio indique la partie des ventes qui contribue au bénéfice de l'entreprise.
+</p>
+<ul class="org-ul">
+<li>Le ratio ne sert à rien si l'entreprise perd de l'argent, car elle ne fait
+alors pas de profit.</li>
+<li>Lorsque le ratio de marge bénéficiaire nette (marge nette) est faible, cela
+peut être attribuable à la stratégie prix et/ou à l'incidence que la
+concurrence a sur la marge.</li>
+<li>Une marge élevée est un bon signe</li>
+<li>Ce ratio est utile pour se comparer à ses concurrents.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org4d38c9c"></a>Ratio de la marge brute<br />
+<div class="outline-text-6" id="text-1-3-2-4-2">
+<pre class="example">
+Resultats bruts
+---------------
+ Ventes nettes
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="org534331d"></a>Interprétation<br />
+<div class="outline-text-7" id="text-1-3-2-4-2-1">
+<p>
+Indique le niveau de bénéfice généré par l'entreprise.
+</p>
+
+<p>
+Ce ratio témoigne de la politique de fixation des prix de la société et de la majoration
+réelle des prix.
+</p>
+
+<p>
+Par exemple, si le ration de la marge bénéficiaire brute (marge brute) est de 33 %,
+cela signifie que le prix des produits est majoré de 50 % (1/(1-33 %))-100 %).
+</p>
+<ul class="org-ul">
+<li>Les résultats peuvent être biaisés si l'éventail de produits de la société est
+très large.</li>
+<li>Ce ratio se révèle très utile lorsqu'il est comparé à ceux des exercices
+antérieurs.</li>
+<li>En général, la marge bénéficiaire brute doit être stable. Elle ne doit pas
+fluctuer d'une période à l'autre.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org2503fcb"></a>Ratio de rentabilité<br />
+<div class="outline-text-6" id="text-1-3-2-4-3">
+<pre class="example">
+         résultats nets
+-----------------------------------
+valeur moyenne des capitaux propres
+
+Valeur moyenne = (Montant de fin + montant début)/2
+Résultat net = résultat brut moins les charges
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="orgf11b0aa"></a>Interprétation<br />
+<div class="outline-text-7" id="text-1-3-2-4-3-1">
+<p>
+Ce ratio indique le taux de rendement que l'entreprise tire de l'investissement
+de ses propriétaires ou que les actionnaires obtiennent de leurs actions.
+</p>
+
+<p>
+Par exemple, si le ratio s'élève à 10 %, cela signifie que chaque dollar investi
+à l'origine produit un actif de 10 cents.
+</p>
+
+<ul class="org-ul">
+<li>Les sociétés à forte croissance devraient obtenir un rendement élevé des capitaux
+propres.</li>
+<li>Le rendement moyen des capitaux propres au cours des 5 à 10 dernières années
+donne une meilleure idée de la croissance à long terme.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+
+<li><a id="org89dad49"></a>Ratios de la valeur marchande<br />
+<ol class="org-ol">
+<li><a id="orga43ef33"></a>Ratio du résultat par action<br />
+<div class="outline-text-6" id="text-1-3-2-5-1">
+<pre class="example">
+            Résultats nets
+------------------------------------------
+Nombre d'actions ordinaires en circulation
+
+Résultats net = résultat brut moins les charges
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="orge14dbb0"></a>Interprétation<br />
+<div class="outline-text-7" id="text-1-3-2-5-1-1">
+<p>
+C'est le ratio le plus utilisé. Il indique le montant du bénéfice généré par la
+société, par action.
+</p>
+<ul class="org-ul">
+<li>On compare ce ratio avec les exercices précédents ainsi qu’avec d’autres
+entreprises.</li>
+<li>Lorsque la société émet de nouvelles actions, il est beaucoup plus difficile
+de comparer le BPA de l'exercice en cours et des exercices précédents.</li>
+<li>Le ratio du bénéfice par action (BPA ou du résultat par action) est
+principalement utilisé pour les sociétés cotées en bourse. En soi, le BPA
+n'indique pas grand-chose. Par contre, si vous le comparez au BPA d'un
+trimestre ou d'un exercice antérieur, vous pouvez calculer le taux de
+croissance du bénéfice (par action) de la société. Par exemple, une entreprise
+qui augmente de 50 % en un an possède un excellent taux de croissance.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orga50dbb7"></a>Ratio du cours/résultats<br />
+<div class="outline-text-6" id="text-1-3-2-5-2">
+<pre class="example">
+Cours du marché ordinaire
+-------------------------
+Résultat par action
+
+Résultats net = résultat brut moins les charges
+</pre>
+</div>
+<ol class="org-ol">
+<li><a id="org48664c2"></a>Interprétation<br />
+<div class="outline-text-7" id="text-1-3-2-5-2-1">
+<p>
+L'un des ratios les plus utilisés, il permet de comparer le prix courant au
+bénéfice afin de déterminer si le titre est surévalué ou sous-évalué. Il
+représente une attente quant au rendement futur de l'entreprise.
+</p>
+<ul class="org-ul">
+<li>En règle générale, lorsque le ratio est élevé, cela signifie que les
+investisseurs prévoient une forte croissance dans le futur.</li>
+<li>Le ratio cours/bénéfice (cours/résultats, C/B) moyen du marché est de 20 à 25
+fois le bénéfice.</li>
+<li>Les sociétés qui perdent de l'argent n'ont pas de ratio C/B.</li>
+<li>On compare ce ratio avec les exercices précédents ainsi qu’avec d’autres
+entreprises.</li>
+<li>Le ratio C/B ne détermine pas le cours de l'action. Un ratio C/B bas peut
+indiquer que le bénéfice de l'entreprise est stable ou qu'il croît lentement,
+comme il peut signifier que l'entreprise éprouve des difficultés financières.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org7a359bd" class="outline-4">
+<h4 id="org7a359bd"><span class="section-number-4">1.3.3</span> Immobilisations et amortissement</h4>
+<div class="outline-text-4" id="text-1-3-3">
+</div>
+<ol class="org-ol">
+<li><a id="orgced8529"></a>Vocabulaire<br />
+<div class="outline-text-5" id="text-1-3-3-1">
+<p>
+<b>Actif immobilisé/Immobilisations</b> : 
+</p>
+<ul class="org-ul">
+<li>Destinés à être utilisés pour la production de bien ou pour gagner du revenu.</li>
+<li>Destinés à être utilisés de façon durable</li>
+<li>Non destinés à être vendus</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="orga1b33db"></a>Catégories d'immobilisations<br />
+<ol class="org-ol">
+<li><a id="org3aed0a3"></a>Immobilisations corporelles<br />
+<div class="outline-text-7" id="text-1-3-3-1-1-1">
+<ul class="org-ul">
+<li>Biens amortissables : 
+<ul class="org-ul">
+<li>Immeubles</li>
+<li>Biens qui s'épuisent</li>
+</ul></li>
+<li>Biens non-ammortissables : 
+<ul class="org-ul">
+<li>Terrain</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org35671d5"></a>Immobilisations incorporelles<br />
+<div class="outline-text-7" id="text-1-3-3-1-1-2">
+<ul class="org-ul">
+<li>R&amp;D</li>
+<li>Droits d'auteur</li>
+<li>Franchises</li>
+<li>Licenses</li>
+<li>Marque de commerce</li>
+<li>Autres propriétés intellectuelles</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+
+<li><a id="org2c0da34"></a>Coût d'un actif immobilisé<br />
+<div class="outline-text-5" id="text-1-3-3-2">
+<p>
+L'idée est de prendre en compte 
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Coût de l'actif (prix affiché)</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Coûts de mise en service</td>
+</tr>
+
+<tr>
+<td class="org-left">+ Autres frais comme transport, préparation, installation</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+
+<li><a id="orgc7b2a9b"></a>Coût Amortissable<br />
+<div class="outline-text-5" id="text-1-3-3-3">
+<p>
+Si on achète un terrain et un immeuble pour un prix P, il faut déterminer quelle
+partie est amortissable.
+</p>
+
+<p>
+Une évaluation municipale par exemple dirait que l'immeuble vaut I et le terrain
+vaut T.  Alors on va dire que P * (I/T) est le coût amortissable de l'immeuble.
+</p>
+
+<p>
+Notons que nous n'avons pas nécéssairement I + T = P.  Nous utilisons les
+évaluations pour obtenir un ratio de valeur, mais nous utilisons le coût d'achat
+comme entrée pour avoir le coût amortissable.
+</p>
+</div>
+</li>
+
+<li><a id="orgfa3e486"></a>Amortissement<br />
+<ol class="org-ol">
+<li><a id="orgcdea711"></a>Amortissement linéaire<br />
+<div class="outline-text-6" id="text-1-3-3-4-1">
+<p>
+L'immobilisation passe du coût initial <b>P</b> à sa valeur résiduelle <b>R</b> en <b>n</b>
+années en perdant <b>(P-R)/n</b> à chaque année (sauf la première année où on prend
+une fraction de ce montant correspondant à la fraction d'année d'utilisation(m/12)).
+</p>
+
+<p>
+D<sub>1</sub> = (m/12) * (P-R)/n
+</p>
+
+<p>
+D<sub>t</sub> = (P-R)/n
+</p>
+</div>
+</li>
+
+<li><a id="orgb571d29"></a>Amortissement à taux dégressif à taux constant<br />
+<div class="outline-text-6" id="text-1-3-3-4-2">
+<p>
+Aller de <b>P</b> à <b>R</b> en <b>n</b> étapes en multipliant par un facteur.
+</p>
+
+<p>
+L'idée est en fait de multiplier la valeur de l'année précédente par un facteur
+de sorte qu'après avoir multiplié par ce facteur <b>n</b> fois, on fini par avoir
+multiplié par <b>R/P</b>.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Année</th>
+<th scope="col" class="org-left">Valeur comptable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-left">P</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">P (R/P)<sup>1/n</sup></td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">P (R/P)<sup>1/n</sup> (R/P)<sup>1/n</sup></td>
+</tr>
+
+<tr>
+<td class="org-right">&hellip;</td>
+<td class="org-left">&hellip;</td>
+</tr>
+
+<tr>
+<td class="org-right">n</td>
+<td class="org-left">P ( (R/P)<sup>1/n</sup> )<sup>n</sup> = P (R/P) = R</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+En pratique, on utilise la terminologie suivante:
+On calcule un taux basé sur <b>P</b>, <b>R</b> et <b>n</b>:
+</p>
+
+<p>
+d = 1 - (R/P)<sup>1/n</sup>
+</p>
+
+<p>
+et au lieu de soustraire le même montant à chaque année, on ammortit de
+</p>
+
+<p>
+D<sub>t</sub> = CNA<sub>t-1</sub> * d
+</p>
+
+<p>
+Ce qui correspond à multiplier par (R/P)<sup>1/n</sup>:
+</p>
+
+<p>
+CNA<sub>t</sub> = CNA<sub>t-1</sub> - CNA<sub>t-1</sub> * d = CNA<sub>t-1</sub> * (1 - d) = CNA<sub>t-1</sub> * (R/P)<sup>1/n</sup>
+</p>
+</div>
+</li>
+
+<li><a id="org4ed64d8"></a>Amortissement Proportionnel à l'ordre inversé des années<br />
+<div class="outline-text-6" id="text-1-3-3-4-3">
+<p>
+Soit U<sub>t</sub> = (P-R)(n - t + 1)/k la perte de valeur dans la première année <b>d'utilisation</b>.
+</p>
+
+<p>
+Si les années d'utilisation sont désynchronisées avec les périodes d'éxercice,
+chaque année d'exercice ira chercher une partie de chaque année d'utilisation qui
+la chevauchent.
+</p>
+
+<p>
+Par exemple, pour une machinne achetée en fin avril de l'année 1: on a
+U<sub>1</sub> = (P-R)(n-1+1)/k, mais seulement (8/12)U<sub>1</sub> sera mis dans les livres pour
+l'année 1.
+</p>
+
+<p>
+D<sub>1</sub> = (8/12)U<sub>1</sub>
+</p>
+
+<p>
+À l'année fiscale 2, on a 4 mois qui font partie de la première année
+d'utilisation (U<sub>1</sub>).  L'amortissement à l'année 2 incluera (4/12)D<sub>1</sub> et aussi (8/12)D<sub>2</sub>
+où
+</p>
+
+<p>
+D<sub>2</sub> = (4/12)U<sub>1</sub> + (8/12)U<sub>2</sub>
+</p>
+
+<p>
+<b>En passant, k = n(n+1)/2.</b>
+</p>
+
+<p>
+/Sti que ça vaut pas la peine d'apprendre cet esti d'amortissement, come on.
+R'garde, si j'ai besoin de faire un amortissement comme ça, j'ouvrirai un
+livre./
+</p>
+</div>
+</li>
+
+
+<li><a id="org95ca09d"></a>Amortissement Proportionnel à l'utilisation<br />
+<div class="outline-text-6" id="text-1-3-3-4-4">
+<p>
+Ben simple: on remplace le <b>n</b> par un volume total d'utilisation <b>V</b>.
+</p>
+
+<p>
+on a donc d = (P-R)/V
+</p>
+
+<p>
+L'amortissement à l'année <b>t</b> sera donné par le volume d'utilisation de v<sub>t</sub> de
+l'année <b>t</b>.
+</p>
+
+<p>
+D<sub>t</sub> = d*v<sub>t</sub>
+</p>
+
+<p>
+Par exemple, ça pourrait être une voiture, <b>V</b> serait le nombre total de
+kilomètres qu'on prévoit faire avec la voiture et v<sub>t</sub> serait le nombre de
+kilomètres faits durant l'année <b>t</b>.
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org1a5ca44" class="outline-4">
+<h4 id="org1a5ca44"><span class="section-number-4">1.3.4</span> Intérêt et valeur de l'argent dans le temps</h4>
+<div class="outline-text-4" id="text-1-3-4">
+<p>
+À cause des intérêts ou de l'inflation, un montant X<sub>1</sub> à un temps T<sub>1</sub> n'aura pas
+la même valeur à un temps T<sub>2</sub>.  Les méthodes dans cette sections permettent de
+trouver des équivalences entre des montants d'argents à différents temps.
+</p>
+
+<p>
+Les facteurs d'actualisations permettent d'établire ces équivalences.
+</p>
+
+<p>
+Les taux effectifs permettent de comparer des situations avec des fréquences de
+capitalisations différentes.
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org77b7c2d"></a>Valeur de l'argent dans le temps<br />
+<ol class="org-ol">
+<li><a id="org420108e"></a>La base<br />
+<div class="outline-text-6" id="text-1-3-4-1-1">
+<p>
+Avec un taux i, un montant est multiplié par (1+i) à chaque période de
+capitalisation.
+</p>
+
+<p>
+Ainsi, un montant à l'année 0 aura été mutiplié par (1+i)<sup>n</sup> rendu à l'année n.
+</p>
+
+<p>
+Ainsi, si on connait le montant à l'année n, on peut connaître le montant à
+l'année 0 en multipliant par (1+i)<sup>-n</sup>.  Donc:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">(P/F, i, n)</td>
+<td class="org-left">(1+i)<sup>-n</sup></td>
+</tr>
+
+<tr>
+<td class="org-left">(F/P, i, n)</td>
+<td class="org-left">(1+i)<sup>n</sup></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+
+<li><a id="orgc71c614"></a>Le reste<br />
+<div class="outline-text-6" id="text-1-3-4-1-2">
+<p>
+Avec des annuités, on dépose un montant A à chaque période. Au bout de n années,
+le premier montant A déposé à l'année vaudrait A(1+i)<sup>-1</sup> à l'année 0, le montant
+déposé à l'année 2 vaudrait A(1+i)<sup>-2</sup> à l'année 0.  Finalement le montant déposé
+à l'année n vaudrait A(1+i)<sup>-n</sup> à l'année 0.
+</p>
+
+<p>
+La somme est donc
+</p>
+
+<p>
+A((1+i)<sup>-1</sup> + (1+i)<sup>-2</sup> + &hellip; + (1+i)<sup>-n</sup>) = P
+</p>
+
+<p>
+Si on fait le même truc qu'avec une série géométrique pour trouver P/A = &xi;, nous
+avons
+</p>
+
+<p>
+&xi; = (1+i)<sup>-1</sup> + (1+i)<sup>-2</sup> + &hellip; + (1+i)<sup>-n</sup>
+</p>
+
+<p>
+et
+</p>
+
+<p>
+(1+i)&xi; = 1 + (1+i)<sup>-1</sup> + (1+i)<sup>-2</sup> + &hellip; + (1+i)<sup>-(n-1)</sup> 
+</p>
+
+<p>
+donc &xi; - (1+i)&xi; = -i&xi; = (1+i)<sup>-n</sup> - 1.
+</p>
+
+<p>
+ou bien i&xi; = 1 - (1+i)<sup>-n</sup> et donc &xi; = (1 - (1+i)<sup>-n</sup>)/i
+</p>
+
+<p>
+On peut multiplier par (1+i)<sup>n</sup>/(1+i)<sup>n</sup> = 1 pour obtenir
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">(P/A, i, n)</td>
+<td class="org-left">((1+i)<sup>n</sup> - 1)/(i(1+i)<sup>n</sup>)</td>
+</tr>
+
+<tr>
+<td class="org-left">(A/P, i, n)</td>
+<td class="org-left">1/(P/A, i, n)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+pour avoir une formule sans exposants négatifs.
+</p>
+
+<p>
+Les autres formules peuvent être obtenues ainsi:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">(F/A, i, n)</td>
+<td class="org-left">((1+i)<sup>n</sup> - 1)/i</td>
+</tr>
+
+<tr>
+<td class="org-left">(A/F, i, n)</td>
+<td class="org-left">i / ((1+i)<sup>n</sup> - 1)</td>
+</tr>
+
+<tr>
+<td class="org-left">(P/G, i, n)</td>
+<td class="org-left">&#x2026;</td>
+</tr>
+
+<tr>
+<td class="org-left">(</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+
+<li><a id="org95d3380"></a>Cas spécial: Annuité à l'infini<br />
+<div class="outline-text-6" id="text-1-3-4-1-3">
+<p>
+Combien d'argent dois-je déposer dans un compte pour pouvoir retirer A<sub>&infin;</sub> à
+chaque année jusqu'à la fin des temps?  Pour que ça marche, c'est que les
+intérêts qui me seront versés à chaque année vont être l'annuité.
+</p>
+
+<p>
+Si je place 1000 à un taux <b>i</b>, à chaque année, la banque va me donner
+1000 &sdot; i.  Si je retire 1000 &sdot; i, il me reste encore 1000 et je pourrai retirer
+1000 &sdot; i l'année prochaine.
+</p>
+
+<p>
+Donc si je veux retirer A<sub>&infin;</sub> par année jusqu'à la fin des temps, il faut que
+</p>
+
+<p>
+A<sub>&infin;</sub> = i &sdot; P.
+</p>
+
+<p>
+<b>Tout ce que c'est les annuités à l'infini, c'est de dire que je vais me payer
+par l'intérêt à chaque année.</b>
+</p>
+
+<p>
+Ou en d'autres termes, j'ai un projet qui me rapporte 100$ par année jusqu'à la
+fin des temps.  Et le taux est de 7%.  Ça veut dire que la valeur actuelle de ce
+projet est de 100/0.07 = 1428.57 parce que le projet est équivalent à mettre
+1428.57 dans un compte avec un rendement de 7% et je vais recevoir 100$ par
+année comme ce que le projet me donnerait.
+</p>
+
+<p>
+Mathématiquement, notons que
+</p>
+
+<p>
+(P/A, i, n) = (1 - (1+i)<sup>-n</sup>)/i
+</p>
+
+<p>
+et que lorsque n &rarr; &infin;, ceci tend vers (1+0)/i = 1/i. Notons que ceci requiert que
+i &gt; 0 pour que (1+i) &gt; 1 pour que (1+i)<sup>-n</sup> &rarr; 0 quand n &rarr; &infin;.
+</p>
+</div>
+</li>
+</ol>
+</li>
+
+<li><a id="org03aea6e"></a>Taux nominal et périodes de capitalisation<br />
+<div class="outline-text-5" id="text-1-3-4-2">
+<p>
+Les termes d'un prêt ou d'un investissement expriment les taux sous la forme
+</p>
+
+<p>
+"Un taux nominal de i<sub>nominal</sub> par année capitalisée m fois par année"
+</p>
+
+<p>
+Ceci veux dire que m fois par année, le montant sera multiplié par (1 + i/m).
+Au bout d'une année, le montant aura été multiplié par (1 + i/m)<sup>m</sup>.
+</p>
+
+<p>
+On appelle i<sub>eff</sub> = (1 + i<sub>nom</sub>/m)<sup>m</sup>.
+</p>
+
+<p>
+Afin de pouvoir travailler avec des flux monétaires avec diverses fréquences de
+capitalisation, nous devons transformer ces taux en taux effectifs de la même
+fréquence (généralement on met tout en années).
+</p>
+
+<p>
+Périodes de versements:
+</p>
+
+<p>
+On a vu une formule pour avoir un taux effectif qui a un <b>m</b> et un <b>v</b>.  Ce
+qu'on veut, c'est que
+</p>
+
+<p>
+(1+i/m)<sup>m</sup> = (1 + i/v)<sup>v</sup>
+</p>
+
+<p>
+On fait X<sup>(1/v)</sup> des deux côtés pour obtenir
+</p>
+
+<p>
+((1+i<sub>1</sub>/m)<sup>m</sup>)<sup>1/v</sup> = 1 + i<sub>2</sub>/v <br />
+&rArr; (1 + i<sub>1</sub>/m)<sup>m/v</sup> = 1 + i<sub>2</sub>/v <br />
+&rArr; (1 + i<sub>1</sub>/m)<sup>m/v</sup> - 1 = i<sub>2</sub>/v <br />
+</p>
+
+<p>
+Exemple: un taux de 10% capitalisé mensuellement mais payés semestriellement
+donne:
+</p>
+
+<p>
+(1 + 0.10/12)<sup>12</sup> = (1 + i<sub>2</sub>/2)<sup>2</sup>      <br />
+&rArr; (1 + 0.10/12)<sup>6</sup> = 1 + i<sub>2</sub>/2       <br />
+&rArr; (1 + 0.10/12)<sup>6</sup> - 1 = 0.05105    <br />
+</p>
+
+<p>
+Ce qui veut dire que notre taux de 10% par année capitalisé mensuellement
+correspond à un taux de 5.105% effectif par période de paiement.
+</p>
+
+<p>
+Ça correspond aussi à un taux de 10.21% capitalisé semestriellement.
+</p>
+
+<p>
+En effet:
+</p>
+
+<p>
+(1 + 0.10/12)<sup>12</sup> = 1.1047
+</p>
+
+<p>
+et 
+</p>
+
+<p>
+(1 + 0.1021/2)<sup>2</sup> = 1.1047
+</p>
+
+<p>
+Le 0.05105, c'est le i<sub>2</sub>/v. C'est le taux effectif.  Si on veut un taux nominal
+annuel, c'est i<sub>2</sub> = 10.21%.
+</p>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org98c2332" class="outline-4">
+<h4 id="org98c2332"><span class="section-number-4">1.3.5</span> Interpolations:</h4>
+<div class="outline-text-4" id="text-1-3-5">
+<p>
+Supposons une fonction y = f(x) et nous cherchons x<sup>*</sup> pour que f(x<sup>*</sup>) = y<sup>*</sup>,
+</p>
+
+<p>
+Si on a x<sub>1</sub>, x<sub>2</sub> tels que f(x<sub>1</sub>) &lt; y<sup>*</sup> &lt; f(x<sub>2</sub>) (sans dire si x<sub>1</sub> &gt; x<sub>2</sub> ou x<sub>2</sub> &gt; x<sub>2</sub>), la
+droite reliant (x<sub>2</sub>, y<sub>2</sub>) à (x<sup>*</sup>, y<sup>*</sup>) a la même pente que la droite reliant (x<sub>1</sub>,
+y<sub>1</sub>) à (x<sub>2</sub>, y<sub>2</sub>) donc
+</p>
+
+<pre class="example">
+x_2 - x^*     x_2 - x_1  \\
+---------  =  ---------  \\
+y_2 - y^*     y_2 - y_1  \\
+
+Et on peut manipuler cette équation
+
+x_1 - x^*    x_2 - x_1            \\
+---------  = --------- (y_1 - y^*)  \\
+             y_2 - y_1            \\
+
+
+              x_2 - x_1            \\
+-x^* = -x_1 + --------- (y_1 - y^*)  \\
+              y_2 - y_1            \\
+
+pour obtenir
+
+              x_2 - x_1            \\
+ x^* = +x_1 - --------- (y_1 - y^*)  \\
+              y_2 - y_1            \\
+
+Et notons que dans les slides, c'est généralement présenté comme suit:
+
+              x_2 - x_1            \\
+ x^* = +x_1 + --------- (y^* - y_1)  \\
+              y_2 - y_1            \\
+</pre>
+
+<p>
+x<sup>*</sup> = +x<sub>1</sub> + (y<sup>*</sup> - y<sub>1</sub>) &sdot; (x<sub>2</sub> - x<sub>1</sub>)/(y<sub>2</sub> - y<sub>1</sub>) <br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdbff311" class="outline-3">
+<h3 id="orgdbff311"><span class="section-number-3">1.4</span> Travaux Pratiques (TP)</h3>
+</div>
+
+
+<div id="outline-container-org26ece3d" class="outline-3">
+<h3 id="org26ece3d"><span class="section-number-3">1.5</span> Feuille de formules</h3>
+<div class="outline-text-3" id="text-1-5">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> États financiers <code>[4/4]</code>
+<ul class="org-ul">
+<li class="on"><code>[X]</code> État des résultats
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Notes</li>
+</ul></li>
+<li class="on"><code>[X]</code> État de variations de CP
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Notes</li>
+</ul></li>
+<li class="on"><code>[X]</code> État des résultats
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Notes</li>
+</ul></li>
+<li class="on"><code>[X]</code> État des flux de trésorie
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Notes</li>
+</ul></li>
+</ul></li>
+
+<li class="trans"><code>[-]</code> Ratios <code>[4/14]</code>
+
+<ul class="org-ul">
+<li class="on"><code>[X]</code> </li>
+
+<li class="on"><code>[X]</code> </li>
+
+<li class="off"><code>[&#xa0;]</code> </li>
+
+<li class="off"><code>[&#xa0;]</code> </li>
+
+<li class="on"><code>[X]</code> </li>
+
+<li class="on"><code>[X]</code> </li>
+
+<li class="off"><code>[&#xa0;]</code> </li>
+
+<li class="off"><code>[&#xa0;]</code> </li>
+
+<li class="off"><code>[&#xa0;]</code> </li>
+
+<li class="off"><code>[&#xa0;]</code> </li>
+
+<li class="off"><code>[&#xa0;]</code> </li>
+
+<li class="off"><code>[&#xa0;]</code> </li>
+
+<li class="off"><code>[&#xa0;]</code> </li>
+
+<li class="off"><code>[&#xa0;]</code> </li>
+</ul></li>
+
+<li class="off"><code>[&#xa0;]</code> Cas de figure (valeur de l'argent dans le temps) <code>[0/5]</code>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Annuités</li>
+<li class="off"><code>[&#xa0;]</code> Gradient arithmétique</li>
+<li class="off"><code>[&#xa0;]</code> Gradient géométrique</li>
+<li class="off"><code>[&#xa0;]</code> Annuité à l'infini</li>
+<li class="off"><code>[&#xa0;]</code> Formule d'interpolation (Slides extra MVH P35)</li>
+</ul></li>
+
+<li class="off"><code>[&#xa0;]</code> Conversions de taux d'intérêts</li>
+
+<li class="off"><code>[&#xa0;]</code> Amortissement
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Note: Coût amortissable</li>
+<li class="off"><code>[&#xa0;]</code> Amortissement Linéaire</li>
+<li class="off"><code>[&#xa0;]</code> Amortissement Dégressif</li>
+<li class="off"><code>[&#xa0;]</code> Amortissement Proportionnel à l'ordre inversé des années</li>
+<li class="off"><code>[&#xa0;]</code> Amortissement Linéaire</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Philippe Carphin</p>
+<p class="date">Created: 2019-01-19 Sat 15:43</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
