@@ -1,0 +1,9 @@
+
+* Notes de cours
+
+** Fichiers
+
+Les fichiers =*.org= sont les fichiers originaux.  Les autres sont des formats
+exportés à partir de ceux-ci.
+
+** Toute proposition de modification est bienvenue et aidera les gens des générations futures :)
